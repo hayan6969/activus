@@ -1,6 +1,6 @@
 
 
-import HeroSection from '@/components/HeroSection';
+import HeroSection from '@/components/HeroSection/HeroSection';
 
 import Cursor from "@/components/Cursor";
 
