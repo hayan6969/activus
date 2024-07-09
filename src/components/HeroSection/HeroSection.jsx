@@ -8,6 +8,8 @@ const BG = dynamic(() => import('./BG'), {
 });
 
 export default function HeroSection() {
+
+
   return (
     <div className=" w-full h-screen overflow-hidden flex items-center justify-center relative bg-black">
       <Image

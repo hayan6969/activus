@@ -28,3 +28,7 @@
 *{
   cursor: none;
 }
+
+#spline-cube{
+  transform: scale(3);
+}
