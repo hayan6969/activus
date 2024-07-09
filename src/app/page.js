@@ -1,13 +1,13 @@
 
 
-// import HeroSection from '@/components/HeroSection';
+import HeroSection from '@/components/HeroSection';
 
 import Cursor from "@/components/Cursor";
 
 export default function Home() {
   return (
     <main className=" text-4xl">
-      {/* <HeroSection /> */}
+      <HeroSection />
       
       
       Activus
