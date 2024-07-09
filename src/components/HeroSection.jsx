@@ -14,7 +14,7 @@ export default function HeroSection() {
         alt="Logo"
         className=" aspect-auto w-full absolute z-10 pointer-events-none"
       />
-      <div style={{ transform: "scale(2)" }}>
+      <div style={{ transform: "scale(2.2)" }}>
         <Spline scene="https://prod.spline.design/MDLEFHXlmzID6oEB/scene.splinecode" />
       </div>
     </div>
