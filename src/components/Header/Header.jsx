@@ -2,7 +2,7 @@
 
 import "./Header.css";
 import { forwardRef, useState } from "react";
-import Framer from "../Magnetic/magnetic";
+import Framer from "../Magnetic/Magnetic";
 
 const Header = forwardRef(function index(props, ref) {
   const [isOpen, setIsOpen] = useState(false);
