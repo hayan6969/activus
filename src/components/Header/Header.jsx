@@ -4,7 +4,7 @@ import "./Header.css";
 import { forwardRef, useState } from "react";
 import Framer from "../Magnetic/Magnetic";
 
-const Header = forwardRef(function index(props, ref) {
+const Header = forwardRef(function Header(props, ref) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
@@ -14,11 +14,10 @@ const Header = forwardRef(function index(props, ref) {
         <div
           className=" p-8"
           onClick={() => {
-            console.log("clicked", !isOpen);
             setIsOpen(!isOpen);
           }}
         >
-          <input type="checkbox" id="checkbox" checked={isOpen} />
+          <input type="checkbox" id="checkbox" checked={isOpen} onChange={(e)=>{console.log(e.target.checked);}} />
           <label htmlFor="checkbox" className="toggle">
             <div className="bars" id="bar1"></div>
             <div className="bars" id="bar2"></div>
