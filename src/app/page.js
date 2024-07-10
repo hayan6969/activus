@@ -1,19 +1,8 @@
+import Main from '@/components/Main/Main'
+import React from 'react'
 
-
-import HeroSection from '@/components/HeroSection/HeroSection';
-
-import Cursor from "@/components/Cursor";
-
-export default function Home() {
+export default function page() {
   return (
-    <main className=" text-4xl">
-      <HeroSection />
-      
-      
-      Activus
-      <h1 className="font-bold">Matter font bold</h1>
-      <h1 className=" font-black">Matter font black</h1>
-      <Cursor />
-    </main>
-  );
+    <Main />
+  )
 }
