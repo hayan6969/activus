@@ -9,13 +9,18 @@ export default function Main() {
   
   const stickyElement = useRef(null);
 
+  
   return (
     <div className={'main'}>
       <Header ref={stickyElement}/>
+
       <HeroSection />
+
       <div className=' w-full h-screen'>
         Second section
+       
       </div>
+
       <StickyCursor stickyElement={stickyElement}/>
     </div>
   )

@@ -46,6 +46,8 @@
   background-color: black;
   border-radius: 50%;
   pointer-events: all;
+  z-index: 90;
+  /* mix-blend-mode: difference; */
 }
 
 .header{
@@ -55,16 +57,16 @@
   justify-content: flex-end;
   padding: 10px;
   box-sizing: border-box;
-  cursor: pointer;
   mix-blend-mode: difference;
-  z-index: 1;
+  z-index: 100;
+  pointer-events: none;
   .burger{
       position: relative;
       display: flex;
       gap: 8px;
       flex-direction: column;
       padding: 30px;
-      pointer-events: none;
+      /* pointer-events: none; */
       &::before, &::after{
           display: block;
           content: "";
