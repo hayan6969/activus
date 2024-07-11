@@ -15,8 +15,8 @@ export default function Main() {
       <div className={" bg-white grid gap-6"}>
         
         {/* section 1  */}
-        <HeroSection />
-
+        {/* <HeroSection /> */}
+<div className="my-24"></div>
         {/* section 2  */}
         <BentoGrid />
 
