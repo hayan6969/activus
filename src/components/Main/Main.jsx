@@ -13,15 +13,18 @@ export default function Main() {
     <div>
       <Header ref={stickyElement} />
       <div className={" bg-white grid gap-6"}>
-        
+
         {/* section 1  */}
-        {/* <HeroSection /> */}
-<div className="my-24"></div>
+        <HeroSection />
+
         {/* section 2  */}
         <BentoGrid />
 
       </div>
-      <StickyCursor stickyElement={stickyElement} />
+
+      <div className=" hidden sm:block">
+        <StickyCursor stickyElement={stickyElement} />
+      </div>
     </div>
   );
 }

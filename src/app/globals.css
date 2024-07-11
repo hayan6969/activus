@@ -2,22 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @import '../styles/fonts.css';
-
-:root {
-  /* --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255; */
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0; */
-  }
-}
-
 
 @layer utilities {
   .text-balance {
@@ -34,10 +20,6 @@
 }
 
  /* new css  */
-.main{
-  /* height: 200vh; */
-  background-color: white;
-}
 
 .cursor{
   position: fixed;
@@ -88,3 +70,12 @@
       }
   }
 }
+
+.sectionCSS{
+  @apply px-4 sm:px-24 py-12 relative;
+}
+
+.sectionHeading{
+  @apply text-4xl sm:text-5xl font-bold pb-2 sm:pb-6;
+}
+

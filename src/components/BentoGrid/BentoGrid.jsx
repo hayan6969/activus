@@ -1,13 +1,39 @@
-import Image from "next/image";
 import React from "react";
+import WordPullUp from "../magicui/word-pull-up";
 
 export default function BentoGrid() {
   const divStyle = " rounded-2xl w-full h-full relative overflow-hidden ";
   const videoStyle = " absolute top-0 left-0 w-full h-full object-cover ";
 
   return (
-    <div className=" px-4 sm:px-24 py-12">
-      
+    <section className=" sectionCSS ">
+      <WordPullUp
+        words={"Our Projects"}
+        className={" sectionHeading "}
+        wrapperFramerProps={{
+          hidden: { opacity: 0 },
+          show: {
+            opacity: 1,
+            transition: {
+              staggerChildren: 0.4,
+            },
+          },
+        }}
+        framerProps={{
+          hidden: { y: -30, opacity: 0 },
+          show: {
+            y: 0,
+            opacity: 1,
+            transition: {
+              duration: 0.5,
+              repeat: Infinity,
+              repeatType: "mirror",
+              repeatDelay: 1,
+            },
+          },
+        }}
+      />
+
       <div className="  grid gap-6 grid-cols-12 grid-rows-10 w-full h-screen">
         <div
           className={
@@ -44,8 +70,16 @@ export default function BentoGrid() {
           }
         >
           <video
-            className={videoStyle}
+            className={videoStyle + " block sm:hidden "}
             src="/assets/5.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+          <video
+            className={videoStyle + " hidden sm:block "}
+            src="/assets/1.mp4"
             autoPlay
             loop
             muted
@@ -58,8 +92,16 @@ export default function BentoGrid() {
           }
         >
           <video
-            className={videoStyle}
+            className={videoStyle + " block sm:hidden"}
             src="/assets/1.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+          <video
+            className={videoStyle + " hidden sm:block"}
+            src="/assets/5.mp4"
             autoPlay
             loop
             muted
@@ -109,6 +151,6 @@ export default function BentoGrid() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
