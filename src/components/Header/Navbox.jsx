@@ -31,24 +31,6 @@ export default function Navbox() {
             </motion.div>
           </div>
         );
-        return (
-          <div
-            key={index}
-            className={""}
-            style={{ perspective: "120px", perspectiveOrigin: "bottom" }}
-          >
-            <motion.div
-              href={item?.path}
-              custom={i}
-              variants={perspective}
-              initial="initial"
-              animate="enter"
-              exit="exit"
-            >
-              <a className=" text-black text-4xl">{item?.name}</a>
-            </motion.div>
-          </div>
-        );
       })}
     </div>
   );

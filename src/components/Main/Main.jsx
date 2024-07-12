@@ -5,6 +5,8 @@ import Header from "../Header/Header";
 import StickyCursor from "../StickyCursor/StickyCursor";
 import HeroSection from "../HeroSection/HeroSection";
 import BentoGrid from "../BentoGrid/BentoGrid";
+import WhatAllAbout from "../WhatAllAbout/WhatAllAbout";
+import WordpressToReact from "../WordpressToReact/WordpressToReact";
 
 export default function Main() {
   const stickyElement = useRef(null);
@@ -19,6 +21,15 @@ export default function Main() {
 
         {/* section 2  */}
         <BentoGrid />
+
+
+        {/* section 3  */}
+        <WhatAllAbout />
+
+        {/* section 4  */}
+        <WordpressToReact />
+
+        <div className="mt-24"></div>
 
       </div>
 
