@@ -14,7 +14,7 @@ export default function Main() {
   return (
     <div>
       <Header ref={stickyElement} />
-      <div className={" bg-white grid gap-6"}>
+      <div className={" bg-white grid gap-8"}>
 
         {/* section 1  */}
         <HeroSection />

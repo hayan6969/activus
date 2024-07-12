@@ -23,6 +23,9 @@ module.exports = {
       screens: {
         'xsm': {'min': '450px', 'max': '639px'},
       },
+      colors: {
+        'primary': "#7900FF",
+      },
     
       // colors: {
       //   border: "hsl(var(--border))",

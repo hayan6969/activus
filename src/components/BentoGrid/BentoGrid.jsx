@@ -92,14 +92,6 @@ export default function BentoGrid() {
           }
         >
           <video
-            className={videoStyle + " block sm:hidden"}
-            src="/assets/1.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-          />
-          <video
             className={videoStyle + " hidden sm:block"}
             src="/assets/5.mp4"
             autoPlay
@@ -107,6 +99,15 @@ export default function BentoGrid() {
             muted
             playsInline
           />
+          <video
+            className={videoStyle + " block sm:hidden"}
+            src="/assets/1.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+          
         </div>
         <div
           className={

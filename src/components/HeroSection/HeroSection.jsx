@@ -9,6 +9,7 @@ const BG = dynamic(() => import("./BG"), {
 });
 
 export default function HeroSection() {
+  
   const defaultOptions = {
     loop: true,
     autoplay: true,
