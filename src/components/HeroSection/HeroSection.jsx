@@ -3,13 +3,18 @@ import React from "react";
 import dynamic from "next/dynamic";
 import Lottie from "react-lottie";
 import scrollIcon from "../../../public/assets/scroll.json";
+import "./spinner.css";
 
 const BG = dynamic(() => import("./BG"), {
+  loading: () => (
+    <div class="spinner">
+      <div class="spinnerin"></div>
+    </div>
+  ),
   ssr: false,
 });
 
 export default function HeroSection() {
-  
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -29,6 +34,7 @@ export default function HeroSection() {
         className=" aspect-auto w-full absolute z-[1] pointer-events-none"
       />
       <BG />
+
       {/* scroll icon  */}
       <div className="z-[2] absolute bottom-0 left-auto right-auto">
         <Lottie options={defaultOptions} style={{ height: 200, width: 200 }} />

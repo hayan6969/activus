@@ -72,7 +72,7 @@
 }
 
 .sectionCSS{
-  @apply px-4 sm:px-24 py-12 relative;
+  @apply px-4 sm:px-24 py-12 relative w-full h-fit md:h-screen;
 }
 
 .sectionHeading{

@@ -18,7 +18,7 @@ export default function WordpressToReact() {
   };
 
   return (
-    <section className=" sectionCSS ">
+    <section className=" px-4 sm:px-24 relative w-full h-screen overflow-hidden ">
 
       <div className=" flex items-center sm:items-end justify-center flex-wrap gap-4 sm:gap-0 sm:pb-6  ">
         <BlurIn word={"Wordpress"} className={" sectionHeading "} />

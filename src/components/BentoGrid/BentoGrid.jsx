@@ -5,8 +5,12 @@ export default function BentoGrid() {
   const videoStyle = " absolute top-0 left-0 w-full h-full object-cover ";
 
   return (
-    <section className=" sectionCSS ">
-      <div className="  grid gap-6 grid-cols-12 grid-rows-10 w-full h-screen">
+    <section
+      className=" sectionCSS "
+      loading="lazy"
+      onLoad={<h1>Loading...</h1>}
+    >
+      <div className="  grid gap-6 grid-cols-12 grid-rows-10 w-full h-full">
         <div
           className={
             divStyle + " row-span-10 col-span-6 md:row-span-6 md:col-span-3 "
@@ -63,6 +67,14 @@ export default function BentoGrid() {
             divStyle + " col-span-12 row-span-10 md:col-span-5 md:row-span-3"
           }
         >
+        <video
+          className={videoStyle + " block sm:hidden"}
+          src="/assets/1.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
           <video
             className={videoStyle + " hidden sm:block"}
             src="/assets/5.mp4"
@@ -71,15 +83,6 @@ export default function BentoGrid() {
             muted
             playsInline
           />
-          <video
-            className={videoStyle + " block sm:hidden"}
-            src="/assets/1.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-          />
-          
         </div>
         <div
           className={
@@ -124,7 +127,6 @@ export default function BentoGrid() {
           />
         </div>
       </div>
-      
     </section>
   );
 }

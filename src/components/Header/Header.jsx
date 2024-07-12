@@ -63,7 +63,7 @@ const Header = forwardRef(function Header(props, ref) {
         variants={menu}
         animate={isOpen ? "open" : "closed"}
         initial="closed"
-        className={` bg-white  mix-blend-differenc fixed z-[2] rounded-3xl flex items-center justify-start`}
+        className={` bg-primary text-white  mix-blend-differenc fixed z-[2] rounded-3xl flex items-center justify-start`}
       >
         <AnimatePresence>{isOpen && <Navbox />}</AnimatePresence>
       </motion.div>

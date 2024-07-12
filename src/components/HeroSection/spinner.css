@@ -1,0 +1,27 @@
+.spinner {
+    width: 22em;
+    height: 22em;
+    cursor: not-allowed;
+    border-radius: 50%;
+    border: 1px solid #444;
+    box-shadow: -15px -15px 15px #7900FF, 0px -15px 15px 0px #ffffff, 15px -15px 15px #7900FF, 15px 0 15px #ffffff, 15px 15px 15px 0px#7900FF, 0 15px 15px 0px #FFFFFF, -15px 15px 15px 0px #7900FF;
+    animation: rot55 1.7s linear infinite;
+  }
+  
+  .spinnerin {
+    border: 1px solid #444;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes rot55 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

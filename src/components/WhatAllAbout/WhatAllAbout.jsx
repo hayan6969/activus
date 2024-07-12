@@ -8,33 +8,34 @@ import Slider from "react-slick";
 
 export default function WhatAllAbout() {
   const divStyle =
-    " rounded-2xl w-full sm:h-[500px] relative overflow-hidden bg-red-300 ";
+    " rounded-2xl w-full sm h-full  relative overflow-hidden bg-red-300 ";
     
   const settings1 = {
     dots: false,
     autoplay: true,
-    speed: 1000,
-    autoplaySpeed: 2000,
+    speed: 2500,
+    autoplaySpeed: 3000,
     cssEase: "ease-in-out",
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     pauseOnHover: false,
-    
   };
   const settings2 = {
     dots: false,
     autoplay: true,
-    speed: 900,
-    autoplaySpeed: 1800,
+    speed: 2500,
+    autoplaySpeed: 3000,
     cssEase: "ease-in-out",
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    pauseOnHover: false
+    pauseOnHover: false,
+    rtl: true
   };
+
   return (
-    <section className=" py-12 relative overflow-hidden">
+    <section className=" py-12 relative overflow-hidden h-fit md:h-screen ">
       <WordPullUp
         words={"What It's All About"}
         className={" sectionHeading "}
@@ -66,55 +67,55 @@ export default function WhatAllAbout() {
         className={" text-3xl sm:text-4xl font-semibold"}
         text={" Custom Programming "}
       >
-        <div className=" sectionCSS w-full grid gap-6">
+        <div className="px-4 sm:px-24 py-12 relative w-full grid gap-6">
           <div className=" w-full grid place-items-center">
             <h1 className=" text-center text-2xl sm:text-3xl w-full xsm:w-[80%] sm:w-[50%] md:w-[70%]  ">
               We love innovation and want to help you bring your ideas&nbsp;💡
               to the world&nbsp;🌍
             </h1>
           </div>
-          <div className=" grid grid-cols-7 gap-12 ">
+          <div className=" grid grid-cols-7 gap-6 ">
             <div className={`${divStyle} h-[250px] col-span-7 sm:col-span-3`}>
               <Slider {...settings1}>
-                <div className=" w-full bg-yellow-300 h-[500px]">
-                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white">1</h3>
+                <div className=" w-full bg-yellow-300 h-full ">
+                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white bg-opacity-50">Lorem ipsum sit.</h3>
                 </div>
-                <div className=" w-full bg-cyan-400 h-[500px]">
-                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white">2</h3>
+                <div className=" w-full bg-cyan-100 h-full ">
+                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white bg-opacity-50">Lorem ipsum sit.</h3>
                 </div>
-                <div className=" w-full bg-yellow-100 h-[500px]">
-                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white">3</h3>
+                <div className=" w-full bg-yellow-100 h-full ">
+                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white bg-opacity-50">Lorem ipsum sit.</h3>
                 </div>
-                <div className=" w-full bg-cyan-700 h-[500px]">
-                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white">4</h3>
+                <div className=" w-full bg-cyan-200 h-full ">
+                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white bg-opacity-50">Lorem ipsum sit.</h3>
                 </div>
-                <div className=" w-full bg-yellow-200 h-[500px]">
-                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white">5</h3>
+                <div className=" w-full bg-yellow-200 h-full ">
+                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white bg-opacity-50">Lorem ipsum sit.</h3>
                 </div>
-                <div className=" w-full bg-cyan-500 h-[500px]">
-                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white">6</h3>
+                <div className=" w-full bg-cyan-300 h-full ">
+                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white bg-opacity-50">Lorem ipsum sit.</h3>
                 </div>
               </Slider>
             </div>
             <div className={`${divStyle} h-[400px] col-span-7 sm:col-span-4 bg-red-300 `}>
             <Slider {...settings2}>
-                <div className=" w-full bg-green-300 h-[500px]">
-                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white">1</h3>
+                <div className=" w-full bg-green-300 h-full ">
+                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white bg-opacity-50">Lorem ipsum dolor sit.</h3>
                 </div>
-                <div className=" w-full bg-purple-400 h-[500px]">
-                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white">2</h3>
+                <div className=" w-full bg-purple-100 h-full ">
+                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white bg-opacity-50">Lorem ipsum dolor sit.</h3>
                 </div>
-                <div className=" w-full bg-green-100 h-[500px]">
-                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white">3</h3>
+                <div className=" w-full bg-green-100 h-full ">
+                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white bg-opacity-50">Lorem ipsum dolor sit.</h3>
                 </div>
-                <div className=" w-full bg-purple-700 h-[500px]">
-                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white">4</h3>
+                <div className=" w-full bg-purple-200 h-full ">
+                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white bg-opacity-50">Lorem ipsum dolor sit.</h3>
                 </div>
-                <div className=" w-full bg-green-200 h-[500px]">
-                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white">5</h3>
+                <div className=" w-full bg-green-200 h-full ">
+                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white bg-opacity-50">Lorem ipsum dolor sit.</h3>
                 </div>
-                <div className=" w-full bg-purple-500 h-[500px]">
-                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white">6</h3>
+                <div className=" w-full bg-purple-300 h-full ">
+                  <h3 className=" text-6xl mix-blend-difference text-center py-52 text-white bg-opacity-50">Lorem ipsum dolor sit.</h3>
                 </div>
               </Slider>
             </div>
