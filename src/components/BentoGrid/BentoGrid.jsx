@@ -1,5 +1,4 @@
 import React from "react";
-import WordPullUp from "../magicui/word-pull-up";
 
 export default function BentoGrid() {
   const divStyle = " rounded-2xl w-full h-full relative overflow-hidden ";
@@ -7,33 +6,6 @@ export default function BentoGrid() {
 
   return (
     <section className=" sectionCSS ">
-      <WordPullUp
-        words={"Our Projects"}
-        className={" sectionHeading "}
-        wrapperFramerProps={{
-          hidden: { opacity: 0 },
-          show: {
-            opacity: 1,
-            transition: {
-              staggerChildren: 0.4,
-            },
-          },
-        }}
-        framerProps={{
-          hidden: { y: -30, opacity: 0 },
-          show: {
-            y: 0,
-            opacity: 1,
-            transition: {
-              duration: 0.5,
-              repeat: Infinity,
-              repeatType: "mirror",
-              repeatDelay: 1,
-            },
-          },
-        }}
-      />
-
       <div className="  grid gap-6 grid-cols-12 grid-rows-10 w-full h-screen">
         <div
           className={
