@@ -36,7 +36,7 @@ export default function WhatAllAbout() {
   };
 
   return (
-    <section className=" py-6 relative overflow-hidden h-fit md:h-screen bg-white ">
+    <section className=" pt-6 relative overflow-hidden h-fit md:h-screen stickyScroll ">
       <BlurIn word={"What It's All About"} className={" sectionHeading "} id={2} />
 
 
@@ -44,16 +44,16 @@ export default function WhatAllAbout() {
         className={" text-3xl sm:text-4xl font-semibold"}
         text={" Custom Programming "}
       >
-        <div className="px-4 sm:px-24 pb-6 relative w-full h-[71vh] overflow-hidden">
+        <div className="px-4 sm:px-24 pb-6 relative w-full h-[68vh] overflow-hidden">
 
           <div className=" w-full grid place-items-center py-4">
-            <h1 className=" text-center text-xl sm:text-2xl md:text-3xl w-full lg:w-[70%]  ">
+            <h1 className=" text-center text-xl sm:text-2xl md:text-3xl w-full lg:w-[70%] font-light  ">
               We love innovation and want to help you bring your ideas&nbsp;💡
               to the world&nbsp;🌍
             </h1>
           </div>
 
-          <div className=" grid grid-cols-7 gap-6 h-[54vh] ">
+          <div className=" grid grid-cols-7 gap-6 h-[51vh] ">
             <div className={`${divStyle} col-span-7 sm:col-span-3 bg-white`}>
               <Slider {...settings1}>
                 <div className=" w-full bg-yellow-300 h-[54vh] ">

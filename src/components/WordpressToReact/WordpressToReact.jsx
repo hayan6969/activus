@@ -18,7 +18,7 @@ export default function WordpressToReact() {
   };
 
   return (
-    <section className=" px-4 sm:px-24 relative w-full h-fit md:h-screen bg-white overflow-hidden ">
+    <section className=" px-4 sm:px-24 relative w-full h-fit md:h-screen bg-white overflow-hidden stickyScroll ">
 
       <div className=" flex items-center sm:items-end justify-center flex-wrap gap-4 sm:gap-0 sm:pb-6  ">
         <BlurIn word={"Wordpress"} className={" sectionHeading "} id={1} />
@@ -39,7 +39,7 @@ export default function WordpressToReact() {
         <div
           className={" block sm:hidden h-fit bg-white sm:shadow "}
         >
-          <h3 className=" text-xl sm:text-2xl md:text-3xl lg:text-4xl mix-blend-differenc text-black text-center sm:px-12">
+          <h3 className=" text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light mix-blend-differenc text-black text-center sm:px-12">
             We custom build it and put it in a better outfit.
           </h3>
         </div>
@@ -59,7 +59,7 @@ export default function WordpressToReact() {
           <div
             className={divStyle + " bg-violet-30 bg-white sm:shadow h-full "}
           >
-            <h3 className=" text-xl sm:text-2xl md:text-3xl lg:text-4xl mix-blend-differenc text-black text-center sm:px-4">
+            <h3 className=" text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light mix-blend-differenc text-black text-center sm:px-4">
               Tired of your Wordpress site that is difficult to update?
             </h3>
           </div>
@@ -70,7 +70,7 @@ export default function WordpressToReact() {
               " sm:grid hidden bg-green-30 bg-white sm:shadow h-full "
             }
           >
-            <h3 className=" text-xl sm:text-2xl md:text-3xl lg:text-4xl mix-blend-differenc text-black text-center sm:px-12">
+            <h3 className=" text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light mix-blend-differenc text-black text-center sm:px-12">
               We custom build it and put it in a better outfit.
             </h3>
           </div>
