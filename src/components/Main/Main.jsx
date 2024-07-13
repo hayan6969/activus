@@ -102,10 +102,10 @@ export default function Main() {
         <WhatAllAbout />
 
         {/* section 4  */}
-        <WordpressToReact />
+        {/* <WordpressToReact /> */}
 
         {/* section 5  */}
-        <TechUsed />
+        {/* <TechUsed /> */}
 
 
       </div>

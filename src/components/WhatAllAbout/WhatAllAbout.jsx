@@ -44,7 +44,7 @@ export default function WhatAllAbout() {
         className={" text-3xl sm:text-4xl font-semibold"}
         text={" Custom Programming "}
       >
-        <div className="px-4 sm:px-24 pb-6 relative w-full h-[68vh] overflow-hidden">
+        <div className="px-4 sm:px-24 pb-6 relative w-full h-[60vh] overflow-hidden">
 
           <div className=" w-full grid place-items-center py-4">
             <h1 className=" text-center text-xl sm:text-2xl md:text-3xl w-full lg:w-[70%] font-light  ">
@@ -53,48 +53,48 @@ export default function WhatAllAbout() {
             </h1>
           </div>
 
-          <div className=" grid grid-cols-7 gap-6 h-[51vh] ">
+          <div className=" grid grid-cols-7 gap-6 h-[45vh] ">
             <div className={`${divStyle} col-span-7 sm:col-span-3 bg-white`}>
               <Slider {...settings1}>
-                <div className=" w-full bg-yellow-300 h-[54vh] ">
-                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-36 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum sit.</h3>
+                <div className=" w-full bg-yellow-300 h-[45vh] ">
+                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-32 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum sit.</h3>
                 </div>
-                <div className=" w-full bg-cyan-100 h-[54vh] ">
-                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-36 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum sit.</h3>
+                <div className=" w-full bg-cyan-100 h-[45vh] ">
+                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-32 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum sit.</h3>
                 </div>
-                <div className=" w-full bg-yellow-100 h-[54vh] ">
-                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-36 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum sit.</h3>
+                <div className=" w-full bg-yellow-100 h-[45vh] ">
+                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-32 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum sit.</h3>
                 </div>
-                <div className=" w-full bg-cyan-200 h-[54vh] ">
-                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-36 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum sit.</h3>
+                <div className=" w-full bg-cyan-200 h-[45vh] ">
+                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-32 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum sit.</h3>
                 </div>
-                <div className=" w-full bg-yellow-200 h-[54vh] ">
-                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-36 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum sit.</h3>
+                <div className=" w-full bg-yellow-200 h-[45vh] ">
+                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-32 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum sit.</h3>
                 </div>
-                <div className=" w-full bg-cyan-300 h-[54vh] ">
-                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-36 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum sit.</h3>
+                <div className=" w-full bg-cyan-300 h-[45vh] ">
+                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-32 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum sit.</h3>
                 </div>
               </Slider>
             </div>
             <div className={`${divStyle} col-span-7 sm:col-span-4 bg-gray-300 `}>
             <Slider {...settings2}>
-                <div className=" w-full bg-green-300 h-[54vh] ">
-                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-36 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum dolor sit.</h3>
+                <div className=" w-full bg-green-300 h-[45vh] ">
+                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-32 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum dolor sit.</h3>
                 </div>
-                <div className=" w-full bg-purple-100 h-[54vh] ">
-                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-36 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum dolor sit.</h3>
+                <div className=" w-full bg-purple-100 h-[45vh] ">
+                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-32 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum dolor sit.</h3>
                 </div>
-                <div className=" w-full bg-green-100 h-[54vh] ">
-                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-36 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum dolor sit.</h3>
+                <div className=" w-full bg-green-100 h-[45vh] ">
+                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-32 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum dolor sit.</h3>
                 </div>
-                <div className=" w-full bg-purple-200 h-[54vh] ">
-                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-36 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum dolor sit.</h3>
+                <div className=" w-full bg-purple-200 h-[45vh] ">
+                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-32 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum dolor sit.</h3>
                 </div>
-                <div className=" w-full bg-green-200 h-[54vh] ">
-                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-36 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum dolor sit.</h3>
+                <div className=" w-full bg-green-200 h-[45vh] ">
+                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-32 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum dolor sit.</h3>
                 </div>
-                <div className=" w-full bg-purple-300 h-[54vh] ">
-                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-36 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum dolor sit.</h3>
+                <div className=" w-full bg-purple-300 h-[45vh] ">
+                  <h3 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-16 sm:py-40 lg:py-32 text-center mix-blend-difference text-white bg-opacity-50">Lorem ipsum dolor sit.</h3>
                 </div>
               </Slider>
             </div>
