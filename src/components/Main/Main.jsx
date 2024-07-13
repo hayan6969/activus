@@ -23,6 +23,7 @@ export default function Main() {
         {/* section 2  */}
         <BentoGrid />
 
+        {/* <div className="mt-44"></div> */}
 
         {/* section 3  */}
         <WhatAllAbout />
@@ -33,7 +34,6 @@ export default function Main() {
         {/* section 5  */}
         <TechUsed />
 
-        {/* <div className="mt-24"></div> */}
 
       </div>
 

@@ -7,8 +7,8 @@ import "./spinner.css";
 
 const BG = dynamic(() => import("./BG"), {
   loading: () => (
-    <div class="spinner">
-      <div class="spinnerin"></div>
+    <div className="spinner">
+      <div className="spinnerin"></div>
     </div>
   ),
   ssr: false,

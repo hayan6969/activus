@@ -2,6 +2,7 @@ import React from "react";
 import WordPullUp from "../magicui/word-pull-up";
 import Link from "next/link";
 import IconCloud from "../magicui/icon-cloud";
+import BlurIn from "../magicui/blur-in";
 
 export default function TechUsed() {
   const techs = [
@@ -69,32 +70,7 @@ export default function TechUsed() {
       <div className=" w-full h-fit md:h-full grid grid-cols-7 ">
         <div className=" grid place-items-center h-fit md:h-full col-span-7 md:col-span-3">
         <div className=" ">
-          <WordPullUp
-            words={"Tech Used"}
-            className={" sectionHeading "}
-            wrapperFramerProps={{
-              hidden: { opacity: 0 },
-              show: {
-                opacity: 1,
-                transition: {
-                  staggerChildren: 0.4,
-                },
-              },
-            }}
-            framerProps={{
-              hidden: { y: 30, opacity: 0 },
-              show: {
-                y: 0,
-                opacity: 1,
-                transition: {
-                  duration: 0.5,
-                  repeat: Infinity,
-                  repeatType: "mirror",
-                  repeatDelay: 2,
-                },
-              },
-            }}
-          />
+        <BlurIn word={"Tech Used"} className={" sectionHeading "} id={3} />
           {/* techs name  */}
           <div className=" flex flex-wrap items-center gap-2 px-8 ">
             {techs.map((item, index) => {

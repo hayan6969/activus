@@ -4,7 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { cn } from "@/lib/utils";
 
-const BlurIn = ({ word, className, variant, duration = .85 }) => {
+const BlurIn = ({ word, className, variant, duration = .35, id = 0 }) => {
   const controls = useAnimation();
 
   const defaultVariants = {
@@ -15,7 +15,7 @@ const BlurIn = ({ word, className, variant, duration = .85 }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const element = document.getElementById('blur-in-element');
+      const element = document.getElementById(`blur-in-element-${id}`);
       if (element) {
         const rect = element.getBoundingClientRect();
         if (rect.top <= window.innerHeight && rect.bottom >= 0) {
@@ -34,7 +34,7 @@ const BlurIn = ({ word, className, variant, duration = .85 }) => {
 
   return (
     <motion.h1
-      id="blur-in-element"
+      id={`blur-in-element-${id}`}
       initial="hidden"
       animate={controls}
       transition={{ duration }}
