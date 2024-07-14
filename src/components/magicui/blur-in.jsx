@@ -4,7 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { cn } from "@/lib/utils";
 
-const BlurIn = ({ word, className, variant, duration = .35, id = 0 }) => {
+const BlurIn = ({ word, className, variant, duration = .25, id = 0 }) => {
   const controls = useAnimation();
 
   const defaultVariants = {
