@@ -41,7 +41,7 @@ const BlurIn = ({ word, className, variant, duration = .25, id = 0 }) => {
       variants={combinedVariants}
       className={cn(
         className,
-        " text-center tracking-[-0.02em] drop-shadow-sm md:leading-[5rem]"
+        " text-center tracking-[-0.02em] drop-shadow-sm md:leading-[4rem]"
       )}
     >
       {word}

@@ -9,6 +9,7 @@ import WhatAllAbout from "../WhatAllAbout/WhatAllAbout";
 import WordpressToReact from "../WordpressToReact/WordpressToReact";
 import TechUsed from "../TechUsed/TechUsed";
 import Security from "../Security/Security";
+import Section8 from "../Section8/Section8";
 
 export default function Main() {
   const stickyElement = useRef(null);
@@ -35,6 +36,9 @@ export default function Main() {
 
         {/* section 6  */}
         <Security />
+
+        {/* section 7 */}
+        <Section8 />
 
         {/* <div className="mt-44"></div> */}
       </div>
