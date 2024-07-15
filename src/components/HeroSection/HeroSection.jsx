@@ -3,12 +3,10 @@ import React from "react";
 import dynamic from "next/dynamic";
 import Lottie from "react-lottie";
 import scrollIcon from "../../../public/assets/scroll.json";
-import "./spinner.css";
 
 const BG = dynamic(() => import("./BG"), {
   loading: () => (
-    <div className="spinner">
-      <div className="spinnerin"></div>
+    <div className="spinner-large">
     </div>
   ),
   ssr: false,

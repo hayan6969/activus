@@ -1,5 +1,4 @@
 import React from "react";
-import WordPullUp from "../magicui/word-pull-up";
 import Link from "next/link";
 import IconCloud from "../magicui/icon-cloud";
 import BlurIn from "../magicui/blur-in";

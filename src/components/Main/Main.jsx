@@ -8,6 +8,7 @@ import BentoGrid from "../BentoGrid/BentoGrid";
 import WhatAllAbout from "../WhatAllAbout/WhatAllAbout";
 import WordpressToReact from "../WordpressToReact/WordpressToReact";
 import TechUsed from "../TechUsed/TechUsed";
+import Security from "../Security/Security";
 
 export default function Main() {
   const stickyElement = useRef(null);
@@ -22,7 +23,6 @@ export default function Main() {
         {/* section 2  */}
         <BentoGrid />
 
-        {/* <div className="mt-44"></div> */}
 
         {/* section 3  */}
         <WhatAllAbout />
@@ -32,6 +32,11 @@ export default function Main() {
 
         {/* section 5  */}
         <TechUsed />
+
+        {/* section 6  */}
+        <Security />
+
+        {/* <div className="mt-44"></div> */}
       </div>
 
       <div className=" hidden sm:block">

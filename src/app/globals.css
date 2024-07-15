@@ -109,3 +109,32 @@
   /* box-shadow: 0px 0px 55px 2px #790FFF; */
   /* @apply shadow-[0px_0px_55px_2px_#790FFF]; */
 }
+
+
+/* spinner loader for spline design  */
+
+.spinner-large {
+  width: 22em;
+  height: 22em;
+  cursor: not-allowed;
+  border-radius: 50%;
+  border: 1px solid #444;
+  box-shadow: -15px -15px 15px #7900FF, 0px -15px 15px 0px #ffffff, 15px -15px 15px #7900FF, 15px 0 15px #ffffff, 15px 15px 15px 0px#7900FF, 0 15px 15px 0px #FFFFFF, -15px 15px 15px 0px #7900FF;
+  animation: rot55 1.7s linear infinite;
+}
+
+.spinner-small {
+  width: 4em;
+  height: 4em;
+  cursor: not-allowed;
+  border-radius: 50%;
+  border: 1px solid #7900FF;
+  box-shadow: -4px -4px 4px #7900FF, 0px -4px 4px 0px #ffffff, 4px -4px 4px #7900FF, 4px 0 4px #ffffff, 4px 4px 4px 0px#7900FF, 0 4px 4px 0px #FFFFFF, -4px 4px 4px 0px #7900FF;
+  animation: rot55 1s linear infinite;
+}
+
+@keyframes rot55 {
+  to {
+    transform: rotate(360deg);
+  }
+}
