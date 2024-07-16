@@ -11,7 +11,7 @@ import { FaAws, FaDocker } from "react-icons/fa6";
 import { SiMicrosoftazure } from "react-icons/si";
 import { AiOutlineKubernetes } from "react-icons/ai";
 
-export default function Section8() {
+export default function Section7() {
   const divStyle =
     " relative w-full h-fit sm:h-full rounded-2xl lg:col-span-4 shadow-[0px_0px_20px_7px_#00000024] bg-white overflow-hidden ";
 

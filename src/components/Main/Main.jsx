@@ -9,8 +9,8 @@ import WhatAllAbout from "../WhatAllAbout/WhatAllAbout";
 import WordpressToReact from "../WordpressToReact/WordpressToReact";
 import TechUsed from "../TechUsed/TechUsed";
 import Security from "../Security/Security";
-import Section7 from "../Section7/Section7-Just_Abdullah";
-import WayToManySystems from "../WayToManySystems/WayToManySystems";
+import Section7 from "../Section7/Section7";
+import WayTooManySystemsMain from "../WayToManySystems/WayTooManySystemsMain";
 
 export default function Main() {
   const stickyElement = useRef(null);
@@ -41,7 +41,11 @@ export default function Main() {
         <Section7 />
 
         {/* section 8  */}
-        <WayToManySystems />
+        <WayTooManySystemsMain />
+
+        {/* section9  */}
+        <div className=" h-screen w-full">section 9</div>
+        
 
         {/* <div className="mt-44"></div> */}
       </div>

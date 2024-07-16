@@ -1,0 +1,40 @@
+.peice-mb {
+    width: 12vw;
+    height: 12vw;
+    position: relative;
+  }
+  
+  .peice-mb .l, .peice-mb .r, .peice-mb .t, .peice-mb .b, .peice-mb div{
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    position: absolute;
+  }
+
+  .peice-mb .t {
+   width: 4vw;
+    height: 4vw;
+    top: -2vw;
+    left: 4vw;
+  }
+  
+  .peice-mb .r {
+   width: 4vw;
+    height: 4vw;
+    top: 4vw;
+    left: 10vw;
+  }
+  
+  .peice-mb .b { 
+   width: 4vw;
+    height: 4vw;
+    top: 10vw;
+    left: 4vw;
+  }
+  
+  .peice-mb .l { 
+   width: 4vw;
+    height: 4vw;
+    top: 4vw;
+    left: -2vw;
+  }

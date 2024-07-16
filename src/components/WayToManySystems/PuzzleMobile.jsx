@@ -1,32 +1,34 @@
 "use client";
-import "./puzzle.css";
+import "./puzzle_mobile.css";
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 
-const Puzzle = ({onSolved, onUnSolved, hideSectionRef}) => {
+const PuzzleMobile = ({onSolved, onUnSolved, hideSectionRef}) => {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    const triggerPoint = document.querySelector(".trigger-point-pc"); // Adjust based on your trigger element
-    //   const triggerPoint = 100;
+    const triggerPoint = document.querySelector(".trigger-point-mb");
     let previousScrollY = 0;
 
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const scrollDirection = scrollY > previousScrollY ? "down" : "up"; // Calculate direction
+      const viewportHeight = window.innerHeight;
+      const triggerMiddle = triggerPoint.offsetTop + triggerPoint.offsetHeight / 2;
 
       if (
         triggerPoint &&
-        scrollY >= triggerPoint.offsetTop &&
-        scrollDirection === "down"
+        scrollDirection === "down" &&
+        triggerMiddle < scrollY - viewportHeight - 200
       ) {
         animateContent();
+
       }
 
       if (
         triggerPoint &&
-        scrollY >= triggerPoint.offsetTop &&
-        scrollDirection === "up"
+        scrollDirection === "up" &&
+        triggerMiddle > scrollY - viewportHeight - 260
       ) {
         resetContent();
       }
@@ -39,19 +41,20 @@ const Puzzle = ({onSolved, onUnSolved, hideSectionRef}) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
   const animateContent = () => {
-    gsap.to(".peice-pc", {
+    gsap.to(".peice-mb", {
       onComplete: () => {
         gsap.to(containerRef.current, {
           duration: 2.5,
           ease: "easeOut", 
-          width: "37.65vw",
-          height: "37.65vw",
+          // width: "37.65vw",
+          // height: "37.65vw",
       });
       onSolved();
       },
       onStart: () => {
-        gsap.to(".outer-pc", {
+        gsap.to(".outer-mb", {
           duration: 2.8,
       ease: "easeInOut",
           backgroundColor: "#22C55E"
@@ -72,14 +75,14 @@ const Puzzle = ({onSolved, onUnSolved, hideSectionRef}) => {
     gsap.to(containerRef.current, {
       duration: 1, // Adjust animation duration as needed
       ease: "easeOut", // Customize easing function
-      width: "55vw",
-      height: "45vw",
+      // width: "55vw",
+      // height: "45vw",
 
       onComplete: () => {
         // Reset individual grid items to their initial states
-        gsap.to(".peice-pc", {
+        gsap.to(".peice-mb", {
           onStart: () => {
-            gsap.to(".outer-pc", {
+            gsap.to(".outer-mb", {
               duration: 2,
           ease: "easeInOut",
               backgroundColor: "#EF4444"
@@ -129,84 +132,83 @@ const Puzzle = ({onSolved, onUnSolved, hideSectionRef}) => {
   };
 
   return (
-    <div className=" w-full h-[1200px] py-12 grid place-items-center">
-
-<div className=" trigger-point-pc"></div>
-
+    <div className=" overflow-hidden w-full h-fit py-12 grid place-items-center scale-150">
+<div className=" trigger-point-mb"></div>
 {/* initial state  */}
 <div
   ref={containerRef}
-  className="w-[55vw] bg-white h-[45vw] grid grid-cols-3 place-items-center"
+  className="w-fit bg-white h-fit grid grid-cols-3 place-items-center"
 >
-  <div className="peice-pc bg-[#EF4444] rotate-[-13deg] translate-x-[-1vw] translate-y-[30vw]">
+  <div className="peice-mb bg-[#EF4444] rotate-[-13deg] translate-x-[-1vw] translate-y-[30vw]">
+  <div ref={hideSectionRef} className=' hideSection'></div>
     <span className=" "></span>
     <span className="r bg-white "></span>
     <span className="b bg-white"></span>
     <span className=" "></span>
   </div>
 
-  <div className="peice-pc bg-[#EF4444] rotate-[-26deg] translate-x-[-18vw] translate-y-[-6vw]">
+  <div className="peice-mb bg-[#EF4444] rotate-[-26deg] translate-x-[-18vw] translate-y-[-6vw]">
     <span className=""></span>
     <span className="r bg-white"></span>
     <span className="b bg-white "></span>
-    <span className="l outer-pc bg-[#EF4444] "></span>
+    <span className="l outer-mb bg-[#EF4444] "></span>
 
   </div>
 
-  <div className="peice-pc bg-[#EF4444] rotate-[3deg] translate-x-[-15vw] translate-y-[11vw]">
+  <div className="peice-mb bg-[#EF4444] rotate-[3deg] translate-x-[-15vw] translate-y-[11vw]">
     <span className=" "></span>
     <span className=" "></span>
     <span className="b bg-white"></span>
-    <span className="l outer-pc bg-[#EF4444]  "></span>
+    <span className="l outer-mb bg-[#EF4444]  "></span>
 
   </div>
   
 
-  <div className="peice-pc bg-[#EF4444] rotate-[20deg] translate-x-[15vw] translate-y-[13vw]">
-    <span className="t outer-pc bg-[#EF4444]  "></span>
+  <div className="peice-mb bg-[#EF4444] rotate-[20deg] translate-x-[15vw] translate-y-[13vw]">
+    <span className="t outer-mb bg-[#EF4444]  "></span>
     <span className="r bg-white"></span>
     <span className="b bg-white "></span>
     <span className=" "></span>
 
   </div>
 
-  <div className="peice-pc bg-[#EF4444] rotate-[-13deg] translate-x-[16vw] translate-y-[17vw]">
-    <span className="t outer-pc bg-[#EF4444] "></span>
+  <div className="peice-mb bg-[#EF4444] rotate-[-13deg] translate-x-[16vw] translate-y-[17vw]">
+    <span className="t outer-mb bg-[#EF4444] "></span>
     <span className="r bg-white"></span>
     <span className="b bg-white"></span>
-    <span className="l outer-pc bg-[#EF4444]  "></span>
+    <span className="l outer-mb bg-[#EF4444]  "></span>
 
   </div>
 
-  <div className="peice-pc bg-[#EF4444] rotate-[43deg] translate-x-[-30vw] translate-y-[-4vw]">
-<div ref={hideSectionRef} className=' hideSection'></div>
-    <span className="t outer-pc bg-[#EF4444]  "></span>
+  <div className="peice-mb bg-[#EF4444] rotate-[43deg] translate-x-[-30vw] translate-y-[-4vw]">
+
+    <span className="t outer-mb bg-[#EF4444]  "></span>
     <span className=" "></span>
     <span className="b bg-white"></span>
-    <span className="l outer-pc bg-[#EF4444]  "></span>
+    <span className="l outer-mb bg-[#EF4444]  "></span>
   </div>
 
-  <div className="peice-pc bg-[#EF4444] rotate-[30deg] translate-x-[34vw] translate-y-[-30vw] ">
-    <span className="t outer-pc bg-[#EF4444] "></span>
+  <div className="peice-mb bg-[#EF4444] rotate-[30deg] translate-x-[34vw] translate-y-[-30vw] ">
+    <span className="t outer-mb bg-[#EF4444] "></span>
     <span className="r bg-white "></span>
     <span className=" "></span>
     <span className=" "></span>
 
   </div>
 
-  <div className="peice-pc bg-[#EF4444] rotate-[11deg] translate-x-[16vw] translate-y-[-14vw]">
-    <span className="t outer-pc bg-[#EF4444]  "></span>
+  <div className="peice-mb bg-[#EF4444] rotate-[11deg] translate-x-[16vw] translate-y-[-14vw]">
+    <span className="t outer-mb bg-[#EF4444]  "></span>
     <span className="r bg-white "></span>
     <span className=" "></span>
-    <span className="l outer-pc bg-[#EF4444] "></span>
+    <span className="l outer-mb bg-[#EF4444] "></span>
 
   </div>
 
-  <div className="peice-pc bg-[#EF4444] rotate-[75deg] translate-x-[-16vw] translate-y-[-32vw]">
-    <span className="t outer-pc bg-[#EF4444]  "></span>
+  <div className="peice-mb bg-[#EF4444] rotate-[75deg] translate-x-[-16vw] translate-y-[-32vw]">
+    <span className="t outer-mb bg-[#EF4444]  "></span>
     <span className=" "></span>
     <span className=" "></span>
-    <span className="l outer-pc bg-[#EF4444] "></span>
+    <span className="l outer-mb bg-[#EF4444] "></span>
 
   </div>
 </div>
@@ -217,4 +219,4 @@ const Puzzle = ({onSolved, onUnSolved, hideSectionRef}) => {
   );
 };
 
-export default Puzzle;
+export default PuzzleMobile;

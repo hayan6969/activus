@@ -4,7 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { cn } from "@/lib/utils";
 
-const BlurIn = ({ word, className, variant, duration = .25, id = 0 }) => {
+const BlurIn = ({ word, className, variant, duration = .25, id = 0, doNotHide = false }) => {
   const controls = useAnimation();
 
   const defaultVariants = {
@@ -21,7 +21,9 @@ const BlurIn = ({ word, className, variant, duration = .25, id = 0 }) => {
         if (rect.top <= window.innerHeight && rect.bottom >= 0) {
           controls.start("visible");
         } else {
+          if(!doNotHide){
           controls.start("hidden");
+          }
         }
       }
     };
@@ -41,7 +43,7 @@ const BlurIn = ({ word, className, variant, duration = .25, id = 0 }) => {
       variants={combinedVariants}
       className={cn(
         className,
-        " text-center tracking-[-0.02em] drop-shadow-sm md:leading-[4rem]"
+        " text-center tracking-[-0.02em] drop-shadow-sm md:leading-[3.5rem]"
       )}
     >
       {word}

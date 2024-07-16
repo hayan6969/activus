@@ -1,10 +1,10 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react'
 import BlurIn from '../magicui/blur-in';
-import Puzzle from './Puzzle';
+import PuzzleMobile from './PuzzleMobile';
 
 
-export default function WayToManySystems() {
+export default function WayToManySystemsMobile() {
   const [isSolved, setIsSolved] = useState(false);
 
   const hideSectionRef = useRef(null);
@@ -29,14 +29,11 @@ export default function WayToManySystems() {
   }, []);
 
   return (<>
-    <section ref={sectionDRef} className=' w-full h-full stickyScroll top-0 z-[10] '>
-        <BlurIn doNotHide={true} word={isSolved ? `Integrate and thereby increase efficiency, automation and benefit for all` : `Way Too Many Systems?` } id={81} className={`${isSolved ? " text-3xl sm:text-4xl md:text-5xl font-bold px-32 " : " sectionHeading sm:pt-6 " } duration-300 transition-all`} />
+    <section ref={sectionDRef} className=' overflow-hidden w-full h-full stickyScroll top-0 z-[1] duration-700 transition-all '>
+      
+        <BlurIn word={isSolved ? `Integrate and thereby increase efficiency, automation and benefit for all` : `Way Too Many Systems?` } id={82} className={`${isSolved ? " text-3xl sm:text-4xl md:text-5xl font-semibold " : " sectionHeading " } duration-300 transition-all `} />
     </section>
-          <Puzzle onSolved={()=>{setIsSolved(true)}} onUnSolved={()=>{setIsSolved(false)}} 
-          
-          hideSectionRef={hideSectionRef}
-          
-          />
+          <PuzzleMobile onSolved={()=>{setIsSolved(true)}} onUnSolved={()=>{setIsSolved(false)}} hideSectionRef={hideSectionRef} />
         </>
   )
 }
