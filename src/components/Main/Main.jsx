@@ -9,7 +9,8 @@ import WhatAllAbout from "../WhatAllAbout/WhatAllAbout";
 import WordpressToReact from "../WordpressToReact/WordpressToReact";
 import TechUsed from "../TechUsed/TechUsed";
 import Security from "../Security/Security";
-import Section8 from "../Section8/Section8";
+import Section7 from "../Section7/Section7-Just_Abdullah";
+import WayToManySystems from "../WayToManySystems/WayToManySystems";
 
 export default function Main() {
   const stickyElement = useRef(null);
@@ -24,7 +25,6 @@ export default function Main() {
         {/* section 2  */}
         <BentoGrid />
 
-
         {/* section 3  */}
         <WhatAllAbout />
 
@@ -38,7 +38,10 @@ export default function Main() {
         <Security />
 
         {/* section 7 */}
-        <Section8 />
+        <Section7 />
+
+        {/* section 8  */}
+        <WayToManySystems />
 
         {/* <div className="mt-44"></div> */}
       </div>

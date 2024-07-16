@@ -1,0 +1,66 @@
+.peice {
+    width: 12em;
+    height: 12em;
+    position: relative;
+    /* overflow: hidden; */
+    /* -webkit-border-radius: .5em;
+    -moz-border-radius: .5em; */
+    /* border-radius: .5em; */
+    /* cursor: pointer; */
+  }
+  
+  /* .peice,
+  .peice span {
+   background-color: #0284cf; 
+  }
+  
+  .peice-2,
+  .peice-2 span {
+   background-color: #00008B; 
+  } */
+   
+/*   
+  .text {
+    display: block;
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 1.9em 0 0 1.2em;
+    position: relative;
+    background: transparent !important;
+  } */
+
+  .peice .l, .peice .r, .peice .t, .peice .b{
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    position: absolute;
+  }
+
+  .peice .t {
+   width: 4em;
+    height: 4em;
+    top: -2em;
+    left: 4em;
+  }
+  
+  .peice .r {
+   width: 4em;
+    height: 4em;
+    top: 4em;
+    left: 10em;
+  }
+  
+  .peice .b { 
+   width: 4em;
+    height: 4em;
+    top: 10em;
+    left: 4em;
+  }
+  
+  .peice .l { 
+   width: 4em;
+    height: 4em;
+    top: 4em;
+    left: -2em;
+  }
