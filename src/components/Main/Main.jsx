@@ -12,6 +12,7 @@ import Security from "../Security/Security";
 import Section7 from "../Section7/Section7";
 import WayTooManySystemsMain from "../WayToManySystems/WayTooManySystemsMain";
 import Section9 from "../Section9/Section9";
+import Contact from "../Contact/Contact";
 
 export default function Main() {
   const stickyElement = useRef(null);
@@ -46,6 +47,19 @@ export default function Main() {
 
         {/* section9  */}
         <Section9 />
+
+        {/* section 10 game */}
+
+
+        {/* section 11 contact  */}
+        <Contact />
+
+        {/* footer  */}
+        <footer className=" py-4 w-full">
+          <p className=" text-center">
+            2024 &copy; Activus - All rights are reserved.
+          </p>
+        </footer>
         
 
         {/* <div className="mt-44"></div> */}

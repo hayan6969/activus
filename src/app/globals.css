@@ -19,6 +19,14 @@
   transform: scale(3);
 }
 
+#spline-robot{
+  transform: scale(.5);
+}
+
+.inputTag {
+  @apply px-4 py-3 bg-gray-300 rounded-3xl border-none outline-none  ;
+}
+
  /* new css  */
 
 .cursor{
@@ -125,6 +133,16 @@
   border: 1px solid #444;
   box-shadow: -15px -15px 15px #7900FF, 0px -15px 15px 0px #ffffff, 15px -15px 15px #7900FF, 15px 0 15px #ffffff, 15px 15px 15px 0px#7900FF, 0 15px 15px 0px #FFFFFF, -15px 15px 15px 0px #7900FF;
   animation: rot55 1.7s linear infinite;
+}
+
+.spinner-medium {
+  width: 8em;
+  height: 8em;
+  cursor: not-allowed;
+  border-radius: 50%;
+  border: 1px solid #7900FF;
+  box-shadow: -6px -6px 6px #7900FF, 0px -6px 6px 0px #ffffff, 6px -6px 6px #7900FF, 6px 0 6px #ffffff, 6px 6px 6px 0px#7900FF, 0 6px 6px 0px #FFFFFF, -6px 6px 6px 0px #7900FF;
+  animation: rot55 1.4s linear infinite;
 }
 
 .spinner-small {

@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
   ],
   prefix: "",
   theme: {
@@ -18,21 +18,42 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        matter: ['Matter', 'sans-serif'],
+        matter: ["Matter", "sans-serif"],
       },
       screens: {
-        'xsm': {'min': '450px', 'max': '639px'},
+        xsm: { min: "450px", max: "639px" },
       },
       colors: {
-        'primary': "#7900FF",
+        primary: "#7900FF",
       },
       animation: {
+        "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
+        slide: "slide var(--speed) ease-in-out infinite alternate",
         "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
-        'orbit': "orbit calc(var(--duration)*1s) linear infinite",
+        orbit: "orbit calc(var(--duration)*1s) linear infinite",
         marquee: "marquee var(--duration) linear infinite",
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
       },
       keyframes: {
+        "spin-around": {
+          "0%": {
+            transform: "translateZ(0) rotate(0)",
+          },
+          "15%, 35%": {
+            transform: "translateZ(0) rotate(90deg)",
+          },
+          "65%, 85%": {
+            transform: "translateZ(0) rotate(270deg)",
+          },
+          "100%": {
+            transform: "translateZ(0) rotate(360deg)",
+          },
+        },
+        slide: {
+          to: {
+            transform: "translate(calc(100cqw - 100%), 0)",
+          },
+        },
         marquee: {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(calc(-100% - var(--gap)))" },
@@ -46,7 +67,7 @@ module.exports = {
             "offset-distance": "100%",
           },
         },
-        'orbit': {
+        orbit: {
           "0%": {
             transform:
               "rotate(0deg) translateY(calc(var(--radius) * 1px)) rotate(0deg)",
@@ -57,7 +78,7 @@ module.exports = {
           },
         },
       },
-    
+
       // colors: {
       //   border: "hsl(var(--border))",
       //   input: "hsl(var(--input))",
@@ -115,4 +136,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
