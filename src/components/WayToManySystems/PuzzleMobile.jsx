@@ -24,13 +24,13 @@ const PuzzleMobile = ({onSolved, onUnSolved}) => {
         animateContent();
       }
 
-      if (
-        triggerPoint &&
-        scrollDirection === "up" &&
-        triggerMiddle > scrollY - viewportHeight - 260
-      ) {
-        resetContent();
-      }
+      // if (
+      //   triggerPoint &&
+      //   scrollDirection === "up" &&
+      //   triggerMiddle > scrollY - viewportHeight - 260
+      // ) {
+      //   resetContent();
+      // }
 
       previousScrollY = scrollY;
     };
@@ -70,65 +70,65 @@ const PuzzleMobile = ({onSolved, onUnSolved}) => {
     
   };
 
-  const resetContent = () => {
-    gsap.to(containerRef.current, {
-      duration: 1, // Adjust animation duration as needed
-      ease: "easeOut", // Customize easing function
-      // width: "55vw",
-      // height: "45vw",
+  // const resetContent = () => {
+  //   gsap.to(containerRef.current, {
+  //     duration: 1, // Adjust animation duration as needed
+  //     ease: "easeOut", // Customize easing function
+  //     // width: "55vw",
+  //     // height: "45vw",
 
-      onComplete: () => {
-        // Reset individual grid items to their initial states
-        gsap.to(".peice-mb", {
-          onStart: () => {
-            gsap.to(".outer-mb", {
-              duration: 2,
-          ease: "easeInOut",
-              backgroundColor: "#EF4444"
-            })
-          },
-          duration: 1.5, // Adjust animation duration for individual items
-          ease: "easeInOut", // Customize easing function
-          stagger: 0.1, // Add stagger effect for each item (adjust as needed)
-          backgroundColor: '#EF4444',
-          rotate: (i) => {
-            const initialRotates = [-13, -26, 3, 20, -13, 43, 30, 11, 75];
-            return initialRotates[i];
-          },
-          translateX: (i) => {
-            const initialTranslateX = [
-              "-1vw",
-              "-18vw",
-              "-15vw",
-              "15vw",
-              "16vw",
-              "-30vw",
-              "34vw",
-              "16vw",
-              "-16vw",
-            ];
-            return initialTranslateX[i];
-          },
-          translateY: (i) => {
-            const initialTranslateY = [
-              "30vw",
-              "-6vw",
-              "11vw",
-              "13vw",
-              "17vw",
-              "-4vw",
-              "-30vw",
-              "-14vw",
-              "-32vw",
-            ];
-            return initialTranslateY[i];
-          },
-        });
+  //     onComplete: () => {
+  //       // Reset individual grid items to their initial states
+  //       gsap.to(".peice-mb", {
+  //         onStart: () => {
+  //           gsap.to(".outer-mb", {
+  //             duration: 2,
+  //         ease: "easeInOut",
+  //             backgroundColor: "#EF4444"
+  //           })
+  //         },
+  //         duration: 1.5, // Adjust animation duration for individual items
+  //         ease: "easeInOut", // Customize easing function
+  //         stagger: 0.1, // Add stagger effect for each item (adjust as needed)
+  //         backgroundColor: '#EF4444',
+  //         rotate: (i) => {
+  //           const initialRotates = [-13, -26, 3, 20, -13, 43, 30, 11, 75];
+  //           return initialRotates[i];
+  //         },
+  //         translateX: (i) => {
+  //           const initialTranslateX = [
+  //             "-1vw",
+  //             "-18vw",
+  //             "-15vw",
+  //             "15vw",
+  //             "16vw",
+  //             "-30vw",
+  //             "34vw",
+  //             "16vw",
+  //             "-16vw",
+  //           ];
+  //           return initialTranslateX[i];
+  //         },
+  //         translateY: (i) => {
+  //           const initialTranslateY = [
+  //             "30vw",
+  //             "-6vw",
+  //             "11vw",
+  //             "13vw",
+  //             "17vw",
+  //             "-4vw",
+  //             "-30vw",
+  //             "-14vw",
+  //             "-32vw",
+  //           ];
+  //           return initialTranslateY[i];
+  //         },
+  //       });
 
-        onUnSolved();
-      },
-    });
-  };
+  //       onUnSolved();
+  //     },
+  //   });
+  // };
 
   return (
     <div className=" overflow-hidden w-full h-fit py-12 grid place-items-center scale-150">

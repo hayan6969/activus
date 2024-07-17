@@ -22,7 +22,7 @@ export default function Contact() {
         className={" sectionHeading py-6 "}
       />
       <Robot />
-      <div className=" grid place-items-center absolute left-auto right-auto w-full top-[38vh]">
+      <div className=" grid place-items-center absolute left-auto right-auto w-full top-[50vh] sm:top-[38vh]">
         <div className=" bg-white relative p-2 rounded-2xl w-[90vw] sm:w-[80vw] md:w-[70vw] lg:w-[60vw] ">
         <BorderBeam size={300} />
           <BlurIn
