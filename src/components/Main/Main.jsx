@@ -11,6 +11,7 @@ import TechUsed from "../TechUsed/TechUsed";
 import Security from "../Security/Security";
 import Section7 from "../Section7/Section7";
 import WayTooManySystemsMain from "../WayToManySystems/WayTooManySystemsMain";
+import Section9 from "../Section9/Section9";
 
 export default function Main() {
   const stickyElement = useRef(null);
@@ -44,7 +45,7 @@ export default function Main() {
         <WayTooManySystemsMain />
 
         {/* section9  */}
-        <div className=" h-screen w-full">section 9</div>
+        <Section9 />
         
 
         {/* <div className="mt-44"></div> */}

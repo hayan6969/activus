@@ -79,6 +79,13 @@
   @apply text-4xl sm:text-6xl md:text-7xl font-bold pb-2 sm:pb-6;
 }
 
+#camera-spline-mb{
+  transform: scale(2);
+}
+
+#camera-spline-pc{
+  /* transform: scale(2); */
+}
 
 /* styles/scrollbar.css */
 

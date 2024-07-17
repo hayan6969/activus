@@ -15,7 +15,7 @@ export default function Section7() {
   const divStyle =
     " relative w-full h-fit sm:h-full rounded-2xl lg:col-span-4 shadow-[0px_0px_20px_7px_#00000024] bg-white overflow-hidden ";
 
-  const headingStyle = " text-2xl sm:text-3xl md:text-4xl font-semibold ";
+  const headingStyle = " text-2xl sm:text-3xl md:text-4xl font-semibold pt-2 sm:p-0 ";
 
   return (
     <section className="  w-full  sm:h-fit lg:h-screen px-4 md:px-24 py-2 my-6 overflow-hidden">
@@ -30,7 +30,7 @@ export default function Section7() {
               className={headingStyle + " h-full w-full"}
               id={81}
             />
-            <p className=" text-center font-light text-xl md:text-2xl lg:text-3xl w-full pt-2 sm:p-0">
+            <p className=" text-center font-light text-lg md:text-2xl lg:text-3xl w-full p-2 sm:p-0">
               An innovation company in need of programmers, we love innovation
               and want to help you bring your ideas to the world
             </p>
@@ -106,7 +106,7 @@ export default function Section7() {
           <BorderBeam size={150} />
           <BlurIn word={"Languages"} className={headingStyle + " "} id={83} />
           <div className=" grid place-items-center h-[24vh]">
-            <div className=" flex flex-wrap items-center gap-4 w-full px-4">
+            <div className=" flex flex-wrap items-center gap-4 w-full px-8">
               <ShimmerButton className={" shadow-2xl bg-primar"}>
                 English
               </ShimmerButton>
@@ -157,7 +157,7 @@ export default function Section7() {
             className={headingStyle + " "}
             id={85}
           />
-          <p className="text-center font-light text-md md:text-lg px-4 ">
+          <p className="text-center font-light text-md md:text-lg px-4 py-2 sm:py-0 ">
             We analyze the needs of your business and find the best solution
             that could suit your business.
             <br />

@@ -4,22 +4,27 @@ import WayToManySystems from "./WayToManySystems";
 import WayToManySystemsMobile from "./WayToManySystemsMobile";
 
 export default function WayTooManySystemsMain() {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState("nothing");
 
   useEffect(() => {
     let value = window.innerWidth <= 550;
-    setIsMobile(value);
+    setIsMobile(value?"mb":"pc");
   }, []);
   
   return (
     <>
-      {isMobile ? (
+      {isMobile === "nothing" ? 
+      <></>:
+      isMobile === "mb" ? 
+      (
         <div className=" grid md:hidden overflow-hidden">
           <WayToManySystemsMobile />
         </div>
-      ) : (
+      ) : 
+      isMobile === 'pc'? (
         <WayToManySystems />
-      )}
+      ):null
+    }
     </>
   );
 }
