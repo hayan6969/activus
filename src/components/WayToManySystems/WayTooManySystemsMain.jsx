@@ -1,16 +1,25 @@
-import React from 'react'
-import WayToManySystems from './WayToManySystems'
-import WayToManySystemsMobile from './WayToManySystemsMobile'
+"use client";
+import React, { useEffect, useState } from "react";
+import WayToManySystems from "./WayToManySystems";
+import WayToManySystemsMobile from "./WayToManySystemsMobile";
 
 export default function WayTooManySystemsMain() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    let value = window.innerWidth <= 550;
+    setIsMobile(value);
+  }, []);
+  
   return (
     <>
-        {/* <div className=' hidden sm:block'> */}
-            <WayToManySystems />
-        {/* </div> */}
-        <div className=' grid sm:hidden overflow-hidden'>
-            <WayToManySystemsMobile />
+      {isMobile ? (
+        <div className=" grid md:hidden overflow-hidden">
+          <WayToManySystemsMobile />
         </div>
+      ) : (
+        <WayToManySystems />
+      )}
     </>
-  )
+  );
 }

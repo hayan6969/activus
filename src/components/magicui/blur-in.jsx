@@ -37,7 +37,7 @@ const BlurIn = ({ word, className, variant, duration = .25, id = 0, doNotHide = 
   return (
     <motion.h1
       id={`blur-in-element-${id}`}
-      initial="hidden"
+      initial={doNotHide ? "visible" : "hidden"}
       animate={controls}
       transition={{ duration }}
       variants={combinedVariants}

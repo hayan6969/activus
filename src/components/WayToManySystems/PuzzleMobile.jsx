@@ -3,7 +3,7 @@ import "./puzzle_mobile.css";
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 
-const PuzzleMobile = ({onSolved, onUnSolved, hideSectionRef}) => {
+const PuzzleMobile = ({onSolved, onUnSolved}) => {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -22,7 +22,6 @@ const PuzzleMobile = ({onSolved, onUnSolved, hideSectionRef}) => {
         triggerMiddle < scrollY - viewportHeight - 200
       ) {
         animateContent();
-
       }
 
       if (
@@ -140,7 +139,6 @@ const PuzzleMobile = ({onSolved, onUnSolved, hideSectionRef}) => {
   className="w-fit bg-white h-fit grid grid-cols-3 place-items-center"
 >
   <div className="peice-mb bg-[#EF4444] rotate-[-13deg] translate-x-[-1vw] translate-y-[30vw]">
-  <div ref={hideSectionRef} className=' hideSection'></div>
     <span className=" "></span>
     <span className="r bg-white "></span>
     <span className="b bg-white"></span>
