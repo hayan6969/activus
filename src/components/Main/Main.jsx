@@ -20,22 +20,22 @@ export default function Main() {
       <Header ref={stickyElement} />
       <div className={" bg-white grid relative"}>
         {/* section 1  */}
-        {/* <HeroSection /> */}
+        <HeroSection />
 
         {/* section 2  */}
-        {/* <BentoGrid /> */}
+        <BentoGrid />
 
         {/* section 3  */}
-        {/* <WhatAllAbout /> */}
+        <WhatAllAbout />
 
         {/* section 4  */}
-        {/* <WordpressToReact /> */}
+        <WordpressToReact />
 
         {/* section 5  */}
-        {/* <TechUsed /> */}
+        <TechUsed />
 
         {/* section 6  */}
-        {/* <Security /> */}
+        <Security />
 
         {/* section 7 */}
         <Section7 />
