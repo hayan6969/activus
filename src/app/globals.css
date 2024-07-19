@@ -24,7 +24,7 @@
 }
 
 .inputTag {
-  @apply px-4 py-3 bg-gray-300 rounded-3xl border-none outline-none  ;
+  @apply px-4 py-3 bg-gray-200 rounded-3xl border-none outline-none  ;
 }
 
  /* new css  */

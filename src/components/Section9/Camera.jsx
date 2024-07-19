@@ -1,6 +1,6 @@
 'use client';
 
-import Spline from "@splinetool/react-spline";
+import Spline from "@splinetool/react-spline/next";
 import React, { useEffect, useState } from "react";
 
 
