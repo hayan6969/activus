@@ -80,7 +80,7 @@ export default function StickyCursor({ stickyElement }) {
     animate(
       cursor.current,
       { scaleX: 1, scaleY: 1 },
-      { duration: 0.1 },
+      { duration: 0.15 },
       { type: "spring" }
     );
   };
