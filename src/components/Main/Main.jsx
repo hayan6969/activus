@@ -96,7 +96,7 @@ export default function Main({}) {
 
       <div className={" bg-white grid relative "}>
         {allComponents.map((item, index) => {
-          return <RenderIfVisible key={index}>{item}</RenderIfVisible>;
+          return <RenderIfVisible>{item}</RenderIfVisible>;
         })}
       </div>
 
