@@ -32,7 +32,7 @@ export default function Security() {
     },
   };
 
-  const divStyle = " rounded-2xl h-full w-full overflow-hidden";
+  const divStyle = " rounded-2xl h-full w-full overflow-hidden pointer-events-none md:pointer-events-auto ";
 
   return (
     <section className=" sectionCS h-fit md:h-screen w-full stickyScrol overflow-hidden bg red-300 ">

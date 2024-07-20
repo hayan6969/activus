@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 
 export default function TechUsed() {
   const trans = useTranslations("techUsed");
+
   const techs = [
     {
       name: "React Js",
@@ -88,7 +89,7 @@ export default function TechUsed() {
           </div>
         </div>
         </div>
-        <div className=" col-span-7 md:col-span-4 grid place-items-center h-fit md:h-full ">
+        <div className=" pointer-events-none md:pointer-events-auto col-span-7 md:col-span-4 grid place-items-center h-fit md:h-full ">
             <IconCloud iconSlugs={techIcons} />
         </div>
       </div>

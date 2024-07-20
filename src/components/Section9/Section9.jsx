@@ -74,32 +74,38 @@ export default function Section9() {
             className={headingStyle + " "}
             id={93}
           />
+
           <AppDevelopment
             stacks={[
               {
                 name: trans("appDev.stacks.reactNative.name"),
                 username: trans("appDev.stacks.reactNative.username"),
                 body: trans("appDev.stacks.reactNative.body"),
+                img: trans("appDev.stacks.reactNative.img"),
               },
               {
                 name: trans("appDev.stacks.flutter.name"),
                 username: trans("appDev.stacks.flutter.username"),
                 body: trans("appDev.stacks.flutter.body"),
+                img: trans("appDev.stacks.flutter.img"),
               },
               {
                 name: trans("appDev.stacks.kotlin.name"),
                 username: trans("appDev.stacks.kotlin.username"),
                 body: trans("appDev.stacks.kotlin.body"),
+                img: trans("appDev.stacks.kotlin.img"),
               },
               {
                 name: trans("appDev.stacks.swift.name"),
                 username: trans("appDev.stacks.swift.username"),
                 body: trans("appDev.stacks.swift.body"),
+                img: trans("appDev.stacks.swift.img"),
               },
               {
                 name: trans("appDev.stacks.ionic.name"),
                 username: trans("appDev.stacks.ionic.username"),
                 body: trans("appDev.stacks.ionic.body"),
+                img: trans("appDev.stacks.ionic.img"),
               },
             ]}
           />

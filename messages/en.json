@@ -21,7 +21,77 @@
   "section3": {
     "heading": "What It's All About",
     "desc": " We love innovation and want to help you bring your ideas 💡 to the world 🌍",
-    "slidingText": "Custom Programming"
+    "slidingText": "Custom Programming",
+    "stacks": {
+      "react": {
+        "name": "React Js",
+        "body": "Build dynamic user interfaces with React's component-based architecture.",
+        "img": "https://reactnative.dev/img/header_logo.svg"
+      },
+      "nextjs": {
+        "name": "Next Js",
+        "body": "Create fast, server-rendered React applications with Next.js.",
+        "img": "https://static-00.iconduck.com/assets.00/nextjs-icon-2048x1234-pqycciiu.png"
+      },
+      "vue": {
+        "name": "Vue.js",
+        "body": "Develop versatile UIs and single-page applications with Vue.js.",
+        "img": "https://vuejs.org/images/logo.png"
+      },
+      "angular": {
+        "name": "Angular",
+        "body": "Build robust web applications using Angular's comprehensive framework.",
+        "img": "https://angular.io/assets/images/logos/angular/angular.svg"
+      },
+      "jquery": {
+        "name": "jQuery",
+        "body": "Simplify HTML DOM manipulation and event handling with jQuery.",
+        "img": "https://brand.jquery.org/resources/jquery-mark-light.gif"
+      }
+    },
+
+    "techniques": {
+      "agile": {
+        "name": "Agile",
+        "body": "Embrace iterative development and collaboration with Agile methodologies.",
+        "img": "https://media.licdn.com/dms/image/C5612AQGYxhZLXG27KQ/article-cover_image-shrink_600_2000/0/1520876509789?e=2147483647&v=beta&t=ucfK-MT6zvW4sLQ5XUV6kXnVhMSvR_HRnqpPalV8npo"
+      },
+      "scrum": {
+        "name": "Scrum",
+        "body": "Streamline project management with Scrum's iterative sprints.",
+        "img": "https://banner2.cleanpng.com/20180516/rzw/kisspng-agile-software-development-scrum-computer-icons-ag-5afc42d5ddc678.9721919515264816219084.jpg"
+      },
+      "kanban": {
+        "name": "Kanban",
+        "body": "Optimize workflow management using Kanban's visual task tracking.",
+        "img": "https://static.vecteezy.com/system/resources/previews/002/837/593/original/kanban-lean-method-line-icon-vector.jpg"
+      },
+      "ci_cd": {
+        "name": "CI/CD",
+        "body": "Automate software delivery with Continuous Integration and Deployment.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAABUoTg0hRIRysVXsNZg21ojLCOSsljUElA&s"
+      },
+      "tdd": {
+        "name": "TDD",
+        "body": "Ensure code quality with Test-Driven Development practices.",
+        "img": "https://d3f1iyfxxz8i1e.cloudfront.net/courses/course_image/380be13e2174.png"
+      },
+      "bdd": {
+        "name": "BDD",
+        "body": "Foster collaboration with Behavior-Driven Development techniques.",
+        "img": "https://miro.medium.com/v2/resize:fit:1024/0*h1_0AfgUMGbNnKIM"
+      },
+      "version_control": {
+        "name": "Version Control",
+        "body": "Track and manage code changes effectively with Version Control systems.",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg"
+      },
+      "devops": {
+        "name": "DevOps",
+        "body": "Integrate development and operations for faster, efficient delivery.",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/0/05/Devops-toolchain.svg"
+      }
+    }
   },
 
   "wordpressToReact": {
@@ -64,6 +134,7 @@
       "desc": "We analyze the needs of your business and find the best solution that could suit your business. Our designers map out the functionality you need, and we review in advance what needs to be done to achieve maximum results."
     }
   },
+
   "wayTooManySystems": {
     "heading1": "Way Too Many Systems?",
     "heading2": "Integrate and thereby increase efficiency, automation and benefit for all"

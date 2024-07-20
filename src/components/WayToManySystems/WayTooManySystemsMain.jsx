@@ -19,7 +19,7 @@ export default function WayTooManySystemsMain() {
       <></>:
       isMobile === "mb" ? 
       (
-        <div className=" grid md:hidden overflow-hidden">
+        <div className=" grid md:hidden overflow-hidden ">
           <WayToManySystemsMobile heading1={trans('heading1')} heading2={trans('heading2')} />
         </div>
       ) : 

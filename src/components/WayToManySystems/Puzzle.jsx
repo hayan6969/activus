@@ -1,11 +1,10 @@
 "use client";
 import "./puzzle.css";
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 
 const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
   const containerRef = useRef(null);
-  const [reset, setReset] = useState(false);
 
   useEffect(() => {
     const triggerPoint = document.querySelector(".trigger-point-pc"); // Adjust based on your trigger element
@@ -41,8 +40,6 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
   }, []);
 
   const animateContent = () => {
-    setReset(true);
-
     gsap.to(".peice-pc", {
       onComplete: () => {
         gsap.to(containerRef.current, {
@@ -70,70 +67,69 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
     });
   };
 
-  const resetContent = () => {
-    gsap.to(containerRef.current, {
-      duration: 1, // Adjust animation duration as needed
-      ease: "easeOut", // Customize easing function
-      width: "55vw",
-      height: "45vw",
+  // const resetContent = () => {
+  //   gsap.to(containerRef.current, {
+  //     duration: 1, // Adjust animation duration as needed
+  //     ease: "easeOut", // Customize easing function
+  //     width: "55vw",
+  //     height: "45vw",
 
-      onComplete: () => {
-        // Reset individual grid items to their initial states
-        gsap.to(".peice-pc", {
-          onStart: () => {
-            gsap.to(".outer-pc", {
-              duration: 2,
-              ease: "easeInOut",
-              backgroundColor: "#EF4444",
-            });
-          },
-          duration: 1.5, // Adjust animation duration for individual items
-          ease: "easeInOut", // Customize easing function
-          stagger: 0.1, // Add stagger effect for each item (adjust as needed)
-          backgroundColor: "#EF4444",
-          rotate: (i) => {
-            const initialRotates = [-13, -26, 3, 20, -13, 43, 30, 11, 75];
-            return initialRotates[i];
-          },
-          translateX: (i) => {
-            const initialTranslateX = [
-              "-1vw",
-              "-18vw",
-              "-15vw",
-              "15vw",
-              "16vw",
-              "-30vw",
-              "34vw",
-              "16vw",
-              "-16vw",
-            ];
-            return initialTranslateX[i];
-          },
-          translateY: (i) => {
-            const initialTranslateY = [
-              "30vw",
-              "-6vw",
-              "11vw",
-              "13vw",
-              "17vw",
-              "-4vw",
-              "-30vw",
-              "-14vw",
-              "-32vw",
-            ];
-            return initialTranslateY[i];
-          },
-        });
+  //     onComplete: () => {
+  //       // Reset individual grid items to their initial states
+  //       gsap.to(".peice-pc", {
+  //         onStart: () => {
+  //           gsap.to(".outer-pc", {
+  //             duration: 2,
+  //             ease: "easeInOut",
+  //             backgroundColor: "#EF4444",
+  //           });
+  //         },
+  //         duration: 1.5, // Adjust animation duration for individual items
+  //         ease: "easeInOut", // Customize easing function
+  //         stagger: 0.1, // Add stagger effect for each item (adjust as needed)
+  //         backgroundColor: "#EF4444",
+  //         rotate: (i) => {
+  //           const initialRotates = [-13, -26, 3, 20, -13, 43, 30, 11, 75];
+  //           return initialRotates[i];
+  //         },
+  //         translateX: (i) => {
+  //           const initialTranslateX = [
+  //             "-1vw",
+  //             "-18vw",
+  //             "-15vw",
+  //             "15vw",
+  //             "16vw",
+  //             "-30vw",
+  //             "34vw",
+  //             "16vw",
+  //             "-16vw",
+  //           ];
+  //           return initialTranslateX[i];
+  //         },
+  //         translateY: (i) => {
+  //           const initialTranslateY = [
+  //             "30vw",
+  //             "-6vw",
+  //             "11vw",
+  //             "13vw",
+  //             "17vw",
+  //             "-4vw",
+  //             "-30vw",
+  //             "-14vw",
+  //             "-32vw",
+  //           ];
+  //           return initialTranslateY[i];
+  //         },
+  //       });
 
-        onUnSolved();
-        setReset(true);
-      },
-    });
-  };
+  //       onUnSolved();
+  //     },
+  //   });
+  // };
 
   return (
-    <div className=" relative w-full h-[1200px] py-12 grid place-items-center">
-      <div className=" bg-green-300 trigger-point-pc"></div>
+    <div className="c w-full h-[1200px] py-12 grid place-items-center">
+      <div className=" trigger-point-pc"></div>
 
       {/* initial state  */}
       <div
@@ -204,18 +200,6 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
           <span className="l outer-pc bg-[#EF4444] "></span>
         </div>
       </div>
-
-      {reset && (
-        <div
-          className=" h-fit w-fit absolute bottom-32 z-[30] px-6 py-2 rounded-3xl drop-shadow-md cursor-pointer bg-black text-white"
-          onClick={() => {
-            setReset(true);
-            resetContent();
-          }}
-        >
-          Reset
-        </div>
-      )}
     </div>
   );
 };

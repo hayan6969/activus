@@ -21,7 +21,77 @@
   "section3": {
     "heading": "De quoi s'agit-il",
     "desc": "Nous aimons l'innovation et voulons vous aider à apporter vos idées 💡 au monde 🌍",
-    "slidingText": "Programmation sur mesure"
+    "slidingText": "Programmation sur mesure",
+
+    "stacks": {
+      "react": {
+        "name": "React Js",
+        "body": "Construisez des interfaces utilisateur dynamiques avec l'architecture basée sur les composants de React.",
+        "img": "https://reactnative.dev/img/header_logo.svg"
+      },
+      "nextjs": {
+        "name": "Next Js",
+        "body": "Créez des applications React rapides et rendues côté serveur avec Next.js.",
+        "img": "https://static-00.iconduck.com/assets.00/nextjs-icon-2048x1234-pqycciiu.png"
+      },
+      "vue": {
+        "name": "Vue.js",
+        "body": "Développez des interfaces utilisateur polyvalentes et des applications monopages avec Vue.js.",
+        "img": "https://vuejs.org/images/logo.png"
+      },
+      "angular": {
+        "name": "Angular",
+        "body": "Créez des applications web robustes en utilisant le cadre complet d'Angular.",
+        "img": "https://angular.io/assets/images/logos/angular/angular.svg"
+      },
+      "jquery": {
+        "name": "jQuery",
+        "body": "Simplifiez la manipulation du DOM HTML et la gestion des événements avec jQuery.",
+        "img": "https://brand.jquery.org/resources/jquery-mark-light.gif"
+      }
+    },
+    "techniques": {
+      "agile": {
+        "name": "Agile",
+        "body": "Adoptez le développement itératif et la collaboration avec les méthodologies Agile.",
+        "img": "https://media.licdn.com/dms/image/C5612AQGYxhZLXG27KQ/article-cover_image-shrink_600_2000/0/1520876509789?e=2147483647&v=beta&t=ucfK-MT6zvW4sLQ5XUV6kXnVhMSvR_HRnqpPalV8npo"
+      },
+      "scrum": {
+        "name": "Scrum",
+        "body": "Rationalisez la gestion de projet avec les sprints itératifs de Scrum.",
+        "img": "https://banner2.cleanpng.com/20180516/rzw/kisspng-agile-software-development-scrum-computer-icons-ag-5afc42d5ddc678.9721919515264816219084.jpg"
+      },
+      "kanban": {
+        "name": "Kanban",
+        "body": "Optimisez la gestion du flux de travail en utilisant le suivi visuel des tâches de Kanban.",
+        "img": "https://static.vecteezy.com/system/resources/previews/002/837/593/original/kanban-lean-method-line-icon-vector.jpg"
+      },
+      "ci_cd": {
+        "name": "CI/CD",
+        "body": "Automatisez la livraison logicielle avec l'intégration et le déploiement continus.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAABUoTg0hRIRysVXsNZg21ojLCOSsljUElA&s"
+      },
+      "tdd": {
+        "name": "TDD",
+        "body": "Assurez la qualité du code avec les pratiques de développement piloté par les tests.",
+        "img": "https://d3f1iyfxxz8i1e.cloudfront.net/courses/course_image/380be13e2174.png"
+      },
+      "bdd": {
+        "name": "BDD",
+        "body": "Favorisez la collaboration avec les techniques de développement piloté par le comportement.",
+        "img": "https://miro.medium.com/v2/resize:fit:1024/0*h1_0AfgUMGbNnKIM"
+      },
+      "version_control": {
+        "name": "Gestion de Version",
+        "body": "Suivez et gérez les modifications du code efficacement avec les systèmes de gestion de version.",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg"
+      },
+      "devops": {
+        "name": "DevOps",
+        "body": "Intégrez le développement et les opérations pour une livraison plus rapide et efficace.",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/0/05/Devops-toolchain.svg"
+      }
+    }
   },
 
   "wordpressToReact": {

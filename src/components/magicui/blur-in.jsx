@@ -4,12 +4,17 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { motion, useAnimation } from "framer-motion";
 
-const BlurIn = ({ word, className, variant, duration = .25, id = 0, doNotHide = false }) => {
-  
+const BlurIn = ({
+  word,
+  className,
+  variant,
+  duration = 0.25,
+  id = 0,
+  doNotHide = false,
+}) => {
   const controls = useAnimation();
 
   const [isMounted, setIsMounted] = useState(false);
-
 
   const defaultVariants = {
     hidden: { filter: "blur(20px)", opacity: 0 },
@@ -18,7 +23,6 @@ const BlurIn = ({ word, className, variant, duration = .25, id = 0, doNotHide = 
   const combinedVariants = variant || defaultVariants;
 
   useEffect(() => {
-    
     setIsMounted(true);
 
     const handleScroll = () => {
@@ -28,20 +32,18 @@ const BlurIn = ({ word, className, variant, duration = .25, id = 0, doNotHide = 
         if (rect.top <= window.innerHeight && rect.bottom >= 0) {
           controls.start("visible");
         } else {
-          if(!doNotHide){
-          controls.start("hidden");
+          if (!doNotHide) {
+            controls.start("hidden");
           }
         }
       }
     };
 
     window.addEventListener("scroll", handleScroll);
-    
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-
-  
   }, [controls]);
 
   if (!isMounted) {
@@ -66,7 +68,6 @@ const BlurIn = ({ word, className, variant, duration = .25, id = 0, doNotHide = 
 };
 
 export default BlurIn;
-
 
 /*
 "use client";;
