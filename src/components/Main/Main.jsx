@@ -66,28 +66,29 @@ export default function Main({}) {
   const footerTrans = useTranslations("footer");
   const currentYear = new Date().getFullYear();
 
-  const allComponents = [
-    <HeroSection />,
-    <BentoGrid />,
-    <WhatAllAbout />,
-    <WordpressToReact />,
-    <TechUsed />,
-    <Security />,
-    <Section7 />,
-    <div className=" relative">
-      <WayTooManySystemsMain />
-    </div>,
-    <Section9 />,
-    <div className=" hidden sm:block">
-      <GameSectionMain />
-    </div>,
-    <Contact />,
-    <footer className=" py-4 w-full">
-      <p className=" text-center">
-        {currentYear} &copy; {footerTrans("text")}
-      </p>
-    </footer>,
-  ];
+  
+const allComponents = [
+  <HeroSection key="hero-section" />,
+  <BentoGrid key="bento-grid" />,
+  <WhatAllAbout key="what-all-about" />,
+  <WordpressToReact key="wordpress-to-react" />,
+  <TechUsed key="tech-used" />,
+  <Security key="security" />,
+  <Section7 key="section7" />,
+  <div key="way-too-many-systems-main" className="relative">
+    <WayTooManySystemsMain />
+  </div>,
+  <Section9 key="section9" />,
+  <div key="game-section-main" className="hidden sm:block">
+    <GameSectionMain />
+  </div>,
+  <Contact key="contact" />,
+  <footer key="footer" className="py-4 w-full">
+    <p className="text-center">
+      {currentYear} &copy; {footerTrans("text")}
+    </p>
+  </footer>,
+];
 
 
   return (
@@ -96,9 +97,7 @@ export default function Main({}) {
 
       <div className={" bg-white grid relative "}>
         {allComponents.map((item, index) => {
-          return <div key={index}>
-             <RenderIfVisible>{item}</RenderIfVisible>
-          </div>;
+          return <RenderIfVisible>{item}</RenderIfVisible>;
         })}
       </div>
 
