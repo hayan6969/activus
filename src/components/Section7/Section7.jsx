@@ -112,16 +112,16 @@ export default function Section7() {
           <div className=" grid place-items-center h-[24vh]">
             <div className=" flex flex-wrap items-center gap-4 w-full px-8">
             
-              <Link href="/" locale="en">
+              <a href="/" locale="en">
               <ShimmerButton className={" shadow-2xl bg-primar"}>
               {trans('lang.english')}
               </ShimmerButton>
-              </Link>
-              <Link href="/" locale="fr">
+              </a>
+              <a href="/" locale="fr">
               <ShimmerButton className={" shadow-2xl bg-primar"}>
               {trans('lang.french')}
               </ShimmerButton>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

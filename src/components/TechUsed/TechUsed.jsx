@@ -71,7 +71,7 @@ export default function TechUsed() {
       <div className=" w-full h-fit md:h-full grid grid-cols-7 ">
         <div className=" grid place-items-center h-fit md:h-full col-span-7 md:col-span-3">
         <div className=" ">
-        <BlurIn word={trans} className={" sectionHeading "} id={3} />
+        <BlurIn word={trans('heading')} className={" sectionHeading "} id={3} />
           {/* techs name  */}
           <div className=" flex flex-wrap items-center gap-2 justify-center ">
             {techs.map((item, index) => {

@@ -29,7 +29,9 @@
     "text2": "Nous le construisons sur mesure et le mettons dans une meilleure tenue."
   },
 
-  "techUsed": "Technologie utilisée",
+  "techUsed": {
+    "heading": "Technologie utilisée"
+  },
 
   "security": {
     "heading": "Sécurité",

@@ -29,7 +29,9 @@
     "text2": "We custom build it and put it in a better outfit."
   },
 
-  "techUsed": "Tech Used",
+  "techUsed": {
+    "heading": "Tech Used"
+  },
 
   "security": {
     "heading": "Security",
