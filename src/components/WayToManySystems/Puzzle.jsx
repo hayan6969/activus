@@ -1,10 +1,11 @@
 "use client";
 import "./puzzle.css";
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 
-const Puzzle = ({onSolved, onUnSolved, hideSectionRef}) => {
+const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
   const containerRef = useRef(null);
+  const [reset, setReset] = useState(false);
 
   useEffect(() => {
     const triggerPoint = document.querySelector(".trigger-point-pc"); // Adjust based on your trigger element
@@ -40,180 +41,182 @@ const Puzzle = ({onSolved, onUnSolved, hideSectionRef}) => {
   }, []);
 
   const animateContent = () => {
+    setReset(true);
+
     gsap.to(".peice-pc", {
       onComplete: () => {
         gsap.to(containerRef.current, {
           duration: 1.5,
-          ease: "easeOut", 
+          ease: "easeOut",
           width: "37.65vw",
           height: "37.65vw",
-      });
-      onSolved();
+        });
+        onSolved();
       },
       onStart: () => {
         gsap.to(".outer-pc", {
           duration: 2,
-      ease: "easeInOut",
-          backgroundColor: "#22C55E"
-        })
+          ease: "easeInOut",
+          backgroundColor: "#22C55E",
+        });
       },
       duration: 1,
-      ease: "easeInOut", 
-      stagger: 0.1, 
+      ease: "easeInOut",
+      stagger: 0.1,
       rotate: 0,
       translateX: 0,
       translateY: 0,
-      backgroundColor: '#22C55E'
+      backgroundColor: "#22C55E",
     });
-    
   };
 
-  // const resetContent = () => {
-  //   gsap.to(containerRef.current, {
-  //     duration: 1, // Adjust animation duration as needed
-  //     ease: "easeOut", // Customize easing function
-  //     width: "55vw",
-  //     height: "45vw",
+  const resetContent = () => {
+    gsap.to(containerRef.current, {
+      duration: 1, // Adjust animation duration as needed
+      ease: "easeOut", // Customize easing function
+      width: "55vw",
+      height: "45vw",
 
-  //     onComplete: () => {
-  //       // Reset individual grid items to their initial states
-  //       gsap.to(".peice-pc", {
-  //         onStart: () => {
-  //           gsap.to(".outer-pc", {
-  //             duration: 2,
-  //         ease: "easeInOut",
-  //             backgroundColor: "#EF4444"
-  //           })
-  //         },
-  //         duration: 1.5, // Adjust animation duration for individual items
-  //         ease: "easeInOut", // Customize easing function
-  //         stagger: 0.1, // Add stagger effect for each item (adjust as needed)
-  //         backgroundColor: '#EF4444',
-  //         rotate: (i) => {
-  //           const initialRotates = [-13, -26, 3, 20, -13, 43, 30, 11, 75];
-  //           return initialRotates[i];
-  //         },
-  //         translateX: (i) => {
-  //           const initialTranslateX = [
-  //             "-1vw",
-  //             "-18vw",
-  //             "-15vw",
-  //             "15vw",
-  //             "16vw",
-  //             "-30vw",
-  //             "34vw",
-  //             "16vw",
-  //             "-16vw",
-  //           ];
-  //           return initialTranslateX[i];
-  //         },
-  //         translateY: (i) => {
-  //           const initialTranslateY = [
-  //             "30vw",
-  //             "-6vw",
-  //             "11vw",
-  //             "13vw",
-  //             "17vw",
-  //             "-4vw",
-  //             "-30vw",
-  //             "-14vw",
-  //             "-32vw",
-  //           ];
-  //           return initialTranslateY[i];
-  //         },
-  //       });
+      onComplete: () => {
+        // Reset individual grid items to their initial states
+        gsap.to(".peice-pc", {
+          onStart: () => {
+            gsap.to(".outer-pc", {
+              duration: 2,
+              ease: "easeInOut",
+              backgroundColor: "#EF4444",
+            });
+          },
+          duration: 1.5, // Adjust animation duration for individual items
+          ease: "easeInOut", // Customize easing function
+          stagger: 0.1, // Add stagger effect for each item (adjust as needed)
+          backgroundColor: "#EF4444",
+          rotate: (i) => {
+            const initialRotates = [-13, -26, 3, 20, -13, 43, 30, 11, 75];
+            return initialRotates[i];
+          },
+          translateX: (i) => {
+            const initialTranslateX = [
+              "-1vw",
+              "-18vw",
+              "-15vw",
+              "15vw",
+              "16vw",
+              "-30vw",
+              "34vw",
+              "16vw",
+              "-16vw",
+            ];
+            return initialTranslateX[i];
+          },
+          translateY: (i) => {
+            const initialTranslateY = [
+              "30vw",
+              "-6vw",
+              "11vw",
+              "13vw",
+              "17vw",
+              "-4vw",
+              "-30vw",
+              "-14vw",
+              "-32vw",
+            ];
+            return initialTranslateY[i];
+          },
+        });
 
-  //       onUnSolved();
-  //     },
-  //   });
-  // };
+        onUnSolved();
+        setReset(true);
+      },
+    });
+  };
 
   return (
-    <div className=" w-full h-[1200px] py-12 grid place-items-center">
+    <div className=" relative w-full h-[1200px] py-12 grid place-items-center">
+      <div className=" bg-green-300 trigger-point-pc"></div>
 
-<div className=" trigger-point-pc"></div>
+      {/* initial state  */}
+      <div
+        ref={containerRef}
+        className="w-[55vw] bg-white h-[45vw] grid grid-cols-3 place-items-center"
+      >
+        <div className="peice-pc bg-[#EF4444] rotate-[-13deg] translate-x-[-1vw] translate-y-[30vw]">
+          <span className=" "></span>
+          <span className="r bg-white "></span>
+          <span className="b bg-white"></span>
+          <span className=" "></span>
+        </div>
 
-{/* initial state  */}
-<div
-  ref={containerRef}
-  className="w-[55vw] bg-white h-[45vw] grid grid-cols-3 place-items-center"
->
-  <div className="peice-pc bg-[#EF4444] rotate-[-13deg] translate-x-[-1vw] translate-y-[30vw]">
-    <span className=" "></span>
-    <span className="r bg-white "></span>
-    <span className="b bg-white"></span>
-    <span className=" "></span>
-  </div>
+        <div className="peice-pc bg-[#EF4444] rotate-[-26deg] translate-x-[-18vw] translate-y-[-6vw]">
+          <span className=""></span>
+          <span className="r bg-white"></span>
+          <span className="b bg-white "></span>
+          <span className="l outer-pc bg-[#EF4444] "></span>
+        </div>
 
-  <div className="peice-pc bg-[#EF4444] rotate-[-26deg] translate-x-[-18vw] translate-y-[-6vw]">
-    <span className=""></span>
-    <span className="r bg-white"></span>
-    <span className="b bg-white "></span>
-    <span className="l outer-pc bg-[#EF4444] "></span>
+        <div className="peice-pc bg-[#EF4444] rotate-[3deg] translate-x-[-15vw] translate-y-[11vw]">
+          <span className=" "></span>
+          <span className=" "></span>
+          <span className="b bg-white"></span>
+          <span className="l outer-pc bg-[#EF4444]  "></span>
+        </div>
 
-  </div>
+        <div className="peice-pc bg-[#EF4444] rotate-[20deg] translate-x-[15vw] translate-y-[13vw]">
+          <span className="t outer-pc bg-[#EF4444]  "></span>
+          <span className="r bg-white"></span>
+          <span className="b bg-white "></span>
+          <span className=" "></span>
+        </div>
 
-  <div className="peice-pc bg-[#EF4444] rotate-[3deg] translate-x-[-15vw] translate-y-[11vw]">
-    <span className=" "></span>
-    <span className=" "></span>
-    <span className="b bg-white"></span>
-    <span className="l outer-pc bg-[#EF4444]  "></span>
+        <div className="peice-pc bg-[#EF4444] rotate-[-13deg] translate-x-[16vw] translate-y-[17vw]">
+          <span className="t outer-pc bg-[#EF4444] "></span>
+          <span className="r bg-white"></span>
+          <span className="b bg-white"></span>
+          <span className="l outer-pc bg-[#EF4444]  "></span>
+        </div>
 
-  </div>
-  
+        <div className="peice-pc bg-[#EF4444] rotate-[43deg] translate-x-[-30vw] translate-y-[-4vw]">
+          <div ref={hideSectionRef} className=" hideSection"></div>
+          <span className="t outer-pc bg-[#EF4444]  "></span>
+          <span className=" "></span>
+          <span className="b bg-white"></span>
+          <span className="l outer-pc bg-[#EF4444]  "></span>
+        </div>
 
-  <div className="peice-pc bg-[#EF4444] rotate-[20deg] translate-x-[15vw] translate-y-[13vw]">
-    <span className="t outer-pc bg-[#EF4444]  "></span>
-    <span className="r bg-white"></span>
-    <span className="b bg-white "></span>
-    <span className=" "></span>
+        <div className="peice-pc bg-[#EF4444] rotate-[30deg] translate-x-[34vw] translate-y-[-30vw] ">
+          <span className="t outer-pc bg-[#EF4444] "></span>
+          <span className="r bg-white "></span>
+          <span className=" "></span>
+          <span className=" "></span>
+        </div>
 
-  </div>
+        <div className="peice-pc bg-[#EF4444] rotate-[11deg] translate-x-[16vw] translate-y-[-14vw]">
+          <span className="t outer-pc bg-[#EF4444]  "></span>
+          <span className="r bg-white "></span>
+          <span className=" "></span>
+          <span className="l outer-pc bg-[#EF4444] "></span>
+        </div>
 
-  <div className="peice-pc bg-[#EF4444] rotate-[-13deg] translate-x-[16vw] translate-y-[17vw]">
-    <span className="t outer-pc bg-[#EF4444] "></span>
-    <span className="r bg-white"></span>
-    <span className="b bg-white"></span>
-    <span className="l outer-pc bg-[#EF4444]  "></span>
+        <div className="peice-pc bg-[#EF4444] rotate-[75deg] translate-x-[-16vw] translate-y-[-32vw]">
+          <span className="t outer-pc bg-[#EF4444]  "></span>
+          <span className=" "></span>
+          <span className=" "></span>
+          <span className="l outer-pc bg-[#EF4444] "></span>
+        </div>
+      </div>
 
-  </div>
-
-  <div className="peice-pc bg-[#EF4444] rotate-[43deg] translate-x-[-30vw] translate-y-[-4vw]">
-<div ref={hideSectionRef} className=' hideSection'></div>
-    <span className="t outer-pc bg-[#EF4444]  "></span>
-    <span className=" "></span>
-    <span className="b bg-white"></span>
-    <span className="l outer-pc bg-[#EF4444]  "></span>
-  </div>
-
-  <div className="peice-pc bg-[#EF4444] rotate-[30deg] translate-x-[34vw] translate-y-[-30vw] ">
-    <span className="t outer-pc bg-[#EF4444] "></span>
-    <span className="r bg-white "></span>
-    <span className=" "></span>
-    <span className=" "></span>
-
-  </div>
-
-  <div className="peice-pc bg-[#EF4444] rotate-[11deg] translate-x-[16vw] translate-y-[-14vw]">
-    <span className="t outer-pc bg-[#EF4444]  "></span>
-    <span className="r bg-white "></span>
-    <span className=" "></span>
-    <span className="l outer-pc bg-[#EF4444] "></span>
-
-  </div>
-
-  <div className="peice-pc bg-[#EF4444] rotate-[75deg] translate-x-[-16vw] translate-y-[-32vw]">
-    <span className="t outer-pc bg-[#EF4444]  "></span>
-    <span className=" "></span>
-    <span className=" "></span>
-    <span className="l outer-pc bg-[#EF4444] "></span>
-
-  </div>
-</div>
-
-
-</div>
-
+      {reset && (
+        <div
+          className=" h-fit w-fit absolute bottom-32 z-[30] px-6 py-2 rounded-3xl drop-shadow-md cursor-pointer bg-black text-white"
+          onClick={() => {
+            setReset(true);
+            resetContent();
+          }}
+        >
+          Reset
+        </div>
+      )}
+    </div>
   );
 };
 

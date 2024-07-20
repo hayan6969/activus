@@ -4,6 +4,14 @@ export default function BentoGrid() {
   const divStyle = " rounded-2xl w-full h-full relative overflow-hidden ";
   const videoStyle = " absolute top-0 left-0 w-full h-full object-cover ";
 
+  const handleMouseEnter = (e) => {
+    e.target.play();
+  };
+
+  const handleMouseLeave = (e) => {
+    e.target.pause();
+  };
+
   return (
     <section
     id="projects"
@@ -18,7 +26,9 @@ export default function BentoGrid() {
           <video
             className={videoStyle}
             src="/assets/3.mp4"
-            autoPlay
+            
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
             loop
             muted
             playsInline
@@ -32,7 +42,9 @@ export default function BentoGrid() {
           <video
             className={videoStyle}
             src="/assets/2.mp4"
-            autoPlay
+            
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
             loop
             muted
             playsInline
@@ -45,17 +57,11 @@ export default function BentoGrid() {
           }
         >
           <video
-            className={videoStyle + " block sm:hidden "}
-            src="/assets/5.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-          />
-          <video
-            className={videoStyle + " hidden sm:block "}
+            className={videoStyle + " "}
             src="/assets/1.mp4"
-            autoPlay
+            
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
             loop
             muted
             playsInline
@@ -67,21 +73,15 @@ export default function BentoGrid() {
           }
         >
         <video
-          className={videoStyle + " block sm:hidden"}
-          src="/assets/1.mp4"
-          autoPlay
+          className={videoStyle + ""}
+          src="/assets/5.mp4"
+          
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
           loop
           muted
           playsInline
         />
-          <video
-            className={videoStyle + " hidden sm:block"}
-            src="/assets/5.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-          />
         </div>
         <div
           className={
@@ -91,7 +91,9 @@ export default function BentoGrid() {
           <video
             className={videoStyle}
             src="/assets/4.mp4"
-            autoPlay
+            
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
             loop
             muted
             playsInline
@@ -105,7 +107,9 @@ export default function BentoGrid() {
           <video
             className={videoStyle}
             src="/assets/6.mp4"
-            autoPlay
+            
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
             loop
             muted
             playsInline
@@ -119,7 +123,9 @@ export default function BentoGrid() {
           <video
             className={videoStyle}
             src="/assets/7.mp4"
-            autoPlay
+            
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
             loop
             muted
             playsInline
