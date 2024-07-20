@@ -97,7 +97,7 @@ const allComponents = [
 
       <div className={" bg-white grid relative "}>
         {allComponents.map((item, index) => {
-          return <RenderIfVisible>{item}</RenderIfVisible>;
+          return <RenderIfVisible key={index}>{item}</RenderIfVisible>;
         })}
       </div>
 
