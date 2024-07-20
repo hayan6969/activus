@@ -8,7 +8,7 @@
   font-size: 75px;
   font-weight: bold;
   line-height: 90px;
-  /* cursor: default; */
+  /* cursor: none; */
 
   h1 {
     text-align: center;
@@ -20,6 +20,4 @@
   mask-repeat: no-repeat;
   position: absolute;
   color: white;
-  transition-duration: 150ms;
-
 }

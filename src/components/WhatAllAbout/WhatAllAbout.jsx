@@ -39,7 +39,7 @@ export default function WhatAllAbout() {
   };
 
   return (
-    <section className=" pt-6 relative overflow-hidden h-fit md:h-screen stickyScroll ">
+    <section className=" pt-6 relative overflow-hidden h-fit md:h-screen stickyScrol w-[99vw]">
       <BlurIn word={trans('heading')} className={" sectionHeading "} id={2} />
 
 

@@ -33,10 +33,10 @@ const Header = forwardRef(function Header(props, ref) {
 
   return (
     <div className=" relative">
-      <div className={"header"}>
+      <div className={"header "}>
         <Framer>
           <div
-            className=" p-8"
+            className=" p-8 cursor-pointer "
             onClick={() => {
               setIsOpen(!isOpen);
             }}

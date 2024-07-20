@@ -38,7 +38,7 @@ export default function Security() {
     <section className=" sectionCS h-fit md:h-screen w-full stickyScrol overflow-hidden bg red-300 ">
       <BlurIn
         word={trans('heading')}
-        className={" text-4xl sm:text-6xl md:text-7xl font-bold bg green-300 pb-2 "}
+        className={" text-4xl sm:text-6xl md:text-7xl font-bold bg green-300 py-4 "}
         id={23}
       />
       <div className=" bg purple-400 h-fit w-full grid place-items-center overflow-hidden ">

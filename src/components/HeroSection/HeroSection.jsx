@@ -34,7 +34,7 @@ export default function HeroSection() {
       <BG />
 
       {/* scroll icon  */}
-      <div className="z-[2] absolute bottom-0 left-auto right-auto">
+      <div className="z-[2] absolute bottom-0 left-auto right-auto pointer-events-none">
         <Lottie options={defaultOptions} style={{ height: 200, width: 200 }} />
       </div>
     </div>

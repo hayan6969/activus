@@ -43,7 +43,7 @@ const Puzzle = ({onSolved, onUnSolved, hideSectionRef}) => {
     gsap.to(".peice-pc", {
       onComplete: () => {
         gsap.to(containerRef.current, {
-          duration: 2.5,
+          duration: 1.5,
           ease: "easeOut", 
           width: "37.65vw",
           height: "37.65vw",
@@ -52,12 +52,12 @@ const Puzzle = ({onSolved, onUnSolved, hideSectionRef}) => {
       },
       onStart: () => {
         gsap.to(".outer-pc", {
-          duration: 2.8,
+          duration: 2,
       ease: "easeInOut",
           backgroundColor: "#22C55E"
         })
       },
-      duration: 1.5,
+      duration: 1,
       ease: "easeInOut", 
       stagger: 0.1, 
       rotate: 0,
