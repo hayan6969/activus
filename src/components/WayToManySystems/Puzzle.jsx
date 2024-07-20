@@ -7,33 +7,39 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    const triggerPoint = document.querySelector(".trigger-point-pc"); // Adjust based on your trigger element
-    //   const triggerPoint = 100;
-    let previousScrollY = 0;
+    
 
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      const scrollDirection = scrollY > previousScrollY ? "down" : "up"; // Calculate direction
+    // const handleScroll = () => {
+    //   const scrollY = window.scrollY;
+    //   const scrollDirection = scrollY > previousScrollY ? "down" : "up"; // Calculate direction
 
-      if (
-        triggerPoint &&
-        scrollY >= triggerPoint.offsetTop &&
-        scrollDirection === "down"
-      ) {
-        animateContent();
-      }
+    //   if (
+    //     triggerPoint &&
+    //     scrollY >= triggerPoint.offsetTop &&
+    //     scrollDirection === "down"
+    //   ) {
+    //     animateContent();
+    //   }
 
-      // if (
-      //   triggerPoint &&
-      //   scrollY >= triggerPoint.offsetTop &&
-      //   scrollDirection === "up"
-      // ) {
-      //   resetContent();
-      // }
+    //   // if (
+    //   //   triggerPoint &&
+    //   //   scrollY >= triggerPoint.offsetTop &&
+    //   //   scrollDirection === "up"
+    //   // ) {
+    //   //   resetContent();
+    //   // }
 
-      previousScrollY = scrollY;
+    //   previousScrollY = scrollY;
+    // };
+
+    const handleScroll = () => { 
+      const puzzleDiv = document.getElementById('pc-puzzle');
+      const rect = puzzleDiv.getBoundingClientRect();
+        if (rect.top <= 450) {
+          animateContent();
+        }
+        
     };
-
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
@@ -128,11 +134,11 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
   // };
 
   return (
-    <div className="c w-full h-[1200px] py-12 grid place-items-center">
-      <div className=" trigger-point-pc"></div>
+    <div className=" w-full h-[1200px] py-12 grid place-items-center">
 
       {/* initial state  */}
       <div
+      id="pc-puzzle"
         ref={containerRef}
         className="w-[55vw] bg-white h-[45vw] grid grid-cols-3 place-items-center"
       >

@@ -1,20 +1,16 @@
 {
   "navbar": {
-    "portfolio": {
-      "name": "Portfolio",
-      "path": "#"
-    },
     "projects": {
       "name": "Projects",
       "path": "#projects"
     },
+    "customization": {
+      "name": "Customization",
+      "path": "#customization"
+    },
     "contact": {
       "name": "Contact",
       "path": "#contact"
-    },
-    "about": {
-      "name": "About",
-      "path": "#"
     }
   },
 

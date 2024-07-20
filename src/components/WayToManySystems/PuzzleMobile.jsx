@@ -1,38 +1,23 @@
 "use client";
+
 import "./puzzle_mobile.css";
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 
-const PuzzleMobile = ({onSolved, onUnSolved}) => {
+const PuzzleMobile = ({ onSolved, onUnSolved }) => {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    const triggerPoint = document.querySelector(".trigger-point-mb");
-    let previousScrollY = 0;
-
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      const scrollDirection = scrollY > previousScrollY ? "down" : "up"; // Calculate direction
-      const viewportHeight = window.innerHeight;
-      const triggerMiddle = triggerPoint.offsetTop + triggerPoint.offsetHeight / 2;
-
-      if (
-        triggerPoint &&
-        scrollDirection === "down" &&
-        triggerMiddle < scrollY - viewportHeight - 200
-      ) {
-        animateContent();
-      }
-
-      // if (
-      //   triggerPoint &&
-      //   scrollDirection === "up" &&
-      //   triggerMiddle > scrollY - viewportHeight - 260
-      // ) {
-      //   resetContent();
-      // }
-
-      previousScrollY = scrollY;
+    
+    const handleScroll = () => { 
+      const puzzleDiv = document.getElementById('mb-puzzle');
+      const rect = puzzleDiv.getBoundingClientRect();
+        const viewportHeight = window.innerHeight;
+        const midpoint = viewportHeight / 1.7;
+        if (rect.top <= midpoint && rect.bottom >= midpoint) {
+          animateContent();
+        }
+        
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -40,34 +25,32 @@ const PuzzleMobile = ({onSolved, onUnSolved}) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
   const animateContent = () => {
     gsap.to(".peice-mb", {
       onComplete: () => {
         gsap.to(containerRef.current, {
           duration: 2.5,
-          ease: "easeOut", 
+          ease: "easeOut",
           // width: "37.65vw",
           // height: "37.65vw",
-      });
-      onSolved();
+        });
+        onSolved();
       },
       onStart: () => {
         gsap.to(".outer-mb", {
           duration: 2.8,
-      ease: "easeInOut",
-          backgroundColor: "#22C55E"
-        })
+          ease: "easeInOut",
+          backgroundColor: "#22C55E",
+        });
       },
       duration: 1.5,
-      ease: "easeInOut", 
-      stagger: 0.1, 
+      ease: "easeInOut",
+      stagger: 0.1,
       rotate: 0,
       translateX: 0,
       translateY: 0,
-      backgroundColor: '#22C55E'
+      backgroundColor: "#22C55E",
     });
-    
   };
 
   // const resetContent = () => {
@@ -131,89 +114,78 @@ const PuzzleMobile = ({onSolved, onUnSolved}) => {
   // };
 
   return (
-    <div className=" overflow-hidden w-full h-fit py-12 grid place-items-center scale-150">
-<div className=" trigger-point-mb"></div>
-{/* initial state  */}
-<div
-  ref={containerRef}
-  className="w-fit bg-white h-fit grid grid-cols-3 place-items-center"
->
-  <div className="peice-mb bg-[#EF4444] rotate-[-13deg] translate-x-[-1vw] translate-y-[30vw]">
-    <span className=" "></span>
-    <span className="r bg-white "></span>
-    <span className="b bg-white"></span>
-    <span className=" "></span>
-  </div>
+    <div className=" overflow-hidden relative w-full h-fit py-12 grid place-items-center scale-150">
 
-  <div className="peice-mb bg-[#EF4444] rotate-[-26deg] translate-x-[-18vw] translate-y-[-6vw]">
-    <span className=""></span>
-    <span className="r bg-white"></span>
-    <span className="b bg-white "></span>
-    <span className="l outer-mb bg-[#EF4444] "></span>
+      {/* initial state  */}
+      <div
+      id="mb-puzzle"
+        ref={containerRef}
+        className="w-fit bg-white h-fit grid grid-cols-3 place-items-center"
+      >
+        <div className="peice-mb bg-[#EF4444] rotate-[-13deg] translate-x-[-1vw] translate-y-[30vw]">
+          <span className=" "></span>
+          <span className="r bg-white "></span>
+          <span className="b bg-white"></span>
+          <span className=" "></span>
+        </div>
 
-  </div>
+        <div className="peice-mb bg-[#EF4444] rotate-[-26deg] translate-x-[-18vw] translate-y-[-6vw]">
+          <span className=""></span>
+          <span className="r bg-white"></span>
+          <span className="b bg-white "></span>
+          <span className="l outer-mb bg-[#EF4444] "></span>
+        </div>
 
-  <div className="peice-mb bg-[#EF4444] rotate-[3deg] translate-x-[-15vw] translate-y-[11vw]">
-    <span className=" "></span>
-    <span className=" "></span>
-    <span className="b bg-white"></span>
-    <span className="l outer-mb bg-[#EF4444]  "></span>
+        <div className="peice-mb bg-[#EF4444] rotate-[3deg] translate-x-[-15vw] translate-y-[11vw]">
+          <span className=" "></span>
+          <span className=" "></span>
+          <span className="b bg-white"></span>
+          <span className="l outer-mb bg-[#EF4444]  "></span>
+        </div>
 
-  </div>
-  
+        <div className="peice-mb bg-[#EF4444] rotate-[20deg] translate-x-[15vw] translate-y-[13vw]">
+          <span className="t outer-mb bg-[#EF4444]  "></span>
+          <span className="r bg-white"></span>
+          <span className="b bg-white "></span>
+          <span className=" "></span>
+        </div>
 
-  <div className="peice-mb bg-[#EF4444] rotate-[20deg] translate-x-[15vw] translate-y-[13vw]">
-    <span className="t outer-mb bg-[#EF4444]  "></span>
-    <span className="r bg-white"></span>
-    <span className="b bg-white "></span>
-    <span className=" "></span>
+        <div className="peice-mb bg-[#EF4444] rotate-[-13deg] translate-x-[16vw] translate-y-[17vw]">
+          <span className="t outer-mb bg-[#EF4444] "></span>
+          <span className="r bg-white"></span>
+          <span className="b bg-white"></span>
+          <span className="l outer-mb bg-[#EF4444]  "></span>
+        </div>
 
-  </div>
+        <div className="peice-mb bg-[#EF4444] rotate-[43deg] translate-x-[-30vw] translate-y-[-4vw]">
+          <span className="t outer-mb bg-[#EF4444]  "></span>
+          <span className=" "></span>
+          <span className="b bg-white"></span>
+          <span className="l outer-mb bg-[#EF4444]  "></span>
+        </div>
 
-  <div className="peice-mb bg-[#EF4444] rotate-[-13deg] translate-x-[16vw] translate-y-[17vw]">
-    <span className="t outer-mb bg-[#EF4444] "></span>
-    <span className="r bg-white"></span>
-    <span className="b bg-white"></span>
-    <span className="l outer-mb bg-[#EF4444]  "></span>
+        <div className="peice-mb bg-[#EF4444] rotate-[30deg] translate-x-[34vw] translate-y-[-30vw] ">
+          <span className="t outer-mb bg-[#EF4444] "></span>
+          <span className="r bg-white "></span>
+          <span className=" "></span>
+          <span className=" "></span>
+        </div>
 
-  </div>
+        <div className="peice-mb bg-[#EF4444] rotate-[11deg] translate-x-[16vw] translate-y-[-14vw]">
+          <span className="t outer-mb bg-[#EF4444]  "></span>
+          <span className="r bg-white "></span>
+          <span className=" "></span>
+          <span className="l outer-mb bg-[#EF4444] "></span>
+        </div>
 
-  <div className="peice-mb bg-[#EF4444] rotate-[43deg] translate-x-[-30vw] translate-y-[-4vw]">
-
-    <span className="t outer-mb bg-[#EF4444]  "></span>
-    <span className=" "></span>
-    <span className="b bg-white"></span>
-    <span className="l outer-mb bg-[#EF4444]  "></span>
-  </div>
-
-  <div className="peice-mb bg-[#EF4444] rotate-[30deg] translate-x-[34vw] translate-y-[-30vw] ">
-    <span className="t outer-mb bg-[#EF4444] "></span>
-    <span className="r bg-white "></span>
-    <span className=" "></span>
-    <span className=" "></span>
-
-  </div>
-
-  <div className="peice-mb bg-[#EF4444] rotate-[11deg] translate-x-[16vw] translate-y-[-14vw]">
-    <span className="t outer-mb bg-[#EF4444]  "></span>
-    <span className="r bg-white "></span>
-    <span className=" "></span>
-    <span className="l outer-mb bg-[#EF4444] "></span>
-
-  </div>
-
-  <div className="peice-mb bg-[#EF4444] rotate-[75deg] translate-x-[-16vw] translate-y-[-32vw]">
-    <span className="t outer-mb bg-[#EF4444]  "></span>
-    <span className=" "></span>
-    <span className=" "></span>
-    <span className="l outer-mb bg-[#EF4444] "></span>
-
-  </div>
-</div>
-
-
-</div>
-
+        <div className="peice-mb bg-[#EF4444] rotate-[75deg] translate-x-[-16vw] translate-y-[-32vw]">
+          <span className="t outer-mb bg-[#EF4444]  "></span>
+          <span className=" "></span>
+          <span className=" "></span>
+          <span className="l outer-mb bg-[#EF4444] "></span>
+        </div>
+      </div>
+    </div>
   );
 };
 

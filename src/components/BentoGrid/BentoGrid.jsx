@@ -14,10 +14,11 @@ export default function BentoGrid() {
 
   return (
     <section
-    id="projects"
+      id="projects"
       className=" sectionCSS stickyScroll "
     >
-      <div className="  grid gap-6 grid-cols-12 grid-rows-10 w-full h-full">
+      <div
+       className="   grid gap-6 grid-cols-12 grid-rows-10 w-full h-full">
         <div
           className={
             divStyle + " row-span-10 col-span-6 md:row-span-6 md:col-span-3 "

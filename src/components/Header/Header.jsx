@@ -12,7 +12,7 @@ const Header = forwardRef(function Header(props, ref) {
   const menu = {
     open: {
       width: "350px",
-      height: "450px",
+      height: "400px",
       top: "16px",
       right: "16px",
       transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] },

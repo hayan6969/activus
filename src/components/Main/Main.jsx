@@ -2,10 +2,11 @@
 
 import { useRef } from "react";
 import Header from "../Header/Header";
-import StickyCursor from "../StickyCursor/StickyCursor";
+// import StickyCursor from "../StickyCursor/StickyCursor";
 import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
 import RenderIfVisible from "react-render-if-visible";
+import LoadingScreen from "../Utils/LoadingScreen";
 
 const loadingComponent = () => (
   <div className=" grid p-4 md:px-24 md:py-12 grid-cols-3 grid-rows-6 md:grid-rows-3 gap-6 w-full h-screen animate-pulse">
@@ -19,7 +20,9 @@ const loadingComponent = () => (
 );
 
 const HeroSection = dynamic(() => import("../HeroSection/HeroSection"), {
-  loading: loadingComponent,
+  loading: ()=>{
+    return <LoadingScreen />;
+  },
 });
 const BentoGrid = dynamic(() => import("../BentoGrid/BentoGrid"), {
   loading: loadingComponent,
@@ -30,11 +33,15 @@ const WhatAllAbout = dynamic(() => import("../WhatAllAbout/WhatAllAbout"), {
 const WordpressToReact = dynamic(
   () => import("../WordpressToReact/WordpressToReact"),
   {
-    loading: loadingComponent,
+    loading: ()=>{
+    return <LoadingScreen />;
+  },
   }
 );
 const TechUsed = dynamic(() => import("../TechUsed/TechUsed"), {
-  loading: loadingComponent,
+  loading: ()=>{
+    return <LoadingScreen />;
+  },
 });
 const Security = dynamic(() => import("../Security/Security"), {
   loading: loadingComponent,
@@ -57,7 +64,9 @@ const Contact = dynamic(() => import("../Contact/Contact"), {
 const GameSectionMain = dynamic(
   () => import("../GameSection/GameSectionMain"),
   {
-    loading: loadingComponent,
+    loading: ()=>{
+      return <LoadingScreen />;
+    },
   }
 );
 
@@ -95,12 +104,22 @@ export default function Main({}) {
 
       <div className={" bg-white grid relative "}>
         {allComponents.map((item, index) => {
+          if(index === 1){
+            return <BentoGrid />
+          }
+          if(index === 2){
+            return <WhatAllAbout />
+          }
           if (index === 7) {
             return <WayTooManySystemsMain key={index} />;
           }
+          if(index === 10){
+            return <Contact />
+          }
           return <RenderIfVisible key={index}>{item}</RenderIfVisible>;
-        })}
-      </div>
+          })}
+          
+          </div>
 
       {/* <div className=" hidden sm:block">
         <StickyCursor stickyElement={stickyElement} />

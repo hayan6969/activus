@@ -2,12 +2,11 @@ import React from "react";
 import MaskSection from "./MaskSection";
 import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
+import LoadingScreen from "../Utils/LoadingScreen";
 
 const GameSection = dynamic(() => import("./GameSection"), {
   loading: () => (
-    <div className=" w-full h-screen grid place-items-center">
-      <div className="spinner-large"></div>
-    </div>
+    <LoadingScreen message="Game Is Loading Please Wait ..." />
   ),
   ssr: false,
 });

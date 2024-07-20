@@ -110,7 +110,7 @@ export default function WhatAllAbout() {
   };
 
   return (
-    <section className=" pt-6 relative overflow-hidden h-fit md:h-screen stickyScrol w-[99vw]">
+    <section id="customization" className=" pt-6 relative overflow-hidden h-fit md:h-screen stickyScrol w-[99vw]">
       <BlurIn word={trans("heading")} className={" sectionHeading "} id={2} />
 
       <VelocityScroll
@@ -131,14 +131,14 @@ export default function WhatAllAbout() {
                   return (
                     <div
                       key={index}
-                      className=" w-full bg-gray-200 h-[45vh] p-4 "
+                      className=" w-full bg-gray-200 h-[45vh] p-2 md:p-4 "
                     >
                       <div className=" grid grid-cols-2">
                         <h1 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center w-full  my-auto font-semibold ">
                           {item?.name}
                         </h1>
                         <Image
-                          className=" aspect-auto p-2 mx-auto"
+                          className=" aspect-auto p-1 md:p-2 mx-auto"
                           src={item.img}
                           width={100}
                           height={100}
@@ -163,14 +163,14 @@ export default function WhatAllAbout() {
                   return (
                     <div
                       key={index}
-                      className=" w-full bg-gray-200 h-[45vh] p-4 "
+                      className=" w-full bg-gray-200 h-[45vh] p-2 md:p-4 "
                     >
                       <div className=" grid grid-cols-2">
                         <h1 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center w-full  my-auto font-semibold ">
                           {item?.name}
                         </h1>
                         <Image
-                          className=" aspect-auto p-2 mx-auto"
+                          className=" aspect-auto p-1 md:p-2 mx-auto"
                           src={item.img}
                           width={100}
                           height={100}

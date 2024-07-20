@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import BlurIn from '../magicui/blur-in';
 import PuzzleMobile from './PuzzleMobile';
 
