@@ -105,16 +105,16 @@ export default function Main({}) {
       <div className={" bg-white grid relative "}>
         {allComponents.map((item, index) => {
           if(index === 1){
-            return <BentoGrid />
+            return <BentoGrid key="bento-grid-me" />
           }
           if(index === 2){
-            return <WhatAllAbout />
+            return <WhatAllAbout key="what-it-all-about-me" />
           }
           if (index === 7) {
             return <WayTooManySystemsMain key={index} />;
           }
           if(index === 10){
-            return <Contact />
+            return <Contact key="contact-me" />
           }
           return <RenderIfVisible key={index}>{item}</RenderIfVisible>;
           })}
