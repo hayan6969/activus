@@ -5,7 +5,6 @@ import OrbitingCircles from "../magicui/orbiting-circles";
 import { DiMongodb, DiMsqlServer } from "react-icons/di";
 import { GrMysql, GrOracle } from "react-icons/gr";
 import { SiPostgresql } from "react-icons/si";
-import ShimmerButton from "../magicui/shimmer-button";
 import { Dock, DockIcon } from "../magicui/dock";
 import { FaAws, FaDocker } from "react-icons/fa6";
 import { SiMicrosoftazure } from "react-icons/si";
@@ -113,14 +112,14 @@ export default function Section7() {
             <div className=" flex flex-wrap items-center gap-4 w-full px-8">
             
               <Link href="/" locale="en">
-              <ShimmerButton className={" shadow-2xl bg-primar"}>
+              <button className={" rounded-3xl bg-black text-white px-4 py-2"}>
               {trans('lang.english')}
-              </ShimmerButton>
+              </button>
               </Link>
               <Link href="/" locale="fr">
-              <ShimmerButton className={" shadow-2xl bg-primar"}>
+              <button className={" rounded-3xl bg-black text-white px-4 py-2"}>
               {trans('lang.french')}
-              </ShimmerButton>
+              </button>
               </Link>
             </div>
           </div>
