@@ -2,43 +2,6 @@ import { cn } from "@/lib/utils";
 import Marquee from "../magicui/marquee";
 
 
-const reviews = [
-    {
-      name: "React Native",
-      username: "@react_native",
-      body: "React Native allows developers to build native apps using JavaScript and React.",
-      img: "https://reactnative.dev/img/header_logo.svg",
-    },
-    {
-      name: "Flutter",
-      username: "@flutter",
-      body: "Flutter enables building beautiful, natively compiled apps for mobile, web, and desktop from a single codebase.",
-      img: "/assets/flutter.png",
-    },
-    {
-      name: "Swift",
-      username: "@swift",
-      body: "Swift is a powerful programming language for macOS, iOS, watchOS, and tvOS with modern features.",
-      img: "https://www.swift.com/themes/custom/swift_theme/images/swift-logo-new.svg",
-    },
-    {
-      name: "Kotlin",
-      username: "@kotlin",
-      body: "Kotlin is a modern language for Android development, known for its productivity and safety features.",
-      img: "/assets/kotlin.png",
-    },
-    {
-      name: "Ionic",
-      username: "@ionic",
-      body: "Ionic is a mobile UI toolkit for building high-quality cross-platform native and web app experiences using web technologies.",
-      img: "https://ionicframework.com/docs/logos/ionic-text-docs-dark.svg",
-    },
-  ];
-  
-  
-
-const firstRow = reviews.slice(0, reviews.length - 1);
-
 const ReviewCard = ({
   img,
   name,
@@ -69,11 +32,11 @@ const ReviewCard = ({
   );
 };
 
-export function AppDevelopment() {
+export function AppDevelopment({stacks}) {
   return (
     <div className="relative flex h-fit w-full flex-col items-center justify-center overflow-hidden">
       <Marquee pauseOnHover className="[--duration:20s]">
-        {firstRow.map((review) => (
+        {stacks.map((review) => (
           <ReviewCard key={review.username} {...review} />
         ))}
       </Marquee>

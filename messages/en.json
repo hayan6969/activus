@@ -1,0 +1,149 @@
+{
+  "navbar": {
+    "portfolio": {
+      "name": "Portfolio",
+      "path": "#"
+    },
+    "projects": {
+      "name": "Projects",
+      "path": "#projects"
+    },
+    "contact": {
+      "name": "Contact",
+      "path": "#contact"
+    },
+    "about": {
+      "name": "About",
+      "path": "#"
+    }
+  },
+
+  "section3": {
+    "heading": "What It's All About",
+    "desc": " We love innovation and want to help you bring your ideas 💡 to the world 🌍",
+    "slidingText": "Custom Programming"
+  },
+
+  "wordpressToReact": {
+    "text1": "Tired of your Wordpress site that is difficult to update?",
+    "text2": "We custom build it and put it in a better outfit."
+  },
+
+  "techUsed": "Tech Used",
+
+  "security": {
+    "heading": "Security",
+    "subHeading": "Different Functions",
+    "chat": "Chat",
+    "payment": "Payment",
+    "andMore": "And More"
+  },
+
+  "section7": {
+    "helpingInnovation": {
+      "heading": "Helping Innovation",
+      "desc": "An innovation company in need of programmers, we love innovation and want to help you bring your ideas to the world"
+    },
+    "dbDesign": {
+      "heading": "Database Design",
+      "desc": "We design your database with best practice and faster results. Oracle, MS-SQL, MySQL, No-SQL, Informix we know it all."
+    },
+    "lang": {
+      "heading": "Languages",
+      "english": "English",
+      "french": "French"
+    },
+    "cloud": {
+      "heading": "Cloud",
+      "desc": "All in the cloud, for a faster and safer environment. AWS CodeDeploy, Azure DevOps, Kubernetes, Docker, and more"
+    },
+    "analysis": {
+      "heading": "Need Analysis?",
+      "desc": "We analyze the needs of your business and find the best solution that could suit your business. Our designers map out the functionality you need, and we review in advance what needs to be done to achieve maximum results."
+    }
+  },
+  "wayTooManySystems": {
+    "heading1": "Way Too Many Systems?",
+    "heading2": "Integrate and thereby increase efficiency, automation and benefit for all"
+  },
+
+  "section9": {
+    "programming": {
+      "heading": "Programming",
+      "desc": "We can program every conceivable application that is on the market today and we trust ourselves to design and program anything that the mind desires."
+    },
+    "design": {
+      "heading": "Design",
+      "desc": "Years of experience in all design"
+    },
+    "appDev": {
+      "heading": "App Development",
+      "stacks": {
+        "reactNative": {
+          "name": "React Native",
+          "username": "@react_native",
+          "body": "React Native allows developers to build native apps using JavaScript and React.",
+          "img": "https://reactnative.dev/img/header_logo.svg"
+        },
+        "flutter": {
+          "name": "Flutter",
+          "username": "@flutter",
+          "body": "Flutter enables building beautiful, natively compiled apps for mobile, web, and desktop from a single codebase.",
+          "img": "/assets/flutter.png"
+        },
+        "swift": {
+          "name": "Swift",
+          "username": "@swift",
+          "body": "Swift is a powerful programming language for macOS, iOS, watchOS, and tvOS with modern features.",
+          "img": "https://www.swift.com/themes/custom/swift_theme/images/swift-logo-new.svg"
+        },
+        "kotlin": {
+          "name": "Kotlin",
+          "username": "@kotlin",
+          "body": "Kotlin is a modern language for Android development, known for its productivity and safety features.",
+          "img": "/assets/kotlin.png"
+        },
+        "ionic": {
+          "name": "Ionic",
+          "username": "@ionic",
+          "body": "Ionic is a mobile UI toolkit for building high-quality cross-platform native and web app experiences using web technologies.",
+          "img": "https://ionicframework.com/docs/logos/ionic-text-docs-dark.svg"
+        }
+      }
+    },
+    "cooperation": {
+      "heading": "Cooperation",
+      "desc": "We conduct functional tests with users and prospective customers who will use our applications."
+    },
+    "monitoring": {
+      "heading": "Monitoring",
+      "desc": "24/7 monitoring and response"
+    }
+  },
+
+  "gameSection": {
+    "heading1": {
+      "text1": "At Activus",
+      "text2": "There’s No Limit To Creativity"
+    },
+    "heading2": {
+      "text1": "You can",
+      "text2": "literally play a game in here"
+    }
+  },
+
+  "contact": {
+    "heading": "Like What you experienced?",
+    "subHeading": "Contact us",
+    "form": {
+      "name": "Your Good Name",
+      "email": "Your Email",
+      "message": "Your Message Goes Here...",
+      "sendBtn": "Send"
+    }
+  },
+
+  "footer": {
+    "text": "Activus - All rights are reserved."
+  }
+}

@@ -8,7 +8,9 @@ import Image from "next/image";
 import Lottie from "react-lottie";
 import scrollIcon from "../../../public/assets/scroll.json";
 
-export default function MaskSection() {
+export default function MaskSection({
+  heading1, heading2
+}) {
   const [isHovered, setIsHovered] = useState(false);
   const { x, y } = useMousePosition();
   const size = isHovered ? 350 : 15;
@@ -43,7 +45,7 @@ export default function MaskSection() {
           }}
           className=" relative "
         >
-          You can <br /> literally play a game in here
+          {heading2.text1} <br /> {heading2.text2}
           <br />
           <Image
             src={"/assets/keys.png"}
@@ -64,9 +66,10 @@ export default function MaskSection() {
 
       <div className=" mask-bg relativ ">
         <h1>
-          At Activus
+        {heading1.text1}
           <br />
-          There’s No Limit To Creativity
+          {heading1.text2}
+
         </h1>
       </div>
 

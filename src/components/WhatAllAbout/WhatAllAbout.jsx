@@ -5,8 +5,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import BlurIn from "../magicui/blur-in";
+import { useTranslations } from "next-intl";
 
 export default function WhatAllAbout() {
+  const trans = useTranslations('section3');
+
   const divStyle =
     " rounded-2xl w-full sm h-full  relative overflow-hidden bg-red-300 ";
     
@@ -37,19 +40,19 @@ export default function WhatAllAbout() {
 
   return (
     <section className=" pt-6 relative overflow-hidden h-fit md:h-screen stickyScroll ">
-      <BlurIn word={"What It's All About"} className={" sectionHeading "} id={2} />
+      <BlurIn word={trans('heading')} className={" sectionHeading "} id={2} />
 
 
       <VelocityScroll
         className={" text-3xl sm:text-4xl font-semibold"}
-        text={" Custom Programming "}
+        text={trans('slidingText')}
       >
         <div className="px-4 sm:px-24 pb-6 relative w-full h-[60vh] overflow-hidden">
 
           <div className=" w-full grid place-items-center py-4">
             <h1 className=" text-center text-xl sm:text-2xl md:text-3xl w-full lg:w-[70%] font-light  ">
-              We love innovation and want to help you bring your ideas&nbsp;💡
-              to the world&nbsp;🌍
+             {trans('desc')}
+
             </h1>
           </div>
 

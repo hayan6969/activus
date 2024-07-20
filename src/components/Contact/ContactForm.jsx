@@ -3,7 +3,7 @@
 import { LoaderIcon, Send, SendHorizonal } from "lucide-react";
 import React, { useState } from "react";
 
-export default function ContactForm() {
+export default function ContactForm({data}) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -80,7 +80,7 @@ export default function ContactForm() {
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder="Your Good Name"
+          placeholder={data.name}
         />
         <input
           className=" inputTag w-full"
@@ -88,7 +88,7 @@ export default function ContactForm() {
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="Your Email"
+          placeholder={data.email}
         />
         <textarea
           className=" inputTag w-full h-32"
@@ -96,7 +96,7 @@ export default function ContactForm() {
           typeof="text"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          placeholder="Your Message goes here..."
+          placeholder={data.message}
         />
       <button
                 disabled={isLoading}
@@ -107,7 +107,7 @@ export default function ContactForm() {
                   <LoaderIcon className=" animate-spin" />
                 ) : (
                   <>
-                    <span className="text-lg">Send</span>
+                    <span className="text-lg">{data.sendBtn}</span>
                     <SendHorizonal
                       strokeWidth={2}
                       className=""

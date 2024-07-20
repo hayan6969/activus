@@ -15,6 +15,7 @@ import StickyCursor from "../StickyCursor/StickyCursor";
 // import Contact from "../Contact/Contact";
 // import GameSectionMain from "../GameSection/GameSectionMain";
 import dynamic from 'next/dynamic';
+import { useTranslations } from "next-intl";
 
 const loadingComponent = () => (
   <div className=" w-full h-screen grid place-items-center">
@@ -56,13 +57,16 @@ const GameSectionMain = dynamic(() => import("../GameSection/GameSectionMain"), 
   loading: loadingComponent,
 });
 
-export default function Main() {
+export default function Main({}) {
   const stickyElement = useRef(null);
-
+  const footerTrans = useTranslations('footer');
+  const currentYear = new Date().getFullYear();
+  
   return (
     <div>
       <Header ref={stickyElement} />
       <div className={" bg-white grid relative"}>
+
         {/* section 1  */}
         <HeroSection />
 
@@ -102,7 +106,7 @@ export default function Main() {
         {/* footer  */}
         <footer className=" py-4 w-full">
           <p className=" text-center">
-            2024 &copy; Activus - All rights are reserved.
+            {currentYear} &copy; {footerTrans('text')}
           </p>
         </footer>
         

@@ -2,8 +2,10 @@ import React from "react";
 import Link from "next/link";
 import IconCloud from "../magicui/icon-cloud";
 import BlurIn from "../magicui/blur-in";
+import { useTranslations } from "next-intl";
 
 export default function TechUsed() {
+  const trans = useTranslations("techUsed");
   const techs = [
     {
       name: "React Js",
@@ -69,7 +71,7 @@ export default function TechUsed() {
       <div className=" w-full h-fit md:h-full grid grid-cols-7 ">
         <div className=" grid place-items-center h-fit md:h-full col-span-7 md:col-span-3">
         <div className=" ">
-        <BlurIn word={"Tech Used"} className={" sectionHeading "} id={3} />
+        <BlurIn word={trans} className={" sectionHeading "} id={3} />
           {/* techs name  */}
           <div className=" flex flex-wrap items-center gap-2 justify-center ">
             {techs.map((item, index) => {

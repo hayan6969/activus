@@ -1,0 +1,149 @@
+{
+  "navbar": {
+    "portfolio": {
+      "name": "Portefeuille",
+      "path": "#"
+    },
+    "projects": {
+      "name": "Projets",
+      "path": "#projects"
+    },
+    "contact": {
+      "name": "Contact",
+      "path": "#contact"
+    },
+    "about": {
+      "name": "À propos",
+      "path": "#"
+    }
+  },
+
+  "section3": {
+    "heading": "De quoi s'agit-il",
+    "desc": "Nous aimons l'innovation et voulons vous aider à apporter vos idées 💡 au monde 🌍",
+    "slidingText": "Programmation sur mesure"
+  },
+
+  "wordpressToReact": {
+    "text1": "Fatigué de votre site Wordpress difficile à mettre à jour?",
+    "text2": "Nous le construisons sur mesure et le mettons dans une meilleure tenue."
+  },
+
+  "techUsed": "Technologie utilisée",
+
+  "security": {
+    "heading": "Sécurité",
+    "subHeading": "Différentes fonctions",
+    "chat": "Chat",
+    "payment": "Paiement",
+    "andMore": "Et plus"
+  },
+
+  "section7": {
+    "helpingInnovation": {
+      "heading": "Aider à l'innovation",
+      "desc": "Une entreprise d'innovation ayant besoin de programmeurs, nous aimons l'innovation et voulons vous aider à apporter vos idées au monde"
+    },
+    "dbDesign": {
+      "heading": "Conception de base de données",
+      "desc": "Nous concevons votre base de données avec les meilleures pratiques et des résultats plus rapides. Oracle, MS-SQL, MySQL, No-SQL, Informix, nous connaissons tout cela."
+    },
+    "lang": {
+      "heading": "Langues",
+      "english": "Anglais",
+      "french": "Français"
+    },
+    "cloud": {
+      "heading": "Cloud",
+      "desc": "Tout dans le cloud, pour un environnement plus rapide et plus sûr. AWS CodeDeploy, Azure DevOps, Kubernetes, Docker, et plus"
+    },
+    "analysis": {
+      "heading": "Besoin d'une analyse?",
+      "desc": "Nous analysons les besoins de votre entreprise et trouvons la meilleure solution qui pourrait convenir à votre entreprise. Nos designers cartographient la fonctionnalité dont vous avez besoin, et nous examinons à l'avance ce qui doit être fait pour obtenir des résultats maximaux."
+    }
+  },
+  "wayTooManySystems": {
+    "heading1": "Trop de systèmes?",
+    "heading2": "Intégrer et ainsi augmenter l'efficacité, l'automatisation et les bénéfices pour tous"
+  },
+
+  "section9": {
+    "programming": {
+      "heading": "Programmation",
+      "desc": "Nous pouvons programmer toutes les applications concevables qui sont sur le marché aujourd'hui et nous nous faisons confiance pour concevoir et programmer tout ce que l'esprit désire."
+    },
+    "design": {
+      "heading": "Conception",
+      "desc": "Des années d'expérience dans toute la conception"
+    },
+    "appDev": {
+      "heading": "Développement d'applications",
+      "stacks": {
+        "reactNative": {
+          "name": "React Native",
+          "username": "@react_native",
+          "body": "React Native permet aux développeurs de créer des applications natives en utilisant JavaScript et React.",
+          "img": "https://reactnative.dev/img/header_logo.svg"
+        },
+        "flutter": {
+          "name": "Flutter",
+          "username": "@flutter",
+          "body": "Flutter permet de créer de belles applications nativement compilées pour mobile, web et bureau à partir d'une seule base de code.",
+          "img": "/assets/flutter.png"
+        },
+        "swift": {
+          "name": "Swift",
+          "username": "@swift",
+          "body": "Swift est un puissant langage de programmation pour macOS, iOS, watchOS et tvOS avec des fonctionnalités modernes.",
+          "img": "https://www.swift.com/themes/custom/swift_theme/images/swift-logo-new.svg"
+        },
+        "kotlin": {
+          "name": "Kotlin",
+          "username": "@kotlin",
+          "body": "Kotlin est un langage moderne pour le développement Android, connu pour ses fonctionnalités de productivité et de sécurité.",
+          "img": "/assets/kotlin.png"
+        },
+        "ionic": {
+          "name": "Ionic",
+          "username": "@ionic",
+          "body": "Ionic est un kit d'outils d'interface utilisateur mobile pour créer des expériences d'applications natives et web de haute qualité en utilisant des technologies web.",
+          "img": "https://ionicframework.com/docs/logos/ionic-text-docs-dark.svg"
+        }
+      }
+    },
+    "cooperation": {
+      "heading": "Coopération",
+      "desc": "Nous effectuons des tests fonctionnels avec des utilisateurs et des clients potentiels qui utiliseront nos applications."
+    },
+    "monitoring": {
+      "heading": "Surveillance",
+      "desc": "Surveillance et réponse 24/7"
+    }
+  },
+
+  "gameSection": {
+    "heading1": {
+      "text1": "Chez Activus",
+      "text2": "Il n'y a pas de limite à la créativité"
+    },
+    "heading2": {
+      "text1": "Vous pouvez",
+      "text2": "jouer littéralement à un jeu ici"
+    }
+  },
+
+  "contact": {
+    "heading": "Vous avez aimé ce que vous avez vécu?",
+    "subHeading": "Contactez-nous",
+    "form": {
+      "name": "Votre bon nom",
+      "email": "Votre e-mail",
+      "message": "Votre message ici...",
+      "sendBtn": "Envoyer"
+    }
+  },
+
+  "footer": {
+    "text": "Activus - Tous droits réservés."
+  }
+}

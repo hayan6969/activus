@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-@import '../styles/fonts.css';
+@import '../../styles/fonts.css';
 
 @layer utilities {
   .text-balance {

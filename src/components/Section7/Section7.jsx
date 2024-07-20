@@ -10,8 +10,13 @@ import { Dock, DockIcon } from "../magicui/dock";
 import { FaAws, FaDocker } from "react-icons/fa6";
 import { SiMicrosoftazure } from "react-icons/si";
 import { AiOutlineKubernetes } from "react-icons/ai";
+import { Link } from "@/navigation";
+import { useTranslations } from "next-intl";
 
 export default function Section7() {
+  const trans = useTranslations('section7');
+
+
   const divStyle =
     " relative w-full h-fit sm:h-full rounded-2xl lg:col-span-4 shadow-[0px_0px_20px_7px_#00000024] bg-white overflow-hidden ";
 
@@ -26,13 +31,12 @@ export default function Section7() {
           <BorderBeam size={300} />
           <div className=" rotate-0 lg:rotate-90 lg:scale-y-[-1] lg:scale-x-[-1] h-fit w-full sm:w-[90vh] grid lg:gap-16">
             <BlurIn
-              word={"Helping Innovation"}
+              word={trans("helpingInnovation.heading")}
               className={headingStyle + " h-full w-full"}
               id={81}
             />
             <p className=" text-center font-light text-lg md:text-2xl lg:text-3xl w-full p-2 sm:p-0">
-              An innovation company in need of programmers, we love innovation
-              and want to help you bring your ideas to the world
+              {trans("helpingInnovation.desc")}
             </p>
           </div>
         </div>
@@ -42,13 +46,13 @@ export default function Section7() {
           <BorderBeam size={240} />
 
           <BlurIn
-            word={"Database Design"}
+            word={trans("dbDesign.heading")}
             className={headingStyle + " "}
             id={82}
           />
           <p className="text-center font-light text-md md:text-lg lg:text-xl px-4 ">
-            We design your database with best practice and faster results.
-            Oracle, MS-SQL, MySQL, No-SQL, Informix we know it all.
+            
+            {trans("dbDesign.desc")}
           </p>
           <div className="relative flex h-fit w-full flex-col items-center justify-center overflow-hidden">
             <span className="pointer-events-none whitespace-pre-wrap h-[42vh] "></span>
@@ -104,18 +108,20 @@ export default function Section7() {
         {/* languages  */}
         <div className={divStyle + " col-span-full sm:row-span-3 sm:col-span-6 lg:row-span-5"}>
           <BorderBeam size={150} />
-          <BlurIn word={"Languages"} className={headingStyle + " "} id={83} />
+          <BlurIn word={trans('lang.heading')} className={headingStyle + " "} id={83} />
           <div className=" grid place-items-center h-[24vh]">
             <div className=" flex flex-wrap items-center gap-4 w-full px-8">
+            
+              <Link href="/" locale="en">
               <ShimmerButton className={" shadow-2xl bg-primar"}>
-                English
+              {trans('lang.english')}
               </ShimmerButton>
+              </Link>
+              <Link href="/" locale="fr">
               <ShimmerButton className={" shadow-2xl bg-primar"}>
-                French
+              {trans('lang.french')}
               </ShimmerButton>
-              <ShimmerButton className={" shadow-2xl bg-primar"}>
-                Spanish
-              </ShimmerButton>
+              </Link>
             </div>
           </div>
         </div>
@@ -123,12 +129,10 @@ export default function Section7() {
         {/* cloud  */}
         <div className={divStyle + " col-span-full  sm:row-span-5 sm:col-span-6 lg:row-span-7"}>
           <BorderBeam size={280} />
-          <BlurIn word={"Cloud"} className={headingStyle + " "} id={84} />
+          <BlurIn word={trans('cloud.heading')} className={headingStyle + " "} id={84} />
           <div className=" grid gap-6 my-6">
             <div className=" text-center font-light text-md md:text-lg lg:text-xl px-4  ">
-              All in the cloud, for a faster and safer environment.
-              <br />
-              AWS CodeDeploy, Azure DevOps, Kubernetes, Docker, and more
+              {trans('cloud.desc')}
             </div>
             <div className="relative w-full">
               <Dock magnification={70} distance={80}>
@@ -153,16 +157,12 @@ export default function Section7() {
         <div className={divStyle + " row-span-4 col-span-full lg:row-span-4"}>
           <BorderBeam size={160} />
           <BlurIn
-            word={"Need Analysis?"}
+            word={trans('analysis.heading')}
             className={headingStyle + " "}
             id={85}
           />
           <p className="text-center font-light text-md md:text-lg px-4 py-2 sm:py-0 ">
-            We analyze the needs of your business and find the best solution
-            that could suit your business.
-            <br />
-            Our designers map out the functionality you need, and we review in
-            advance what needs to be done to achieve maximum results.
+          {trans('analysis.desc')}
           </p>
         </div>
       </div>

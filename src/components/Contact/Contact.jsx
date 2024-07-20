@@ -3,6 +3,7 @@ import BlurIn from "../magicui/blur-in";
 import dynamic from "next/dynamic";
 import ContactForm from "./ContactForm";
 import { BorderBeam } from "../magicui/border-beam";
+import { useTranslations } from "next-intl";
 
 const Robot = dynamic(() => import("./Robot"), {
   loading: () => (
@@ -14,11 +15,13 @@ const Robot = dynamic(() => import("./Robot"), {
 });
 
 export default function Contact() {
+  const trans = useTranslations('contact');
+
   return (
-    <section className=" w-full h-screen overflow-hidden bg-red300 relative ">
+    <section id="contact" className=" w-full h-screen overflow-hidden bg-red300 relative ">
       <BlurIn
         id={111}
-        word={"Like What you experienced?"}
+        word={trans('heading')}
         className={" sectionHeading py-6 "}
       />
       <Robot />
@@ -27,12 +30,19 @@ export default function Contact() {
         <BorderBeam size={300} />
           <BlurIn
             id={112}
-            word={"Contact us"}
+            word={trans('subHeading')}
             className={
               " text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold"
             }
           />
-          <ContactForm />
+          <ContactForm data={
+            {
+              name: trans('form.name'),
+              email: trans('form.email'),
+              message: trans('form.message'),
+              sendBtn: trans('form.sendBtn')
+            }
+          } />
         </div>
       </div>
     </section>

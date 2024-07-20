@@ -3,6 +3,7 @@ import BlurIn from "../magicui/blur-in";
 import Lottie from "react-lottie";
 import security from "../../../public/assets/security.json";
 import dynamic from "next/dynamic";
+import { useTranslations } from "next-intl";
 
 const Chat = dynamic(() => import("./Chat"), {
   loading: () => <div className="spinner-small"> </div>,
@@ -20,6 +21,8 @@ const AndMore = dynamic(() => import("./AndMore"), {
 });
 
 export default function Security() {
+  const trans = useTranslations("security");
+
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -34,7 +37,7 @@ export default function Security() {
   return (
     <section className=" sectionCS h-fit md:h-screen w-full stickyScrol overflow-hidden bg red-300 ">
       <BlurIn
-        word={"Security"}
+        word={trans('heading')}
         className={" text-4xl sm:text-6xl md:text-7xl font-bold bg green-300 pb-2 "}
         id={23}
       />
@@ -66,7 +69,7 @@ export default function Security() {
         </div>
       </div>
       <BlurIn
-        word={"Different Funtions"}
+        word={trans('subHeading')}
         className={
           " text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg violet-300 pt-1 "
         }
@@ -75,7 +78,7 @@ export default function Security() {
       <div className=" grid grid-cols-1 md:grid-cols-3 gap-6 w-full h-full md:h-[43vh] px-4 md:px-24 bg red-500 py-2">
         <div className={divStyle + " bg yellow-300 "}>
           <h1 className=" text-center font-semibold text-xl md:text-2xl lg:text-3xl">
-            Chat
+          {trans('chat')}
           </h1>
           <div className=" bg cyan-200 w-full h-[40vh] md:h-[36vh] rounded-b-2xl grid place-items-center">
             <Chat />
@@ -83,7 +86,7 @@ export default function Security() {
         </div>
         <div className={divStyle + " bg yellow-200 "}>
           <h1 className=" text-center font-semibold text-xl md:text-2xl lg:text-3xl">
-            Payment
+          {trans('payment')}
           </h1>
           <div className=" bg cyan-200 w-full h-[40vh] md:h-[36vh] rounded-b-2xl grid place-items-center ">
 <Payment />
@@ -91,7 +94,7 @@ export default function Security() {
         </div>
         <div className={divStyle + " bg yellow-400 "}>
           <h1 className=" text-center font-semibold text-xl md:text-2xl lg:text-3xl">
-          And More</h1>
+          {trans('andMore')}</h1>
           <div className=" bg cyan-200 w-full h-[40vh] md:h-[36vh] rounded-b-2xl grid place-items-center">
           <AndMore />
 

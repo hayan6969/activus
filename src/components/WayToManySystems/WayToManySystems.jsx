@@ -4,7 +4,7 @@ import BlurIn from '../magicui/blur-in';
 import Puzzle from './Puzzle';
 
 
-export default function WayToManySystems() {
+export default function WayToManySystems({heading1, heading2}) {
   const [isSolved, setIsSolved] = useState(false);
 
   const hideSectionRef = useRef(null);
@@ -30,7 +30,7 @@ export default function WayToManySystems() {
 
   return (<>
     <section ref={sectionDRef} className=' w-full h-full stickyScroll top-0 z-[10] '>
-        <BlurIn doNotHide={true} word={isSolved ? `Integrate and thereby increase efficiency, automation and benefit for all` : `Way Too Many Systems?` } id={81} className={`${isSolved ? " text-3xl sm:text-4xl md:text-5xl font-bold px-32 " : " sectionHeading sm:pt-6 " } duration-300 transition-all`} />
+        <BlurIn doNotHide={true} word={isSolved ? heading2 : heading1 } id={81} className={`${isSolved ? " text-3xl sm:text-4xl md:text-5xl font-bold px-32 " : " sectionHeading sm:pt-6 " } duration-300 transition-all`} />
     </section>
           <Puzzle onSolved={()=>{setIsSolved(true)}} onUnSolved={()=>{setIsSolved(false)}} 
           

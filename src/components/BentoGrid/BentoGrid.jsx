@@ -6,6 +6,7 @@ export default function BentoGrid() {
 
   return (
     <section
+    id="projects"
       className=" sectionCSS stickyScroll "
     >
       <div className="  grid gap-6 grid-cols-12 grid-rows-10 w-full h-full">

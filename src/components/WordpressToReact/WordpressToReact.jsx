@@ -2,6 +2,7 @@ import React from "react";
 import BlurIn from "../magicui/blur-in";
 import Lottie from "react-lottie";
 import wTReactArrow from "../../../public/assets/wTReactArrow.json";
+import { useTranslations } from "next-intl";
 
 export default function WordpressToReact() {
   const divStyle =
@@ -16,6 +17,7 @@ export default function WordpressToReact() {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
+  const trans = useTranslations('wordpressToReact');
 
   return (
     <section className=" px-4 sm:px-24 relative w-full h-fit md:h-screen bg-white overflow-hidden stickyScroll ">
@@ -40,7 +42,7 @@ export default function WordpressToReact() {
           className={" block sm:hidden h-fit bg-white sm:shadow "}
         >
           <h3 className=" text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light mix-blend-differenc text-black text-center sm:px-12">
-            We custom build it and put it in a better outfit.
+            {trans('text2')}
           </h3>
         </div>
 
@@ -60,7 +62,7 @@ export default function WordpressToReact() {
             className={divStyle + " bg-violet-30 bg-white sm:shadow h-full "}
           >
             <h3 className=" text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light mix-blend-differenc text-black text-center sm:px-4">
-              Tired of your Wordpress site that is difficult to update?
+            {trans('text1')}
             </h3>
           </div>
           {/* hide on mobile  */}
@@ -71,7 +73,7 @@ export default function WordpressToReact() {
             }
           >
             <h3 className=" text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light mix-blend-differenc text-black text-center sm:px-12">
-              We custom build it and put it in a better outfit.
+              {trans('text2')}
             </h3>
           </div>
         </div>
