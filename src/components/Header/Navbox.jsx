@@ -15,18 +15,19 @@ export default function Navbox() {
     { name: trans("contact.name"), path: trans("contact.path") }
   ];
 
-  // const handleScroll = (e) => {
-  //   e.preventDefault();
-  //   const targetId = e.currentTarget.getAttribute('href').substring(1);
+  const handleScroll = (e) => {
+    e.preventDefault();
+    const targetId = e.currentTarget.getAttribute('href').substring(1);
     
-  //   const targetElement = document.getElementById(targetId);
-  //   if (targetElement) {
-  //     window.scrollTo({
-  //       top: targetElement.offsetTop,
-  //       behavior: 'smooth',
-  //     });
-  //   }
-  // };
+    const targetElement = document.getElementById(targetId);
+    // console.log(targetId, targetElement);
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  };
 
   return (
     <div className=" grid place-items-start gap-2 px-14">
@@ -44,7 +45,7 @@ export default function Navbox() {
               exit="exit"
             >
               <Link href={item?.path} className=" text-4xl " 
-              // onClick={(e)=>{handleScroll(e)}}
+              onClick={(e)=>{handleScroll(e)}}
               >
                 {item?.name}
               </Link>

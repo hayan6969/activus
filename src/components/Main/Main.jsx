@@ -20,7 +20,7 @@ const loadingComponent = () => (
 );
 
 const HeroSection = dynamic(() => import("../HeroSection/HeroSection"), {
-  loading: ()=>{
+  loading: () => {
     return <LoadingScreen />;
   },
 });
@@ -33,13 +33,13 @@ const WhatAllAbout = dynamic(() => import("../WhatAllAbout/WhatAllAbout"), {
 const WordpressToReact = dynamic(
   () => import("../WordpressToReact/WordpressToReact"),
   {
-    loading: ()=>{
-    return <LoadingScreen />;
-  },
+    loading: () => {
+      return <LoadingScreen />;
+    },
   }
 );
 const TechUsed = dynamic(() => import("../TechUsed/TechUsed"), {
-  loading: ()=>{
+  loading: () => {
     return <LoadingScreen />;
   },
 });
@@ -64,7 +64,7 @@ const Contact = dynamic(() => import("../Contact/Contact"), {
 const GameSectionMain = dynamic(
   () => import("../GameSection/GameSectionMain"),
   {
-    loading: ()=>{
+    loading: () => {
       return <LoadingScreen />;
     },
   }
@@ -104,23 +104,21 @@ export default function Main({}) {
 
       <div className={" site-bg grid relative "}>
         {allComponents.map((item, index) => {
-          if(index === 1){
-            return <BentoGrid key="bento-grid-me" />
+          if (index === 1) {
+            return <BentoGrid key="bento-grid-me" />;
           }
-          if(index === 2){
-            return <WhatAllAbout key="what-it-all-about-me" />
+          if (index === 2) {
+            return <WhatAllAbout key="what-it-all-about-me" />;
           }
           if (index === 7) {
             return <WayTooManySystemsMain key={index} />;
           }
-          if(index === 10){
-            return <Contact key="contact-me" />
+          if (index === 10) {
+            return <Contact key="contact-me" />;
           }
           return <RenderIfVisible key={index}>{item}</RenderIfVisible>;
-          })}
-
-          
-          </div>
+        })}
+      </div>
 
       {/* <div className=" hidden sm:block">
         <StickyCursor stickyElement={stickyElement} />
