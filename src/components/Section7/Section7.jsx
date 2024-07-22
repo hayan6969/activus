@@ -1,3 +1,5 @@
+'use client';
+
 import React from "react";
 import { BorderBeam } from "../magicui/border-beam";
 import BlurIn from "../magicui/blur-in";
