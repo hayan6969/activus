@@ -18,14 +18,16 @@ export default function Contact() {
   const trans = useTranslations('contact');
 
   return (
-    <section id="contact" className=" w-full h-screen overflow-hidden bg-red300 relative ">
+    <section id="contact" className=" w-full h-full overflow-hidden site-bg relative ">
       <BlurIn
         id={111}
         word={trans('heading')}
         className={" sectionHeading py-6 "}
       />
+      <div className=" h-[60vh] sm:h-[98vh] lg:h-[88vh] w-full"></div>
+      <div className=" h-[28vh] lg:h-fit w-full"></div>
       <Robot />
-      <div className=" grid place-items-center absolute left-auto right-auto w-full top-[50vh] sm:top-[38vh]">
+      <div className=" grid place-items-center absolute left-auto right-auto w-full top-[50vh]sm:top-[38vh] bottom-10">
         <div className=" bg-white relative p-2 rounded-2xl w-[90vw] sm:w-[80vw] md:w-[70vw] lg:w-[60vw] ">
         <BorderBeam size={300} />
           <BlurIn

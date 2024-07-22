@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 
 export default function WordpressToReact() {
   const divStyle =
-    " rounded-2xl w-full h-full relative overflow-hidden grid place-items-center ";
+    " rounded-2xl w-full h-full relative overflow-hidden grid place-items-center bg-whit ";
   const videoStyle = " absolute top-0 left-0 w-full h-full object-cover ";
 
   const defaultOptions = {
@@ -20,9 +20,9 @@ export default function WordpressToReact() {
   const trans = useTranslations('wordpressToReact');
 
   return (
-    <section className=" px-4 sm:px-24 relative w-full h-fit md:h-screen bg-white overflow-hidden stickyScroll ">
-
-      <div className=" flex items-center sm:items-end justify-center flex-wrap gap-4 sm:gap-0 sm:pb-6  ">
+    <section className=" px-4 sm:px-24 relative w-full h-fit md:h-screen site-bg overflow-hidden stickyScroll ">
+{/* heading  */}
+      <div className=" flex items-center sm:items-end justify-center flex-wrap gap-4 sm:gap-0 sm:pb-6 site-bg ">
         <BlurIn word={"Wordpress"} className={" sectionHeading "} id={1} />
         <div className=" w-fit">
           <div className=" w-fit hidden sm:block ">
@@ -36,10 +36,11 @@ export default function WordpressToReact() {
         <BlurIn word={"React"} className={" sectionHeading "} id={1} />
       </div>
 
-      <div className="  sm:grid gap-6 grid-cols-5  w-full h-[71vh] flex flex-col-reverse">
+      <div className="  sm:grid gap-6 grid-cols-5  w-full h-[71vh] flex flex-col-reverse site-bg">
+
         {/* show on mobile  */}
         <div
-          className={" block sm:hidden h-fit bg-white sm:shadow "}
+          className={" block sm:hidden h-fit bgwhite sm:shadow "}
         >
           <h3 className=" text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light mix-blend-differenc text-black text-center sm:px-12">
             {trans('text2')}
@@ -59,7 +60,7 @@ export default function WordpressToReact() {
 
         <div className=" col-span-5 h-fit sm:h-full sm:col-span-2 grid gap-6 grid-rows-1 sm:grid-rows-2">
           <div
-            className={divStyle + " bg-violet-30 bg-white sm:shadow h-full "}
+            className={divStyle + "  sm:bg-white h-full "}
           >
             <h3 className=" text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light mix-blend-differenc text-black text-center sm:px-4">
             {trans('text1')}
@@ -69,7 +70,7 @@ export default function WordpressToReact() {
           <div
             className={
               divStyle +
-              " sm:grid hidden bg-green-30 bg-white sm:shadow h-full "
+              " sm:grid hidden  bg-white h-full "
             }
           >
             <h3 className=" text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light mix-blend-differenc text-black text-center sm:px-12">

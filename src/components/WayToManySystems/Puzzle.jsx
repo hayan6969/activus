@@ -140,40 +140,40 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
       <div
       id="pc-puzzle"
         ref={containerRef}
-        className="w-[55vw] bg-white h-[45vw] grid grid-cols-3 place-items-center"
+        className="w-[55vw] site-bg h-[45vw] grid grid-cols-3 place-items-center"
       >
         <div className="peice-pc bg-[#EF4444] rotate-[-13deg] translate-x-[-1vw] translate-y-[30vw]">
           <span className=" "></span>
-          <span className="r bg-white "></span>
-          <span className="b bg-white"></span>
+          <span className="r site-bg "></span>
+          <span className="b site-bg"></span>
           <span className=" "></span>
         </div>
 
         <div className="peice-pc bg-[#EF4444] rotate-[-26deg] translate-x-[-18vw] translate-y-[-6vw]">
           <span className=""></span>
-          <span className="r bg-white"></span>
-          <span className="b bg-white "></span>
+          <span className="r site-bg"></span>
+          <span className="b site-bg "></span>
           <span className="l outer-pc bg-[#EF4444] "></span>
         </div>
 
         <div className="peice-pc bg-[#EF4444] rotate-[3deg] translate-x-[-15vw] translate-y-[11vw]">
           <span className=" "></span>
           <span className=" "></span>
-          <span className="b bg-white"></span>
+          <span className="b site-bg"></span>
           <span className="l outer-pc bg-[#EF4444]  "></span>
         </div>
 
         <div className="peice-pc bg-[#EF4444] rotate-[20deg] translate-x-[15vw] translate-y-[13vw]">
           <span className="t outer-pc bg-[#EF4444]  "></span>
-          <span className="r bg-white"></span>
-          <span className="b bg-white "></span>
+          <span className="r site-bg"></span>
+          <span className="b site-bg "></span>
           <span className=" "></span>
         </div>
 
         <div className="peice-pc bg-[#EF4444] rotate-[-13deg] translate-x-[16vw] translate-y-[17vw]">
           <span className="t outer-pc bg-[#EF4444] "></span>
-          <span className="r bg-white"></span>
-          <span className="b bg-white"></span>
+          <span className="r site-bg"></span>
+          <span className="b site-bg"></span>
           <span className="l outer-pc bg-[#EF4444]  "></span>
         </div>
 
@@ -181,20 +181,20 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
           <div ref={hideSectionRef} className=" hideSection"></div>
           <span className="t outer-pc bg-[#EF4444]  "></span>
           <span className=" "></span>
-          <span className="b bg-white"></span>
+          <span className="b site-bg"></span>
           <span className="l outer-pc bg-[#EF4444]  "></span>
         </div>
 
         <div className="peice-pc bg-[#EF4444] rotate-[30deg] translate-x-[34vw] translate-y-[-30vw] ">
           <span className="t outer-pc bg-[#EF4444] "></span>
-          <span className="r bg-white "></span>
+          <span className="r site-bg "></span>
           <span className=" "></span>
           <span className=" "></span>
         </div>
 
         <div className="peice-pc bg-[#EF4444] rotate-[11deg] translate-x-[16vw] translate-y-[-14vw]">
           <span className="t outer-pc bg-[#EF4444]  "></span>
-          <span className="r bg-white "></span>
+          <span className="r site-bg "></span>
           <span className=" "></span>
           <span className="l outer-pc bg-[#EF4444] "></span>
         </div>

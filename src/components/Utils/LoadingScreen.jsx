@@ -3,7 +3,7 @@ import React from "react";
 
 export default function LoadingScreen({message = ""}) {
   return (
-    <div className=" w-full h-screen bg-white grid place-items-center">
+    <div className=" w-full h-screen site-bg grid place-items-center">
      <div className=" grid place-items-center gap-2">
      <Image
         className=" aspect-auto animate-pulse duration-1000"

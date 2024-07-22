@@ -13,7 +13,13 @@
 
 *{
   /* cursor: none; */
+  
   scroll-behavior: smooth;
+}
+
+.site-bg{
+  background-color: rgb(233, 233, 233);
+  /* background-color: #F2F1DB; */
 }
 
 #spline-cube{
@@ -119,8 +125,6 @@
 
 .stickyScroll{
   position: sticky;
-  /* top: 0; */
-  background-color: white;
 }
 
 /* spinner loader for spline design  */

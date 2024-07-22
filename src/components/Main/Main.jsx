@@ -102,7 +102,7 @@ export default function Main({}) {
     <div>
       <Header ref={stickyElement} />
 
-      <div className={" bg-white grid relative "}>
+      <div className={" site-bg grid relative "}>
         {allComponents.map((item, index) => {
           if(index === 1){
             return <BentoGrid key="bento-grid-me" />
@@ -118,6 +118,7 @@ export default function Main({}) {
           }
           return <RenderIfVisible key={index}>{item}</RenderIfVisible>;
           })}
+
           
           </div>
 

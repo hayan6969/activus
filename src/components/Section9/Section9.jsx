@@ -14,13 +14,13 @@ export default function Section9() {
   const trans = useTranslations("section9");
 
   const divStyle =
-    " relative w-full -fit sm:h-full rounded-2xl bg-white overflow-hidden  shadow-[0px_0px_20px_7px_#00000024]";
+    " relative w-full -fit sm:h-full rounded-2xl bg-white overflow-hidden ";
 
   const headingStyle = " text-2xl sm:text-3xl md:text-5xl font-semibold ";
 
   return (
-    <section className="  w-full sm:h-fit lg:h-screen px-4 md:px-24 py-2 my6 overflow-hidden">
-      <div className=" grid grid-cols-12 sm:grid-rows-12 gap-6 w-full h-full">
+    <section className="  w-full sm:h-fit lg:h-screen px-4 md:px-24 py-2 my6 overflow-hidden site-bg">
+      <div className=" grid grid-cols-12 sm:grid-rows-12 gap-6 w-full h-full site-bg">
         {/* programming  */}
         <div className={divStyle + " col-span-full row-span-8 lg:row-span-4"}>
           <BlurIn

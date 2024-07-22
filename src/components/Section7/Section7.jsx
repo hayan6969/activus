@@ -17,13 +17,13 @@ export default function Section7() {
 
 
   const divStyle =
-    " relative w-full h-fit sm:h-full rounded-2xl lg:col-span-4 shadow-[0px_0px_20px_7px_#00000024] bg-white overflow-hidden ";
+    " relative w-full h-fit sm:h-full rounded-2xl lg:col-span-4 bg-white overflow-hidden ";
 
   const headingStyle = " text-2xl sm:text-3xl md:text-4xl font-semibold pt-2 sm:p-0 ";
 
   return (
-    <section className="  w-full  sm:h-fit lg:h-screen px-4 md:px-24 py-2 my-6 overflow-hidden">
-      <div className=" grid grid-cols-12 sm:grid-rows-12 gap-6 w-full h-full">
+    <section className="  w-full  sm:h-fit lg:h-screen px-4 md:px-24 py-2 my-6 overflow-hidden site-bg">
+      <div className=" grid grid-cols-12 sm:grid-rows-12 gap-6 w-full h-full site-bg ">
 
         {/* helping innovation  */}
         <div className={divStyle + " col-span-full row-span-4 lg:row-span-full grid place-content-center "}>
@@ -109,7 +109,7 @@ export default function Section7() {
           <BorderBeam size={150} />
           <BlurIn word={trans('lang.heading')} className={headingStyle + " "} id={83} />
           <div className=" grid place-items-center h-[24vh]">
-            <div className=" flex flex-wrap items-center gap-4 w-full px-8">
+            <div className=" flex flex-wrap items-center justify-center gap-4 md:gap-8 w-full px-8">
             
               <Link href="/" locale="en">
               <button className={" rounded-3xl bg-black text-white px-4 py-2"}>

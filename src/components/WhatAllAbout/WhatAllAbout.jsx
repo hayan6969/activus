@@ -110,7 +110,7 @@ export default function WhatAllAbout() {
   };
 
   return (
-    <section id="customization" className=" pt-6 relative overflow-hidden h-fit md:h-screen stickyScrol w-[99vw]">
+    <section id="customization" className=" pt-6 relative overflow-hidden h-fit md:h-screen site-bg w-[99vw]">
       <BlurIn word={trans("heading")} className={" sectionHeading "} id={2} />
 
       <VelocityScroll
@@ -125,13 +125,13 @@ export default function WhatAllAbout() {
           </div>
 
           <div className=" grid grid-cols-7 gap-6 h-[45vh] ">
-            <div className={`${divStyle} col-span-7 sm:col-span-3 bg-white`}>
+            <div className={`${divStyle} col-span-7 sm:col-span-3 site-bg`}>
               <Slider {...settings1}>
                 {stacks.map((item, index) => {
                   return (
                     <div
                       key={index}
-                      className=" w-full bg-gray-200 h-[45vh] p-2 md:p-4 "
+                      className=" w-full bg-white h-[45vh] p-2 md:p-4 "
                     >
                       <div className=" grid grid-cols-2">
                         <h1 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center w-full  my-auto font-semibold ">
@@ -163,7 +163,7 @@ export default function WhatAllAbout() {
                   return (
                     <div
                       key={index}
-                      className=" w-full bg-gray-200 h-[45vh] p-2 md:p-4 "
+                      className=" w-full bg-white h-[45vh] p-2 md:p-4 "
                     >
                       <div className=" grid grid-cols-2">
                         <h1 className=" text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center w-full  my-auto font-semibold ">
