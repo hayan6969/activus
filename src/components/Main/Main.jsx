@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+// import { useRef } from "react";
 import Header from "../Header/Header";
 // import StickyCursor from "../StickyCursor/StickyCursor";
 import dynamic from "next/dynamic";
@@ -24,12 +24,15 @@ const HeroSection = dynamic(() => import("../HeroSection/HeroSection"), {
     return <LoadingScreen />;
   },
 });
+
 const BentoGrid = dynamic(() => import("../BentoGrid/BentoGrid"), {
   loading: loadingComponent,
 });
+
 const WhatAllAbout = dynamic(() => import("../WhatAllAbout/WhatAllAbout"), {
   loading: loadingComponent,
 });
+
 const WordpressToReact = dynamic(
   () => import("../WordpressToReact/WordpressToReact"),
   {
@@ -38,29 +41,36 @@ const WordpressToReact = dynamic(
     },
   }
 );
+
 const TechUsed = dynamic(() => import("../TechUsed/TechUsed"), {
   loading: () => {
     return <LoadingScreen />;
   },
 });
+
 const Security = dynamic(() => import("../Security/Security"), {
   loading: loadingComponent,
 });
+
 const Section7 = dynamic(() => import("../Section7/Section7"), {
   loading: loadingComponent,
 });
+
 const WayTooManySystemsMain = dynamic(
   () => import("../WayToManySystems/WayTooManySystemsMain"),
   {
     loading: loadingComponent,
   }
 );
+
 const Section9 = dynamic(() => import("../Section9/Section9"), {
   loading: loadingComponent,
 });
+
 const Contact = dynamic(() => import("../Contact/Contact"), {
   loading: loadingComponent,
 });
+
 const GameSectionMain = dynamic(
   () => import("../GameSection/GameSectionMain"),
   {
@@ -71,7 +81,7 @@ const GameSectionMain = dynamic(
 );
 
 export default function Main({}) {
-  const stickyElement = useRef(null);
+  // const stickyElement = useRef(null);
   const footerTrans = useTranslations("footer");
   const currentYear = new Date().getFullYear();
 
@@ -100,7 +110,7 @@ export default function Main({}) {
 
   return (
     <div>
-      <Header ref={stickyElement} />
+      <Header />
 
       <div className={" site-bg grid relative "}>
         {allComponents.map((item, index) => {
@@ -120,6 +130,7 @@ export default function Main({}) {
         })}
       </div>
 
+        {/* excluded the custom cursor because site got too much animations */}
       {/* <div className=" hidden sm:block">
         <StickyCursor stickyElement={stickyElement} />
       </div> */}

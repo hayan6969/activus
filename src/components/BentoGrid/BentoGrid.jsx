@@ -27,7 +27,7 @@ export default function BentoGrid() {
           <video
             className={videoStyle}
             src="/assets/3.mp4"
-            
+            alt="Bento Grid Video #projects 1"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             loop
@@ -44,6 +44,7 @@ export default function BentoGrid() {
             className={videoStyle}
             src="/assets/2.mp4"
             
+            alt="Bento Grid Video #projects 2"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             loop
@@ -61,6 +62,7 @@ export default function BentoGrid() {
             className={videoStyle + " "}
             src="/assets/1.mp4"
             
+            alt="Bento Grid Video #projects 3"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             loop
@@ -77,6 +79,7 @@ export default function BentoGrid() {
           className={videoStyle + ""}
           src="/assets/5.mp4"
           
+            alt="Bento Grid Video #projects 4"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           loop
@@ -93,6 +96,7 @@ export default function BentoGrid() {
             className={videoStyle}
             src="/assets/4.mp4"
             
+            alt="Bento Grid Video #projects 5"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             loop
@@ -109,6 +113,7 @@ export default function BentoGrid() {
             className={videoStyle}
             src="/assets/6.mp4"
             
+            alt="Bento Grid Video #projects 6"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             loop
@@ -125,6 +130,7 @@ export default function BentoGrid() {
             className={videoStyle}
             src="/assets/7.mp4"
             
+            alt="Bento Grid Video #projects 7"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             loop

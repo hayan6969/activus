@@ -1,5 +1,3 @@
-'use client';
-
 import React from "react";
 import { BorderBeam } from "../magicui/border-beam";
 import BlurIn from "../magicui/blur-in";
@@ -16,8 +14,6 @@ import { useTranslations } from "next-intl";
 
 export default function Section7() {
   const trans = useTranslations('section7');
-
-
   const divStyle =
     " relative w-full h-fit sm:h-full rounded-2xl lg:col-span-4 bg-white overflow-hidden ";
 
@@ -113,13 +109,13 @@ export default function Section7() {
           <div className=" grid place-items-center h-[24vh]">
             <div className=" flex flex-wrap items-center justify-center gap-4 md:gap-8 w-full px-8">
             
-              <Link href="/" locale="en">
-              <button className={" rounded-3xl bg-black text-white px-4 py-2"}>
+              <Link href="/" locale="en" key="lang-link-en">
+              <button key="lang-btn-en" className={" rounded-3xl bg-black text-white px-4 py-2"}>
               {trans('lang.english')}
               </button>
               </Link>
-              <Link href="/" locale="fr">
-              <button className={" rounded-3xl bg-black text-white px-4 py-2"}>
+              <Link key="lang-link-fr" href="/" locale="fr">
+              <button key="lang-btn-fr" className={" rounded-3xl bg-black text-white px-4 py-2"}>
               {trans('lang.french')}
               </button>
               </Link>

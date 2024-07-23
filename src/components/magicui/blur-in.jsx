@@ -10,7 +10,7 @@ const BlurIn = ({
   variant,
   duration = 0.25,
   id = 0,
-  doNotHide = false,
+  doNotHide = true,
 }) => {
   const controls = useAnimation();
 
