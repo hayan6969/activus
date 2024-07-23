@@ -9,10 +9,11 @@ import { Dock, DockIcon } from "../magicui/dock";
 import { FaAws, FaDocker } from "react-icons/fa6";
 import { SiMicrosoftazure } from "react-icons/si";
 import { AiOutlineKubernetes } from "react-icons/ai";
-import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Section7() {
+
   const trans = useTranslations('section7');
   const divStyle =
     " relative w-full h-fit sm:h-full rounded-2xl lg:col-span-4 bg-white overflow-hidden ";
@@ -107,7 +108,7 @@ export default function Section7() {
           <BorderBeam size={150} />
           <BlurIn word={trans('lang.heading')} className={headingStyle + " "} id={83} />
           <div className=" grid place-items-center h-[24vh]">
-            <div className=" flex flex-wrap items-center justify-center gap-4 md:gap-8 w-full px-8">
+            {/* <div className=" flex flex-wrap items-center justify-center gap-4 md:gap-8 w-full px-8">
             
               <Link href="/" locale="en" key="lang-link-en">
               <button key="lang-btn-en" className={" rounded-3xl bg-black text-white px-4 py-2"}>
@@ -119,7 +120,8 @@ export default function Section7() {
               {trans('lang.french')}
               </button>
               </Link>
-            </div>
+            </div> */}
+            <LanguageSwitcher english={trans('lang.english')} french={trans('lang.french')} />
           </div>
         </div>
 

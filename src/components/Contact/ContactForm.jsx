@@ -56,7 +56,7 @@ export default function ContactForm({data}) {
   };
 
   return (
-    <div className=" py-2 grid gap-2">
+    <div className=" p-2 grid gap-2">
       {isError && (
         <p className=" text-red-500 text-sm text-center font-semibold">
           {isError}
