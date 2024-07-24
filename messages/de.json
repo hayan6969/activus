@@ -1,0 +1,218 @@
+{
+  "navbar": {
+    "projects": {
+      "name": "Projekte",
+      "path": "#projects"
+    },
+    "customization": {
+      "name": "Anpassung",
+      "path": "#customization"
+    },
+    "contact": {
+      "name": "Kontakt",
+      "path": "#contact"
+    }
+  },
+
+  "section3": {
+    "heading": "Worum es geht",
+    "desc": "Wir lieben Innovation und möchten Ihnen helfen, Ihre Ideen 💡 in die Welt 🌍 zu bringen",
+    "slidingText": "Individuelle Programmierung",
+    "stacks": {
+      "react": {
+        "name": "React Js",
+        "body": "Erstellen Sie dynamische Benutzeroberflächen mit Reacts komponentenbasierter Architektur. Nutzen Sie wiederverwendbare Komponenten, um interaktive und effiziente Anwendungen zu entwickeln.",
+        "img": "https://reactnative.dev/img/header_logo.svg"
+      },
+      "nextjs": {
+        "name": "Next Js",
+        "body": "Erstellen Sie schnelle, serverseitig gerenderte React-Anwendungen mit Next.js. Optimieren Sie die Leistung und das SEO Ihrer Website mit seinen leistungsstarken Funktionen.",
+        "img": "https://static-00.iconduck.com/assets.00/nextjs-icon-2048x1234-pqycciiu.png"
+      },
+      "vue": {
+        "name": "Vue.js",
+        "body": "Entwickeln Sie vielseitige Benutzeroberflächen und Single-Page-Anwendungen mit Vue.js. Genießen Sie eine sanfte Lernkurve und eine hoch anpassungsfähige Architektur.",
+        "img": "https://vuejs.org/images/logo.png"
+      },
+      "angular": {
+        "name": "Angular",
+        "body": "Erstellen Sie robuste Webanwendungen mit dem umfassenden Framework von Angular. Profitieren Sie von einem starken Ökosystem und leistungsstarken Entwicklungstools.",
+        "img": "https://angular.io/assets/images/logos/angular/angular.svg"
+      },
+      "jquery": {
+        "name": "jQuery",
+        "body": "Vereinfachen Sie die HTML-DOM-Manipulation und das Event-Handling mit jQuery. Verbessern Sie Ihre Webseiten mit seinen umfangreichen Plugins und Dienstprogrammen.",
+        "img": "https://brand.jquery.org/resources/jquery-mark-light.gif"
+      }
+    },
+
+    "techniques": {
+      "agile": {
+        "name": "Agile",
+        "body": "Nutzen Sie iterative Entwicklung und Zusammenarbeit mit Agile-Methoden. Verbessern Sie die Produktivität des Teams und passen Sie sich an sich ändernde Projektanforderungen an.",
+        "img": "https://media.licdn.com/dms/image/C5612AQGYxhZLXG27KQ/article-cover_image-shrink_600_2000/0/1520876509789?e=2147483647&v=beta&t=ucfK-MT6zvW4sLQ5XUV6kXnVhMSvR_HRnqpPalV8npo"
+      },
+      "scrum": {
+        "name": "Scrum",
+        "body": "Optimieren Sie das Projektmanagement mit iterativen Sprints von Scrum. Verbessern Sie die Zusammenarbeit und liefern Sie inkrementelle Verbesserungen effizient.",
+        "img": "https://banner2.cleanpng.com/20180516/rzw/kisspng-agile-software-development-scrum-computer-icons-ag-5afc42d5ddc678.9721919515264816219084.jpg"
+      },
+      "kanban": {
+        "name": "Kanban",
+        "body": "Optimieren Sie das Workflow-Management mit der visuellen Aufgabenverfolgung von Kanban. Visualisieren Sie Ihre Arbeit und verbessern Sie die Prozesseffizienz.",
+        "img": "https://static.vecteezy.com/system/resources/previews/002/837/593/original/kanban-lean-method-line-icon-vector.jpg"
+      },
+      "ci_cd": {
+        "name": "CI/CD",
+        "body": "Automatisieren Sie die Softwarebereitstellung mit Continuous Integration und Deployment. Stellen Sie schnelle und zuverlässige Code-Releases sicher.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAABUoTg0hRIRysVXsNZg21ojLCOSsljUElA&s"
+      },
+      "tdd": {
+        "name": "TDD",
+        "body": "Stellen Sie die Codequalität mit testgetriebenen Entwicklungspraktiken sicher. Schreiben Sie Tests vor dem Code, um Fehler zu verhindern und das Design zu verbessern.",
+        "img": "https://d3f1iyfxxz8i1e.cloudfront.net/courses/course_image/380be13e2174.png"
+      },
+      "bdd": {
+        "name": "BDD",
+        "body": "Fördern Sie die Zusammenarbeit mit verhaltensgesteuerten Entwicklungstechniken. Definieren Sie klare Anforderungen mit natürlicher Sprache und automatisierten Tests.",
+        "img": "https://miro.medium.com/v2/resize:fit:1024/0*h1_0AfgUMGbNnKIM"
+      },
+      "version_control": {
+        "name": "Versionskontrolle",
+        "body": "Verfolgen und verwalten Sie Codeänderungen effektiv mit Versionskontrollsystemen. Arbeiten Sie nahtlos zusammen und pflegen Sie die Projekthistorie.",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg"
+      },
+      "devops": {
+        "name": "DevOps",
+        "body": "Integrieren Sie Entwicklung und Betrieb für eine schnellere, effizientere Bereitstellung. Überwinden Sie Silos und verbessern Sie die Zusammenarbeit über Teams hinweg.",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/0/05/Devops-toolchain.svg"
+      }
+    }
+  },
+
+  "wordpressToReact": {
+    "text1": "Sind Sie es leid, dass Ihre Wordpress-Website schwer zu aktualisieren ist?",
+    "text2": "Wir erstellen sie individuell und geben ihr ein besseres Outfit."
+  },
+
+  "techUsed": {
+    "heading": "Verwendete Technologien"
+  },
+
+  "security": {
+    "heading": "Sicherheit",
+    "subHeading": "Verschiedene Funktionen",
+    "chat": "Chat",
+    "payment": "Zahlung",
+    "andMore": "Und mehr"
+  },
+
+  "section7": {
+    "helpingInnovation": {
+      "heading": "Innovation unterstützen",
+      "desc": "Ein Innovationsunternehmen, das Programmierer benötigt, wir lieben Innovation und möchten Ihnen helfen, Ihre Ideen in die Welt zu bringen"
+    },
+    "dbDesign": {
+      "heading": "Datenbankdesign",
+      "desc": "Wir entwerfen Ihre Datenbank nach Best Practices und erzielen schnellere Ergebnisse. Oracle, MS-SQL, MySQL, No-SQL, Informix - wir kennen sie alle."
+    },
+    "lang": {
+      "heading": "Sprachen",
+      "english": "Englisch",
+      "french": "Französisch"
+    },
+    "cloud": {
+      "heading": "Cloud",
+      "desc": "Alles in der Cloud, für eine schnellere und sicherere Umgebung. AWS CodeDeploy, Azure DevOps, Kubernetes, Docker und mehr"
+    },
+    "analysis": {
+      "heading": "Bedarfsanalyse?",
+      "desc": "Wir analysieren die Bedürfnisse Ihres Unternehmens und finden die beste Lösung, die zu Ihrem Geschäft passt. Unsere Designer skizzieren die benötigten Funktionen, und wir überprüfen im Voraus, was getan werden muss, um maximale Ergebnisse zu erzielen."
+    }
+  },
+
+  "wayTooManySystems": {
+    "heading1": "Zu viele Systeme?",
+    "heading2": "Integrieren und dadurch Effizienz, Automatisierung und Nutzen für alle steigern"
+  },
+
+  "section9": {
+    "programming": {
+      "heading": "Programmierung",
+      "desc": "Wir können jede erdenkliche Anwendung programmieren, die heute auf dem Markt ist, und wir trauen uns zu, alles zu entwerfen und zu programmieren, was der Verstand begehrt."
+    },
+    "design": {
+      "heading": "Design",
+      "desc": "Jahrelange Erfahrung in allen Designbereichen"
+    },
+    "appDev": {
+      "heading": "App-Entwicklung",
+      "stacks": {
+        "reactNative": {
+          "name": "React Native",
+          "username": "@react_native",
+          "body": "Mit React Native können Entwickler native Apps mit JavaScript und React erstellen.",
+          "img": "https://reactnative.dev/img/header_logo.svg"
+        },
+        "flutter": {
+          "name": "Flutter",
+          "username": "@flutter",
+          "body": "Flutter ermöglicht die Erstellung wunderschöner, nativ kompilierter Apps für mobile Geräte, Web und Desktop von einer einzigen Codebasis aus.",
+          "img": "/assets/flutter.png"
+        },
+        "swift": {
+          "name": "Swift",
+          "username": "@swift",
+          "body": "Swift ist eine leistungsstarke Programmiersprache für macOS, iOS, watchOS und tvOS mit modernen Funktionen.",
+          "img": "https://www.swift.com/themes/custom/swift_theme/images/swift-logo-new.svg"
+        },
+        "kotlin": {
+          "name": "Kotlin",
+          "username": "@kotlin",
+          "body": "Kotlin ist eine moderne Sprache für die Android-Entwicklung, bekannt für ihre Produktivität und Sicherheitsfunktionen.",
+          "img": "/assets/kotlin.png"
+        },
+        "ionic": {
+          "name": "Ionic",
+          "username": "@ionic",
+          "body": "Ionic ist ein mobiles UI-Toolkit zur Erstellung hochwertiger plattformübergreifender nativer und Web-App-Erlebnisse unter Verwendung von Webtechnologien.",
+          "img": "https://ionicframework.com/docs/logos/ionic-text-docs-dark.svg"
+        }
+      }
+    },
+    "cooperation": {
+      "heading": "Zusammenarbeit",
+      "desc": "Wir führen Funktionstests mit Benutzern und potenziellen Kunden durch, die unsere Anwendungen nutzen werden."
+    },
+    "monitoring": {
+      "heading": "Überwachung",
+      "desc": "24/7 Überwachung und Reaktion"
+    }
+  },
+
+  "gameSection": {
+    "heading1": {
+      "text1": "Bei Activus",
+      "text2": "gibt es keine Grenzen für Kreativität"
+    },
+    "heading2": {
+      "text1": "Sie können",
+      "text2": "hier buchstäblich ein Spiel spielen"
+    }
+  },
+
+  "contact": {
+    "heading": "Gefällt Ihnen, was Sie erlebt haben?",
+    "subHeading": "Kontaktieren Sie uns",
+    "form": {
+      "name": "Ihr guter Name",
+      "email": "Ihre E-Mail",
+      "message": "Ihre Nachricht kommt hier hin...",
+      "sendBtn": "Senden"
+    }
+  },
+
+  "footer": {
+    "text": "Activus - Alle Rechte vorbehalten."
+  }
+}

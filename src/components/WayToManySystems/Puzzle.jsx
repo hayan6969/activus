@@ -53,8 +53,8 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
         gsap.to(containerRef.current, {
           duration: 1.5,
           ease: "easeOut",
-          width: "37.65vw",
-          height: "37.65vw",
+          width: "36.3em",
+          height: "36.3em",
         });
         onSolved();
       },
@@ -136,7 +136,7 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
   // };
 
   return (
-    <div className=" w-full h-[1200px] py-12 grid place-items-center">
+    <div className=" w-full h-[1200px] py-12 grid place-items-center relative">
 
       {/* initial state  */}
       <div

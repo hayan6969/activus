@@ -21,27 +21,27 @@
     "stacks": {
       "react": {
         "name": "React Js",
-        "body": "Build dynamic user interfaces with React's component-based architecture.",
+        "body": "Build dynamic user interfaces with React's component-based architecture. Leverage reusable components to create interactive and efficient applications.",
         "img": "https://reactnative.dev/img/header_logo.svg"
       },
       "nextjs": {
         "name": "Next Js",
-        "body": "Create fast, server-rendered React applications with Next.js.",
+        "body": "Create fast, server-rendered React applications with Next.js. Optimize your site's performance and SEO using its powerful features.",
         "img": "https://static-00.iconduck.com/assets.00/nextjs-icon-2048x1234-pqycciiu.png"
       },
       "vue": {
         "name": "Vue.js",
-        "body": "Develop versatile UIs and single-page applications with Vue.js.",
+        "body": "Develop versatile UIs and single-page applications with Vue.js. Enjoy a gentle learning curve and a highly adaptable architecture.",
         "img": "https://vuejs.org/images/logo.png"
       },
       "angular": {
         "name": "Angular",
-        "body": "Build robust web applications using Angular's comprehensive framework.",
+        "body": "Build robust web applications using Angular's comprehensive framework. Benefit from a strong ecosystem and powerful tools for development.",
         "img": "https://angular.io/assets/images/logos/angular/angular.svg"
       },
       "jquery": {
         "name": "jQuery",
-        "body": "Simplify HTML DOM manipulation and event handling with jQuery.",
+        "body": "Simplify HTML DOM manipulation and event handling with jQuery. Enhance your web pages with its extensive plugins and utilities.",
         "img": "https://brand.jquery.org/resources/jquery-mark-light.gif"
       }
     },
@@ -49,42 +49,42 @@
     "techniques": {
       "agile": {
         "name": "Agile",
-        "body": "Embrace iterative development and collaboration with Agile methodologies.",
+        "body": "Embrace iterative development and collaboration with Agile methodologies. Improve team productivity and adapt to changing project requirements.",
         "img": "https://media.licdn.com/dms/image/C5612AQGYxhZLXG27KQ/article-cover_image-shrink_600_2000/0/1520876509789?e=2147483647&v=beta&t=ucfK-MT6zvW4sLQ5XUV6kXnVhMSvR_HRnqpPalV8npo"
       },
       "scrum": {
         "name": "Scrum",
-        "body": "Streamline project management with Scrum's iterative sprints.",
+        "body": "Streamline project management with Scrum's iterative sprints. Enhance collaboration and deliver incremental improvements efficiently.",
         "img": "https://banner2.cleanpng.com/20180516/rzw/kisspng-agile-software-development-scrum-computer-icons-ag-5afc42d5ddc678.9721919515264816219084.jpg"
       },
       "kanban": {
         "name": "Kanban",
-        "body": "Optimize workflow management using Kanban's visual task tracking.",
+        "body": "Optimize workflow management using Kanban's visual task tracking. Visualize your work and improve process efficiency.",
         "img": "https://static.vecteezy.com/system/resources/previews/002/837/593/original/kanban-lean-method-line-icon-vector.jpg"
       },
       "ci_cd": {
         "name": "CI/CD",
-        "body": "Automate software delivery with Continuous Integration and Deployment.",
+        "body": "Automate software delivery with Continuous Integration and Deployment. Ensure fast and reliable code releases.",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAABUoTg0hRIRysVXsNZg21ojLCOSsljUElA&s"
       },
       "tdd": {
         "name": "TDD",
-        "body": "Ensure code quality with Test-Driven Development practices.",
+        "body": "Ensure code quality with Test-Driven Development practices. Write tests before code to prevent bugs and improve design.",
         "img": "https://d3f1iyfxxz8i1e.cloudfront.net/courses/course_image/380be13e2174.png"
       },
       "bdd": {
         "name": "BDD",
-        "body": "Foster collaboration with Behavior-Driven Development techniques.",
+        "body": "Foster collaboration with Behavior-Driven Development techniques. Define clear requirements using natural language and automated tests.",
         "img": "https://miro.medium.com/v2/resize:fit:1024/0*h1_0AfgUMGbNnKIM"
       },
       "version_control": {
         "name": "Version Control",
-        "body": "Track and manage code changes effectively with Version Control systems.",
+        "body": "Track and manage code changes effectively with Version Control systems. Collaborate seamlessly and maintain project history.",
         "img": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg"
       },
       "devops": {
         "name": "DevOps",
-        "body": "Integrate development and operations for faster, efficient delivery.",
+        "body": "Integrate development and operations for faster, efficient delivery. Break down silos and enhance collaboration across teams.",
         "img": "https://upload.wikimedia.org/wikipedia/commons/0/05/Devops-toolchain.svg"
       }
     }

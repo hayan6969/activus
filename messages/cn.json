@@ -1,0 +1,219 @@
+{
+    "navbar": {
+      "projects": {
+        "name": "项目",
+        "path": "#projects"
+      },
+      "customization": {
+        "name": "定制",
+        "path": "#customization"
+      },
+      "contact": {
+        "name": "联系",
+        "path": "#contact"
+      }
+    },
+  
+    "section3": {
+      "heading": "这是什么",
+      "desc": "我们热爱创新，并希望帮助您将您的想法💡带到世界🌍",
+      "slidingText": "定制编程",
+      "stacks": {
+        "react": {
+          "name": "React Js",
+          "body": "使用React的基于组件的架构构建动态用户界面。利用可重用的组件创建互动和高效的应用程序。",
+          "img": "https://reactnative.dev/img/header_logo.svg"
+        },
+        "nextjs": {
+          "name": "Next Js",
+          "body": "使用Next.js创建快速的、服务器渲染的React应用程序。利用其强大的功能优化网站的性能和SEO。",
+          "img": "https://static-00.iconduck.com/assets.00/nextjs-icon-2048x1234-pqycciiu.png"
+        },
+        "vue": {
+          "name": "Vue.js",
+          "body": "使用Vue.js开发多功能的用户界面和单页面应用程序。享受学习曲线平缓且高度可适应的架构。",
+          "img": "https://vuejs.org/images/logo.png"
+        },
+        "angular": {
+          "name": "Angular",
+          "body": "使用Angular的全面框架构建强大的Web应用程序。受益于强大的生态系统和开发工具。",
+          "img": "https://angular.io/assets/images/logos/angular/angular.svg"
+        },
+        "jquery": {
+          "name": "jQuery",
+          "body": "使用jQuery简化HTML DOM操作和事件处理。通过其广泛的插件和工具增强您的网页。",
+          "img": "https://brand.jquery.org/resources/jquery-mark-light.gif"
+        }
+      },
+  
+      "techniques": {
+        "agile": {
+          "name": "敏捷",
+          "body": "采用迭代开发和协作的敏捷方法。提高团队生产力并适应不断变化的项目需求。",
+          "img": "https://media.licdn.com/dms/image/C5612AQGYxhZLXG27KQ/article-cover_image-shrink_600_2000/0/1520876509789?e=2147483647&v=beta&t=ucfK-MT6zvW4sLQ5XUV6kXnVhMSvR_HRnqpPalV8npo"
+        },
+        "scrum": {
+          "name": "Scrum",
+          "body": "通过Scrum的迭代冲刺简化项目管理。增强协作并有效地交付增量改进。",
+          "img": "https://banner2.cleanpng.com/20180516/rzw/kisspng-agile-software-development-scrum-computer-icons-ag-5afc42d5ddc678.9721919515264816219084.jpg"
+        },
+        "kanban": {
+          "name": "看板",
+          "body": "使用看板的视觉任务跟踪优化工作流管理。可视化您的工作并提高流程效率。",
+          "img": "https://static.vecteezy.com/system/resources/previews/002/837/593/original/kanban-lean-method-line-icon-vector.jpg"
+        },
+        "ci_cd": {
+          "name": "CI/CD",
+          "body": "通过持续集成和部署自动化软件交付。确保快速和可靠的代码发布。",
+          "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAABUoTg0hRIRysVXsNZg21ojLCOSsljUElA&s"
+        },
+        "tdd": {
+          "name": "TDD",
+          "body": "通过测试驱动开发实践确保代码质量。先写测试再写代码，防止错误并改进设计。",
+          "img": "https://d3f1iyfxxz8i1e.cloudfront.net/courses/course_image/380be13e2174.png"
+        },
+        "bdd": {
+          "name": "BDD",
+          "body": "通过行为驱动开发技术促进协作。使用自然语言和自动化测试定义清晰的需求。",
+          "img": "https://miro.medium.com/v2/resize:fit:1024/0*h1_0AfgUMGbNnKIM"
+        },
+        "version_control": {
+          "name": "版本控制",
+          "body": "使用版本控制系统有效地跟踪和管理代码更改。无缝协作并维护项目历史。",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg"
+        },
+        "devops": {
+          "name": "DevOps",
+          "body": "集成开发和运营以更快、更高效的交付。打破孤岛并增强团队之间的协作。",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/0/05/Devops-toolchain.svg"
+        }
+      }
+    },
+  
+    "wordpressToReact": {
+      "text1": "厌倦了难以更新的Wordpress网站？",
+      "text2": "我们为您定制构建，并赋予它更好的外观。"
+    },
+  
+    "techUsed": {
+      "heading": "使用的技术"
+    },
+  
+    "security": {
+      "heading": "安全",
+      "subHeading": "不同的功能",
+      "chat": "聊天",
+      "payment": "支付",
+      "andMore": "更多"
+    },
+  
+    "section7": {
+      "helpingInnovation": {
+        "heading": "助力创新",
+        "desc": "一家需要程序员的创新公司，我们热爱创新，并希望帮助您将您的想法带到世界"
+      },
+      "dbDesign": {
+        "heading": "数据库设计",
+        "desc": "我们采用最佳实践设计您的数据库，并实现更快的结果。Oracle, MS-SQL, MySQL, No-SQL, Informix，我们都精通。"
+      },
+      "lang": {
+        "heading": "语言",
+        "english": "英语",
+        "french": "法语"
+      },
+      "cloud": {
+        "heading": "云",
+        "desc": "全部在云端，提供更快和更安全的环境。AWS CodeDeploy, Azure DevOps, Kubernetes, Docker等"
+      },
+      "analysis": {
+        "heading": "需要分析？",
+        "desc": "我们分析您的业务需求并找到最适合您的解决方案。我们的设计师会绘制出您需要的功能，我们会提前审查需要完成的工作以实现最大成果。"
+      }
+    },
+  
+    "wayTooManySystems": {
+      "heading1": "系统太多了？",
+      "heading2": "集成，从而提高效率、自动化和整体收益"
+    },
+  
+    "section9": {
+      "programming": {
+        "heading": "编程",
+        "desc": "我们可以编程市场上所有可以想象的应用程序，并相信自己能够设计和编程任何想要的东西。"
+      },
+      "design": {
+        "heading": "设计",
+        "desc": "多年的设计经验"
+      },
+      "appDev": {
+        "heading": "应用开发",
+        "stacks": {
+          "reactNative": {
+            "name": "React Native",
+            "username": "@react_native",
+            "body": "React Native允许开发者使用JavaScript和React构建原生应用。",
+            "img": "https://reactnative.dev/img/header_logo.svg"
+          },
+          "flutter": {
+            "name": "Flutter",
+            "username": "@flutter",
+            "body": "Flutter使得从单一代码库构建美丽的、本地编译的移动、Web和桌面应用成为可能。",
+            "img": "/assets/flutter.png"
+          },
+          "swift": {
+            "name": "Swift",
+            "username": "@swift",
+            "body": "Swift是一种功能强大的编程语言，用于macOS、iOS、watchOS和tvOS，具有现代特性。",
+            "img": "https://www.swift.com/themes/custom/swift_theme/images/swift-logo-new.svg"
+          },
+          "kotlin": {
+            "name": "Kotlin",
+            "username": "@kotlin",
+            "body": "Kotlin是一种用于Android开发的现代语言，以其高效和安全特性闻名。",
+            "img": "/assets/kotlin.png"
+          },
+          "ionic": {
+            "name": "Ionic",
+            "username": "@ionic",
+            "body": "Ionic是一个移动UI工具包，使用Web技术构建高质量的跨平台原生和Web应用体验。",
+            "img": "https://ionicframework.com/docs/logos/ionic-text-docs-dark.svg"
+          }
+        }
+      },
+      "cooperation": {
+        "heading": "合作",
+        "desc": "我们与将使用我们应用程序的用户和潜在客户进行功能测试。"
+      },
+      "monitoring": {
+        "heading": "监控",
+        "desc": "24/7监控和响应"
+      }
+    },
+  
+    "gameSection": {
+      "heading1": {
+        "text1": "在Activus",
+        "text2": "创意无极限"
+      },
+      "heading2": {
+        "text1": "你可以",
+        "text2": "真的在这里玩游戏"
+      }
+    },
+  
+    "contact": {
+      "heading": "喜欢你的体验吗？",
+      "subHeading": "联系我们",
+      "form": {
+        "name": "你的名字",
+        "email": "你的邮箱",
+        "message": "你的信息写在这里...",
+        "sendBtn": "发送"
+      }
+    },
+  
+    "footer": {
+      "text": "Activus - 版权所有。"
+    }
+  }
+  

@@ -1,0 +1,215 @@
+{
+  "navbar": {
+    "projects": {
+      "name": "Projetos",
+      "path": "#projects"
+    },
+    "customization": {
+      "name": "Personalização",
+      "path": "#customization"
+    },
+    "contact": {
+      "name": "Contato",
+      "path": "#contact"
+    }
+  },
+
+  "section3": {
+    "heading": "Sobre o Que É",
+    "desc": " Nós amamos inovação e queremos ajudar você a trazer suas ideias 💡 para o mundo 🌍",
+    "slidingText": "Programação Personalizada",
+    "stacks": {
+      "react": {
+        "name": "React Js",
+        "body": "Construa interfaces de usuário dinâmicas com a arquitetura baseada em componentes do React. Aproveite componentes reutilizáveis para criar aplicações interativas e eficientes.",
+        "img": "https://reactnative.dev/img/header_logo.svg"
+      },
+      "nextjs": {
+        "name": "Next Js",
+        "body": "Crie aplicações React rápidas e renderizadas no servidor com Next.js. Otimize o desempenho e SEO do seu site usando seus recursos poderosos.",
+        "img": "https://static-00.iconduck.com/assets.00/nextjs-icon-2048x1234-pqycciiu.png"
+      },
+      "vue": {
+        "name": "Vue.js",
+        "body": "Desenvolva UIs versáteis e aplicações de página única com Vue.js. Desfrute de uma curva de aprendizado suave e uma arquitetura altamente adaptável.",
+        "img": "https://vuejs.org/images/logo.png"
+      },
+      "angular": {
+        "name": "Angular",
+        "body": "Construa aplicações web robustas usando o framework abrangente do Angular. Beneficie-se de um ecossistema forte e ferramentas poderosas para desenvolvimento.",
+        "img": "https://angular.io/assets/images/logos/angular/angular.svg"
+      },
+      "jquery": {
+        "name": "jQuery",
+        "body": "Simplifique a manipulação do DOM HTML e o tratamento de eventos com jQuery. Melhore suas páginas da web com seus extensos plugins e utilitários.",
+        "img": "https://brand.jquery.org/resources/jquery-mark-light.gif"
+      }
+    },
+
+    "techniques": {
+      "agile": {
+        "name": "Agile",
+        "body": "Adote desenvolvimento iterativo e colaboração com metodologias Agile. Melhore a produtividade da equipe e adapte-se às mudanças nos requisitos do projeto.",
+        "img": "https://media.licdn.com/dms/image/C5612AQGYxhZLXG27KQ/article-cover_image-shrink_600_2000/0/1520876509789?e=2147483647&v=beta&t=ucfK-MT6zvW4sLQ5XUV6kXnVhMSvR_HRnqpPalV8npo"
+      },
+      "scrum": {
+        "name": "Scrum",
+        "body": "Simplifique a gestão de projetos com os sprints iterativos do Scrum. Melhore a colaboração e entregue melhorias incrementais de forma eficiente.",
+        "img": "https://banner2.cleanpng.com/20180516/rzw/kisspng-agile-software-development-scrum-computer-icons-ag-5afc42d5ddc678.9721919515264816219084.jpg"
+      },
+      "kanban": {
+        "name": "Kanban",
+        "body": "Otimize a gestão do fluxo de trabalho usando o rastreamento visual de tarefas do Kanban. Visualize seu trabalho e melhore a eficiência do processo.",
+        "img": "https://static.vecteezy.com/system/resources/previews/002/837/593/original/kanban-lean-method-line-icon-vector.jpg"
+      },
+      "ci_cd": {
+        "name": "CI/CD",
+        "body": "Automatize a entrega de software com Integração e Implementação Contínuas. Garanta lançamentos de código rápidos e confiáveis.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAABUoTg0hRIRysVXsNZg21ojLCOSsljUElA&s"
+      },
+      "tdd": {
+        "name": "TDD",
+        "body": "Garanta a qualidade do código com práticas de Desenvolvimento Orientado por Testes. Escreva testes antes do código para prevenir bugs e melhorar o design.",
+        "img": "https://d3f1iyfxxz8i1e.cloudfront.net/courses/course_image/380be13e2174.png"
+      },
+      "bdd": {
+        "name": "BDD",
+        "body": "Fomente a colaboração com técnicas de Desenvolvimento Orientado por Comportamento. Defina requisitos claros usando linguagem natural e testes automatizados.",
+        "img": "https://miro.medium.com/v2/resize:fit:1024/0*h1_0AfgUMGbNnKIM"
+      },
+      "version_control": {
+        "name": "Controle de Versão",
+        "body": "Rastreie e gerencie mudanças no código de forma eficaz com sistemas de Controle de Versão. Colabore sem problemas e mantenha o histórico do projeto.",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg"
+      },
+      "devops": {
+        "name": "DevOps",
+        "body": "Integre desenvolvimento e operações para uma entrega mais rápida e eficiente. Quebre silos e melhore a colaboração entre as equipes.",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/0/05/Devops-toolchain.svg"
+      }
+    }
+  },
+
+  "wordpressToReact": {
+    "text1": "Cansado do seu site WordPress que é difícil de atualizar?",
+    "text2": "Nós o construímos sob medida e colocamos em uma roupa melhor."
+  },
+
+  "techUsed": {
+    "heading": "Tecnologias Usadas"
+  },
+
+  "security": {
+    "heading": "Segurança",
+    "subHeading": "Diferentes Funções",
+    "chat": "Chat",
+    "payment": "Pagamento",
+    "andMore": "E Mais"
+  },
+
+  "section7": {
+    "helpingInnovation": {
+      "heading": "Ajudando a Inovação",
+      "desc": "Uma empresa de inovação que precisa de programadores, amamos inovação e queremos ajudar você a trazer suas ideias para o mundo"
+    },
+    "dbDesign": {
+      "heading": "Design de Banco de Dados",
+      "desc": "Desenhamos seu banco de dados com as melhores práticas e resultados mais rápidos. Oracle, MS-SQL, MySQL, No-SQL, Informix, conhecemos todos."
+    },
+    "lang": {
+      "heading": "Idiomas",
+      "english": "Inglês",
+      "french": "Francês"
+    },
+    "cloud": {
+      "heading": "Nuvem",
+      "desc": "Tudo na nuvem, para um ambiente mais rápido e seguro. AWS CodeDeploy, Azure DevOps, Kubernetes, Docker e mais"
+    },
+    "analysis": {
+      "heading": "Precisa de Análise?",
+      "desc": "Analisamos as necessidades do seu negócio e encontramos a melhor solução que pode se adequar ao seu negócio. Nossos designers mapeiam a funcionalidade necessária e revisamos antecipadamente o que precisa ser feito para alcançar os melhores resultados."
+    }
+  },
+
+  "wayTooManySystems": {
+    "heading1": "Sistemas Demais?",
+    "heading2": "Integre e, assim, aumente a eficiência, automação e benefício para todos"
+  },
+
+  "section9": {
+    "programming": {
+      "heading": "Programação",
+      "desc": "Podemos programar qualquer aplicação concebível que está no mercado hoje e confiamos em nós mesmos para projetar e programar qualquer coisa que a mente desejar."
+    },
+    "design": {
+      "heading": "Design",
+      "desc": "Anos de experiência em todo design"
+    },
+    "appDev": {
+      "heading": "Desenvolvimento de Aplicativos",
+      "stacks": {
+        "reactNative": {
+          "name": "React Native",
+          "username": "@react_native",
+          "body": "React Native permite que os desenvolvedores construam aplicativos nativos usando JavaScript e React.",
+          "img": "https://reactnative.dev/img/header_logo.svg"
+        },
+        "flutter": {
+          "name": "Flutter",
+          "username": "@flutter",
+          "body": "Flutter permite construir aplicativos bonitos e compilados nativamente para mobile, web e desktop a partir de um único código-fonte.",
+          "img": "/assets/flutter.png"
+        },
+        "swift": {
+          "name": "Swift",
+          "username": "@swift",
+          "body": "Swift é uma linguagem de programação poderosa para macOS, iOS, watchOS e tvOS com recursos modernos.",
+          "img": "https://www.swift.com/themes/custom/swift_theme/images/swift-logo-new.svg"
+        },
+        "kotlin": {
+          "name": "Kotlin",
+          "username": "@kotlin",
+          "body": "Kotlin é uma linguagem moderna para desenvolvimento Android, conhecida por seus recursos de produtividade e segurança.",
+          "img": "/assets/kotlin.png"
+        },
+        "ionic": {
+          "name": "Ionic",
+          "username": "@ionic",
+          "body": "Ionic é um kit de ferramentas de UI móvel para construir experiências de aplicativos nativos e web de alta qualidade usando tecnologias web.",
+          "img": "https://ionicframework.com/docs/logos/ionic-text-docs-dark.svg"
+        }
+      }
+    },
+    "cooperation": {
+      "heading": "Cooperação",
+      "desc": "Realizamos testes funcionais com usuários e clientes potenciais que usarão nossas aplicações."
+    },
+    "monitoring": {
+      "heading": "Monitoramento",
+      "desc": "Monitoramento e resposta 24/7"
+    }
+  },
+  "gameSection": {
+    "heading1": {
+      "text1": "Na Activus",
+      "text2": "Não há Limite Para a Criatividade"
+    },
+    "heading2": {
+      "text1": "Você pode",
+      "text2": "literalmente jogar um jogo aqui"
+    }
+  },
+  "contact": {
+    "heading": "Gostou do que viu?",
+    "subHeading": "Contate-nos",
+    "form": {
+      "name": "Seu Bom Nome",
+      "email": "Seu Email",
+      "message": "Sua Mensagem Vai Aqui...",
+      "sendBtn": "Enviar"
+    }
+  },
+  "footer": {
+    "text": "Activus - Todos os direitos reservados."
+  }
+}

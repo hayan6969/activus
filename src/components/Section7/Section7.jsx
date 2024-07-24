@@ -107,21 +107,11 @@ export default function Section7() {
         <div className={divStyle + " col-span-full sm:row-span-3 sm:col-span-6 lg:row-span-5"}>
           <BorderBeam size={150} />
           <BlurIn word={trans('lang.heading')} className={headingStyle + " "} id={83} />
-          <div className=" grid place-items-center h-[24vh]">
-            {/* <div className=" flex flex-wrap items-center justify-center gap-4 md:gap-8 w-full px-8">
-            
-              <Link href="/" locale="en" key="lang-link-en">
-              <button key="lang-btn-en" className={" rounded-3xl bg-black text-white px-4 py-2"}>
-              {trans('lang.english')}
-              </button>
-              </Link>
-              <Link key="lang-link-fr" href="/" locale="fr">
-              <button key="lang-btn-fr" className={" rounded-3xl bg-black text-white px-4 py-2"}>
-              {trans('lang.french')}
-              </button>
-              </Link>
-            </div> */}
-            <LanguageSwitcher english={trans('lang.english')} french={trans('lang.french')} />
+          <div className=" grid place-items-center h-[24vh] my-auto ">
+            <LanguageSwitcher 
+            // english={trans('lang.english')} 
+            // french={trans('lang.french')} 
+            />
           </div>
         </div>
 

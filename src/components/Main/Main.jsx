@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
 import RenderIfVisible from "react-render-if-visible";
 import LoadingScreen from "../Utils/LoadingScreen";
+import { Section } from "lucide-react";
 
 const loadingComponent = () => (
   <div className=" grid p-4 md:px-24 md:py-12 grid-cols-3 grid-rows-6 md:grid-rows-3 gap-6 w-full h-screen animate-pulse">
@@ -116,7 +117,7 @@ export default function Main({}) {
             return <BentoGrid key="bento-grid-me" />;
           }
           if (index === 2) {
-            return <WhatAllAbout key="what-it-all-about-me" />;
+            return <WhatAllAbout key="what-it-all-about-me" />; 
           }
           if (index === 6) {
             return <Section7 key="section7" />;

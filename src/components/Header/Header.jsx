@@ -33,7 +33,7 @@ const Header = forwardRef(function Header(props, ref) {
 
   return (
     <div className=" relative">
-      <div className={"header "}>
+      <div className={"header z-[100]"}>
         <Framer>
           <div
             className=" p-8 cursor-pointer "
@@ -63,7 +63,7 @@ const Header = forwardRef(function Header(props, ref) {
         variants={menu}
         animate={isOpen ? "open" : "closed"}
         initial="closed"
-        className={` bg-primary text-white  mix-blend-differenc fixed z-[2] rounded-3xl flex items-center justify-start`}
+        className={` bg-primary text-white  mix-blend-differenc fixed z-[90] rounded-3xl flex items-center justify-start`}
       >
         <AnimatePresence>{isOpen && <Navbox />}</AnimatePresence>
       </motion.div>
