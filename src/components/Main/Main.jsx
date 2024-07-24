@@ -1,6 +1,5 @@
 "use client";
 
-// import { useRef } from "react";
 import Header from "../Header/Header";
 // import StickyCursor from "../StickyCursor/StickyCursor";
 import dynamic from "next/dynamic";
@@ -118,6 +117,9 @@ export default function Main({}) {
           }
           if (index === 2) {
             return <WhatAllAbout key="what-it-all-about-me" />;
+          }
+          if (index === 6) {
+            return <Section7 key="section7" />;
           }
           if (index === 7) {
             return <WayTooManySystemsMain key={index} />;

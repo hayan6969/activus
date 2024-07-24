@@ -34,10 +34,12 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
 
     const handleScroll = () => { 
       const puzzleDiv = document.getElementById('pc-puzzle');
-      const rect = puzzleDiv.getBoundingClientRect();
+      if(puzzleDiv){
+        const rect = puzzleDiv.getBoundingClientRect();
         if (rect.top <= 450) {
           animateContent();
         }
+      }
         
     };
     window.addEventListener("scroll", handleScroll);

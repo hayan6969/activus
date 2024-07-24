@@ -8,16 +8,16 @@ const PuzzleMobile = ({ onSolved, onUnSolved }) => {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    
-    const handleScroll = () => { 
-      const puzzleDiv = document.getElementById('mb-puzzle');
-      const rect = puzzleDiv.getBoundingClientRect();
+    const handleScroll = () => {
+      const puzzleDiv = document.getElementById("mb-puzzle");
+      if (puzzleDiv) {
+        const rect = puzzleDiv.getBoundingClientRect();
         const viewportHeight = window.innerHeight;
         const midpoint = viewportHeight / 1.7;
         if (rect.top <= midpoint && rect.bottom >= midpoint) {
           animateContent();
         }
-        
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -115,10 +115,9 @@ const PuzzleMobile = ({ onSolved, onUnSolved }) => {
 
   return (
     <div className=" overflow-hidden relative w-full h-fit py-12 grid place-items-center scale-150">
-
       {/* initial state  */}
       <div
-      id="mb-puzzle"
+        id="mb-puzzle"
         ref={containerRef}
         className="w-fit site-bg h-fit grid grid-cols-3 place-items-center"
       >

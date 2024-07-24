@@ -21,7 +21,7 @@ export default function Section7() {
   const headingStyle = " text-2xl sm:text-3xl md:text-4xl font-semibold pt-2 sm:p-0 ";
 
   return (
-    <section className="  w-full  sm:h-fit lg:h-screen px-4 md:px-24 py-2 my-6 overflow-hidden site-bg">
+    <section id="section7" className="  w-full  sm:h-fit lg:h-screen px-4 md:px-24 py-2 my-6 overflow-hidden site-bg">
       <div className=" grid grid-cols-12 sm:grid-rows-12 gap-6 w-full h-full site-bg ">
 
         {/* helping innovation  */}

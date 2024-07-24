@@ -11,6 +11,9 @@ export default function LanguageSwitcher({ english, french }) {
   const params = useParams();
 
   function handleChangeLanguage(nextLocale) {
+    
+    // sessionStorage.setItem('isLangChanges', "yes");
+
     startTransition(() => {
       router.replace(
         // @ts-expect-error -- TypeScript will validate that only known `params`
