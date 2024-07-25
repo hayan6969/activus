@@ -2,6 +2,15 @@
     width: 12em;
     height: 12em;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .solved-pc{
+    font-size: 96px;
+    color: white;
+    font-weight: bold;
   }
   
   .peice-pc .l, .peice-pc .r, .peice-pc .t, .peice-pc .b, .peice-pc div{

@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 import RenderIfVisible from "react-render-if-visible";
 import LoadingScreen from "../Utils/LoadingScreen";
 import { Section } from "lucide-react";
+import { SecurityBG } from "../Security/SecurityBG";
 
 const loadingComponent = () => (
   <div className=" grid p-4 md:px-24 md:py-12 grid-cols-3 grid-rows-6 md:grid-rows-3 gap-6 w-full h-screen animate-pulse">

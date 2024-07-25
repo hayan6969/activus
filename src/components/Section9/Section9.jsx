@@ -4,6 +4,8 @@ import { AppDevelopment } from "./AppDevelopment";
 import SparklesText from "../magicui/sparkles-text";
 import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
+import Design from "./Design";
+import NewDesign from "./NewDesign";
 
 const Camera = dynamic(() => import("./Camera"), {
   loading: () => <div className="spinner-small"> </div>,
@@ -50,23 +52,14 @@ export default function Section9() {
           <p className="  text-center font-light text-xl md:text-2xl lg:text-3xl w-full px-1 sm:px-4 lg:px-12 ">
             {trans("design.desc")}
           </p>
-          <video
-            className={
-              " absolute bottom-0 left-0 w-full h-[23vh] md:h-[25vh] lg:h-[44vh] object-cover  "
-            }
-            src="/assets/design.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-          />
+            <Design />
         </div>
 
         {/* app development   */}
         <div
           className={
             divStyle +
-            " col-span-full md:col-span-6 lg:col-span-8 row-span-8 lg:row-span-4 "
+            " col-span-full md:col-span-6 lg:col-span-6 row-span-8 lg:row-span-4 "
           }
         >
           <BlurIn
@@ -109,6 +102,17 @@ export default function Section9() {
               },
             ]}
           />
+
+        </div>
+
+        <div
+          className={
+            divStyle +
+            " col-span-full md:col-span-6 lg:col-span-2 row-span-8 lg:row-span-4 grid place-items-center "
+          }
+        ><NewDesign />
+         
+
         </div>
 
         {/* cooperation   */}

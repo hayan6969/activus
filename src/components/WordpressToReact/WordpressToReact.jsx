@@ -3,6 +3,9 @@ import BlurIn from "../magicui/blur-in";
 import Lottie from "react-lottie";
 import wTReactArrow from "../../../public/assets/wTReactArrow.json";
 import { useTranslations } from "next-intl";
+import "./style.css";
+import ColorSelectorNode from "./ColorSelectorNode";
+import CustomNodeFlow from "./CustomNodeFlow";
 
 export default function WordpressToReact() {
   const divStyle =
@@ -47,15 +50,8 @@ export default function WordpressToReact() {
           </h3>
         </div>
 
-        <div className={divStyle + " col-span-5 h-full sm:col-span-3 "}>
-          <video
-            className={videoStyle}
-            src="/assets/wordpresstoreact.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-          />
+        <div className={divStyle + " col-span-5 h-full sm:col-span-3 pointer-events-none md:pointer-events-auto "}>
+          <CustomNodeFlow />
         </div>
 
         <div className=" col-span-5 h-fit sm:h-full sm:col-span-2 grid gap-6 grid-rows-1 sm:grid-rows-2">

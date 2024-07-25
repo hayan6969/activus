@@ -1,11 +1,12 @@
 "use client";
 
 import "./puzzle_mobile.css";
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 
 const PuzzleMobile = ({ onSolved, onUnSolved }) => {
   const containerRef = useRef(null);
+  const [isSolved, setIsSolved] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,6 +36,7 @@ const PuzzleMobile = ({ onSolved, onUnSolved }) => {
           // height: "37.65vw",
         });
         onSolved();
+        setIsSolved(true)
       },
       onStart: () => {
         gsap.to(".outer-mb", {
@@ -117,7 +119,7 @@ const PuzzleMobile = ({ onSolved, onUnSolved }) => {
     <div className=" overflow-hidden relative w-full h-fit py-12 grid place-items-center scale-150">
       {/* initial state  */}
       <div
-        id="mb-puzzle"
+      id="mb-puzzle"
         ref={containerRef}
         className="w-fit site-bg h-fit grid grid-cols-3 place-items-center"
       >
@@ -126,6 +128,7 @@ const PuzzleMobile = ({ onSolved, onUnSolved }) => {
           <span className="r site-bg "></span>
           <span className="b site-bg"></span>
           <span className=" "></span>
+          {isSolved ? <p className={"solved-mb"}>O</p> : <p className={" text-center w-full text-xs font-light text-white "}>CMR</p>}
         </div>
 
         <div className="peice-mb bg-[#EF4444] rotate-[-26deg] translate-x-[-18vw] translate-y-[-6vw]">
@@ -133,6 +136,7 @@ const PuzzleMobile = ({ onSolved, onUnSolved }) => {
           <span className="r site-bg"></span>
           <span className="b site-bg "></span>
           <span className="l outer-mb bg-[#EF4444] "></span>
+          {isSolved ? <p className={"solved-mb"}>N</p> :<p className={" text-center w-full text-xs font-light text-white "}>ERP</p>}
         </div>
 
         <div className="peice-mb bg-[#EF4444] rotate-[3deg] translate-x-[-15vw] translate-y-[11vw]">
@@ -140,6 +144,7 @@ const PuzzleMobile = ({ onSolved, onUnSolved }) => {
           <span className=" "></span>
           <span className="b site-bg"></span>
           <span className="l outer-mb bg-[#EF4444]  "></span>
+          {isSolved ? <p className={"solved-mb"}>E</p> :<p className={" text-center w-full text-xs font-light text-white "}>Sales, Support</p>}
         </div>
 
         <div className="peice-mb bg-[#EF4444] rotate-[20deg] translate-x-[15vw] translate-y-[13vw]">
@@ -147,6 +152,7 @@ const PuzzleMobile = ({ onSolved, onUnSolved }) => {
           <span className="r site-bg"></span>
           <span className="b site-bg "></span>
           <span className=" "></span>
+          {isSolved ? <p className={"solved-mb"}>S</p> :<p className={" text-center w-full text-xs font-light text-white "}>Inventory</p>}
         </div>
 
         <div className="peice-mb bg-[#EF4444] rotate-[-13deg] translate-x-[16vw] translate-y-[17vw]">
@@ -154,13 +160,16 @@ const PuzzleMobile = ({ onSolved, onUnSolved }) => {
           <span className="r site-bg"></span>
           <span className="b site-bg"></span>
           <span className="l outer-mb bg-[#EF4444]  "></span>
+          {isSolved ? <p className={"solved-mb"}>Y</p> :<p className={" text-center w-full text-xs font-light text-white "}>Management</p>}
         </div>
 
         <div className="peice-mb bg-[#EF4444] rotate-[43deg] translate-x-[-30vw] translate-y-[-4vw]">
+          
           <span className="t outer-mb bg-[#EF4444]  "></span>
           <span className=" "></span>
           <span className="b site-bg"></span>
           <span className="l outer-mb bg-[#EF4444]  "></span>
+          {isSolved ? <p className={"solved-mb"}>S</p> :<p className={" text-center w-full text-xs font-light text-white "}>IT</p>}
         </div>
 
         <div className="peice-mb bg-[#EF4444] rotate-[30deg] translate-x-[34vw] translate-y-[-30vw] ">
@@ -168,6 +177,7 @@ const PuzzleMobile = ({ onSolved, onUnSolved }) => {
           <span className="r site-bg "></span>
           <span className=" "></span>
           <span className=" "></span>
+          {isSolved ? <p className={"solved-mb"}>T</p> :<p className={" text-center w-full text-xs font-light text-white "}>Data</p>}
         </div>
 
         <div className="peice-mb bg-[#EF4444] rotate-[11deg] translate-x-[16vw] translate-y-[-14vw]">
@@ -175,6 +185,7 @@ const PuzzleMobile = ({ onSolved, onUnSolved }) => {
           <span className="r site-bg "></span>
           <span className=" "></span>
           <span className="l outer-mb bg-[#EF4444] "></span>
+          {isSolved ? <p className={"solved-mb"}>E</p> :<p className={" text-center w-full text-xs font-light text-white "}>E-commerce</p>}
         </div>
 
         <div className="peice-mb bg-[#EF4444] rotate-[75deg] translate-x-[-16vw] translate-y-[-32vw]">
@@ -182,6 +193,7 @@ const PuzzleMobile = ({ onSolved, onUnSolved }) => {
           <span className=" "></span>
           <span className=" "></span>
           <span className="l outer-mb bg-[#EF4444] "></span>
+          {isSolved ? <p className={"solved-mb"}>M</p> :<p className={" text-center w-full text-xs font-light text-white "}>Communication</p>}
         </div>
       </div>
     </div>

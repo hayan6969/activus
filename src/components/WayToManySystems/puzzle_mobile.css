@@ -2,6 +2,14 @@
     width: 12vw;
     height: 12vw;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .solved-mb{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
   }
   
   .peice-mb .l, .peice-mb .r, .peice-mb .t, .peice-mb .b, .peice-mb div{
