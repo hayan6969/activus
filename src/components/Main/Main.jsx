@@ -111,7 +111,7 @@ export default function Main({}) {
     <div>
       <Header />
       <div className={" site-bg grid relative "}>
-        {/* {allComponents.map((item, index) => {
+        {allComponents.map((item, index) => {
           if (index === 1) {
             return <BentoGrid key="bento-grid-me" />;
           }
@@ -128,9 +128,7 @@ export default function Main({}) {
             return <Contact key="contact-me" />;
           }
           return <RenderIfVisible key={index}>{item}</RenderIfVisible>;
-        })} */}
-        <Section7 />
-        <Section9 />
+        })}
       </div>
       {/* excluded the custom cursor because site got too much animations */}
       {/* <div className=" hidden sm:block">
