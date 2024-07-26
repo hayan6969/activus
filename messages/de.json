@@ -127,7 +127,8 @@
     },
     "analysis": {
       "heading": "Bedarfsanalyse?",
-      "desc": "Wir analysieren die Bedürfnisse Ihres Unternehmens und finden die beste Lösung, die zu Ihrem Geschäft passt. Unsere Designer skizzieren die benötigten Funktionen, und wir überprüfen im Voraus, was getan werden muss, um maximale Ergebnisse zu erzielen."
+      "descBefore": "Wir verstehen Ihr Geschäft und bieten maßgeschneiderte Lösungen.",
+      "descAfter": "Wir analysieren die Bedürfnisse Ihres Unternehmens und finden die beste Lösung, die zu Ihrem Geschäft passen könnte. Unsere Designer skizzieren die benötigte Funktionalität, und wir prüfen im Voraus, was getan werden muss, um maximale Ergebnisse zu erzielen."
     }
   },
 
@@ -182,7 +183,8 @@
     },
     "cooperation": {
       "heading": "Zusammenarbeit",
-      "desc": "Wir führen Funktionstests mit Benutzern und potenziellen Kunden durch, die unsere Anwendungen nutzen werden."
+      "descBefore": "Das Verständnis der Bedürfnisse und Verhaltensweisen der Benutzer ist entscheidend für die Erstellung effektiver Anwendungen.",
+      "descAfter": "Wir führen funktionale Tests mit Benutzern und potenziellen Kunden durch, die unsere Anwendungen nutzen werden."
     },
     "monitoring": {
       "heading": "Überwachung",

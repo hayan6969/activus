@@ -127,7 +127,8 @@
     },
     "analysis": {
       "heading": "Precisa de Análise?",
-      "desc": "Analisamos as necessidades do seu negócio e encontramos a melhor solução que pode se adequar ao seu negócio. Nossos designers mapeiam a funcionalidade necessária e revisamos antecipadamente o que precisa ser feito para alcançar os melhores resultados."
+      "descBefore": "Entendemos o seu negócio e oferecemos soluções personalizadas.",
+      "descAfter": "Analisamos as necessidades do seu negócio e encontramos a melhor solução que pode se adequar ao seu negócio. Nossos designers mapeiam a funcionalidade que você precisa, e revisamos com antecedência o que precisa ser feito para alcançar os melhores resultados."
     }
   },
 
@@ -182,7 +183,8 @@
     },
     "cooperation": {
       "heading": "Cooperação",
-      "desc": "Realizamos testes funcionais com usuários e clientes potenciais que usarão nossas aplicações."
+      "descBefore": "Compreender as necessidades e comportamentos dos usuários é crucial para criar aplicações eficazes.",
+      "descAfter": "Realizamos testes funcionais com usuários e clientes potenciais que utilizarão nossas aplicações."
     },
     "monitoring": {
       "heading": "Monitoramento",

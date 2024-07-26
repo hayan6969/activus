@@ -11,6 +11,7 @@ import { SiMicrosoftazure } from "react-icons/si";
 import { AiOutlineKubernetes } from "react-icons/ai";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { TextRevealCard } from "../ui/text-reveal-card";
 
 export default function Section7() {
 
@@ -150,9 +151,14 @@ export default function Section7() {
             className={headingStyle + " "}
             id={85}
           />
-          <p className="text-center font-light text-md md:text-lg px-4 py-2 sm:py-0 ">
+          <TextRevealCard
+          className={" text-center font-light text-md md:text-lg "}
+          text={trans('analysis.descBefore')}
+          revealText={trans('analysis.descAfter')}
+          />
+          {/* <p className="text-center font-light text-md md:text-lg px-4 py-2 sm:py-0 ">
           {trans('analysis.desc')}
-          </p>
+          </p> */}
         </div>
       </div>
     </section>

@@ -127,7 +127,8 @@
     },
     "analysis": {
       "heading": "Need Analysis?",
-      "desc": "We analyze the needs of your business and find the best solution that could suit your business. Our designers map out the functionality you need, and we review in advance what needs to be done to achieve maximum results."
+      "descBefore": "We understand your business and provide tailored solutions.",
+      "descAfter": "We analyze the needs of your business and find the best solution that could suit your business. Our designers map out the functionality you need, and we review in advance what needs to be done to achieve maximum results."
     }
   },
 
@@ -182,7 +183,8 @@
     },
     "cooperation": {
       "heading": "Cooperation",
-      "desc": "We conduct functional tests with users and prospective customers who will use our applications."
+      "descBefore": "Understanding user needs and behaviors is crucial for creating effective applications.",
+      "descAfter": "We conduct functional tests with users and prospective customers who will use our applications."
     },
     "monitoring": {
       "heading": "Monitoring",

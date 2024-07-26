@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
 import Design from "./Design";
 import NewDesign from "./NewDesign";
+import { TextRevealCard } from "../ui/text-reveal-card";
 
 const Camera = dynamic(() => import("./Camera"), {
   loading: () => <div className="spinner-small"> </div>,
@@ -122,9 +123,10 @@ export default function Section9() {
             id={94}
             className={headingStyle + " "}
           />
-          <p className="  text-center font-light text-sm md:text-xl lg:text-2xl w-full px-1 sm:px-4 py-3 lg:pt-6 ">
+          {/* <p className="  text-center font-light text-sm md:text-xl lg:text-2xl w-full px-1 sm:px-4 py-3 lg:pt-6 ">
             {trans("cooperation.desc")}
-          </p>
+          </p> */}
+          <TextRevealCard className="  text-center font-light text-sm md:text-xl lg:text-2xl" text={trans("cooperation.descBefore")} revealText={trans("cooperation.descAfter")} />
         </div>
 
         {/* monitoring   */}

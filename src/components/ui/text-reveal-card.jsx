@@ -62,7 +62,7 @@ export const TextRevealCard = ({
       onTouchMove={touchMoveHandler}
       ref={cardRef}
       className={cn(
-        "bg-[#1d1c20] border border-white/[0.08] w-[40rem] rounded-lg p-8 relative overflow-hidden",
+        "bg[#1d1c20] border border-white/[0.08] w-full rounded-lg px-1 md:px-2 relative overflow-hidden",
         className
       )}>
       {children}
@@ -82,12 +82,12 @@ export const TextRevealCard = ({
                 }
           }
           transition={isMouseOver ? { duration: 0 } : { duration: 0.4 }}
-          className="absolute bg-[#1d1c20] z-20  will-change-transform">
+          className="absolute bg[#1d1c20] z-20  will-change-transform">
           <p
             style={{
               textShadow: "4px 4px 15px rgba(0,0,0,0.5)",
             }}
-            className="text-base sm:text-[3rem] py-10 font-bold text-white bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300">
+            className=" bg-clip-text text-transparent bg-gradient-to-b from-black to-neutral-800">
             {revealText}
           </p>
         </motion.div>
@@ -98,12 +98,12 @@ export const TextRevealCard = ({
             opacity: widthPercentage > 0 ? 1 : 0,
           }}
           transition={isMouseOver ? { duration: 0 } : { duration: 0.4 }}
-          className="h-40 w-[8px] bg-gradient-to-b from-transparent via-neutral-800 to-transparent absolute z-50 will-change-transform"></motion.div>
+          className="h-40 w-[5px] bg-gradient-to-b from-transparent via-neutral-800 to-transparent absolute z-50 will-change-transform"></motion.div>
 
         <div
-          className=" overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,white,transparent)]">
+          className=" overflow-hidden mask-image:linear-gradient(to_bottom,transparent,white,transparent)]">
           <p
-            className="text-base sm:text-[3rem] py-10 font-bold bg-clip-text text-transparent bg-[#323238]">
+            className={isMouseOver ? " opacity-10 text-gray-500 duration-200" : " opacity-100 text-gray-500 duration-200"}>
             {text}
           </p>
           <MemoizedStars />
@@ -157,7 +157,7 @@ const Stars = () => {
             left: `${random() * 100}%`,
             width: `2px`,
             height: `2px`,
-            backgroundColor: "white",
+            backgroundColor: "#7900FF",
             borderRadius: "50%",
             zIndex: 1,
           }}

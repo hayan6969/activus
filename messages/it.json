@@ -127,7 +127,8 @@
     },
     "analysis": {
       "heading": "Hai Bisogno di Analisi?",
-      "desc": "Analizziamo le esigenze della tua azienda e troviamo la soluzione migliore che potrebbe adattarsi alla tua attività. I nostri designer mappano la funzionalità di cui hai bisogno e rivediamo in anticipo cosa deve essere fatto per ottenere il massimo dei risultati."
+      "descBefore": "Comprendiamo la tua attività e forniamo soluzioni su misura.",
+      "descAfter": "Analizziamo le esigenze della tua attività e troviamo la soluzione migliore che possa adattarsi alla tua attività. I nostri designer tracciano le funzionalità di cui hai bisogno e rivediamo in anticipo cosa deve essere fatto per ottenere i massimi risultati."
     }
   },
 
@@ -182,7 +183,8 @@
     },
     "cooperation": {
       "heading": "Collaborazione",
-      "desc": "Eseguiamo test funzionali con utenti e potenziali clienti che utilizzeranno le nostre applicazioni."
+      "descBefore": "Comprendere le esigenze e i comportamenti degli utenti è fondamentale per creare applicazioni efficaci.",
+      "descAfter": "Effettuiamo test funzionali con utenti e potenziali clienti che utilizzeranno le nostre applicazioni."
     },
     "monitoring": {
       "heading": "Monitoraggio",

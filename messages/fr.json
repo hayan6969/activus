@@ -127,7 +127,8 @@
     },
     "analysis": {
       "heading": "Besoin d'une analyse?",
-      "desc": "Nous analysons les besoins de votre entreprise et trouvons la meilleure solution qui pourrait convenir à votre entreprise. Nos designers cartographient la fonctionnalité dont vous avez besoin, et nous examinons à l'avance ce qui doit être fait pour obtenir des résultats maximaux."
+      "descBefore": "Nous comprenons votre entreprise et fournissons des solutions personnalisées.",
+      "descAfter": "Nous analysons les besoins de votre entreprise et trouvons la meilleure solution qui pourrait convenir à votre entreprise. Nos designers définissent les fonctionnalités dont vous avez besoin, et nous examinons à l'avance ce qu'il faut faire pour obtenir les meilleurs résultats."
     }
   },
   "wayTooManySystems": {
@@ -181,7 +182,8 @@
     },
     "cooperation": {
       "heading": "Coopération",
-      "desc": "Nous effectuons des tests fonctionnels avec des utilisateurs et des clients potentiels qui utiliseront nos applications."
+      "descBefore": "Comprendre les besoins et les comportements des utilisateurs est crucial pour créer des applications efficaces.",
+      "descAfter": "Nous effectuons des tests fonctionnels avec des utilisateurs et des clients potentiels qui utiliseront nos applications."
     },
     "monitoring": {
       "heading": "Surveillance",
