@@ -152,7 +152,7 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
           <span className="r site-bg "></span>
           <span className="b site-bg"></span>
           <span className=" "></span>
-          {isSolved ? <p className={"solved-pc"}>O</p> : <p className={" text-center w-full text-2xl font-light text-white "}>Marketing, CMR</p>}
+          {isSolved ? <p className={"solved-pc"}>O</p> : <p className={" text-center w-full text-2xl font-light text-white "}>Marketing</p>}
         </div>
 
         <div className="peice-pc bg-[#000] rotate-[-26deg] translate-x-[-18vw] translate-y-[-6vw]">
@@ -160,7 +160,7 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
           <span className="r site-bg"></span>
           <span className="b site-bg "></span>
           <span className="l outer-pc bg-[#000] "></span>
-          {isSolved ? <p className={"solved-pc"}>N</p> :<p className={" text-center w-full text-2xl font-light text-white "}>ERP, Finance</p>}
+          {isSolved ? <p className={"solved-pc"}>N</p> :<p className={" text-center w-full text-2xl font-light text-white "}>Finance</p>}
         </div>
 
         <div className="peice-pc bg-[#000] rotate-[3deg] translate-x-[-15vw] translate-y-[11vw]">
@@ -168,7 +168,7 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
           <span className=" "></span>
           <span className="b site-bg"></span>
           <span className="l outer-pc bg-[#000]  "></span>
-          {isSolved ? <p className={"solved-pc"}>E</p> :<p className={" text-center w-full text-2xl font-light text-white "}>Sales, Customer Support</p>}
+          {isSolved ? <p className={"solved-pc"}>E</p> :<p className={" text-center w-full text-2xl font-light text-white "}>Sales</p>}
         </div>
 
         <div className="peice-pc bg-[#000] rotate-[20deg] translate-x-[15vw] translate-y-[13vw]">
@@ -176,7 +176,7 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
           <span className="r site-bg"></span>
           <span className="b site-bg "></span>
           <span className=" "></span>
-          {isSolved ? <p className={"solved-pc"}>S</p> :<p className={" text-center w-full text-2xl font-light text-white "}>Inventory, Supply Chain</p>}
+          {isSolved ? <p className={"solved-pc"}>S</p> :<p className={" text-center w-full text-2xl font-light text-white "}>Inventory</p>}
         </div>
 
         <div className="peice-pc bg-[#000] rotate-[-13deg] translate-x-[16vw] translate-y-[17vw]">
@@ -184,7 +184,7 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
           <span className="r site-bg"></span>
           <span className="b site-bg"></span>
           <span className="l outer-pc bg-[#000]  "></span>
-          {isSolved ? <p className={"solved-pc"}>Y</p> :<p className={" text-center w-full text-2xl font-light text-white "}>Project Management</p>}
+          {isSolved ? <p className={"solved-pc"}>Y</p> :<p className={" text-center w-full text-2xl font-light text-white "}>Management</p>}
         </div>
 
         <div className="peice-pc bg-[#000] rotate-[43deg] translate-x-[-30vw] translate-y-[-4vw]">
@@ -201,7 +201,7 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
           <span className="r site-bg "></span>
           <span className=" "></span>
           <span className=" "></span>
-          {isSolved ? <p className={"solved-pc"}>T</p> :<p className={" text-center w-full text-2xl font-light text-white "}>Reporting, Data Analysis</p>}
+          {isSolved ? <p className={"solved-pc"}>T</p> :<p className={" text-center w-full text-2xl font-light text-white "}>Reporting</p>}
         </div>
 
         <div className="peice-pc bg-[#000] rotate-[11deg] translate-x-[16vw] translate-y-[-14vw]">
@@ -209,7 +209,7 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
           <span className="r site-bg "></span>
           <span className=" "></span>
           <span className="l outer-pc bg-[#000] "></span>
-          {isSolved ? <p className={"solved-pc"}>E</p> :<p className={" text-center w-full text-2xl font-light text-white "}>E-commerce, Scheduling</p>}
+          {isSolved ? <p className={"solved-pc"}>E</p> :<p className={" text-center w-full text-2xl font-light text-white "}>E-commerce</p>}
         </div>
 
         <div className="peice-pc bg-[#000] rotate-[75deg] translate-x-[-16vw] translate-y-[-32vw]">
@@ -217,7 +217,7 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
           <span className=" "></span>
           <span className=" "></span>
           <span className="l outer-pc bg-[#000] "></span>
-          {isSolved ? <p className={"solved-pc"}>M</p> :<p className={" text-center w-full text-2xl font-light text-white "}>Communication, Collaboration</p>}
+          {isSolved ? <p className={"solved-pc"}>M</p> :<p className={" text-center w-full text-2xl font-light text-white "}>Communication</p>}
         </div>
       </div>
     </div>
