@@ -29,7 +29,7 @@ export default function Design() {
         </div>
         <div className=" absolute left-6 bottom-2 flex items-start justify-around gap-2">
           <div>
-            <label htmlFor="aspect-ratio">Aspect ratio</label>
+            <label className={" label-design "} htmlFor="aspect-ratio">Aspect ratio</label>
             <input
             className={" px-5 py-3 rounded-3xl w-24"}
               id="aspect-ratio"
@@ -40,7 +40,7 @@ export default function Design() {
             />
           </div>
           <div>
-            <label htmlFor="width">Width</label>
+            <label className={" label-design "} htmlFor="width">Width</label>
             <input
             className={" px-5 py-3 rounded-3xl w-24"}
               id="width"
