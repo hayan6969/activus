@@ -130,7 +130,6 @@ export default function Main({}) {
           return <RenderIfVisible key={index}>{item}</RenderIfVisible>;
         })}
       </div>
-
       {/* excluded the custom cursor because site got too much animations */}
       {/* <div className=" hidden sm:block">
         <StickyCursor stickyElement={stickyElement} />

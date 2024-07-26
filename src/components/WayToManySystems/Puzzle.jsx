@@ -31,7 +31,7 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
     //   //   resetContent();
     //   // }
 
-    //   previousScrollY = scrollY;
+    //   previousScrollY = scrollY; 
     // };
 
     const handleScroll = () => { 
@@ -65,7 +65,7 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
         gsap.to(".outer-pc", {
           duration: 2,
           ease: "easeInOut",
-          backgroundColor: "#22C55E",
+          backgroundColor: "#7900FF",
         });
       },
       duration: 1,
@@ -74,7 +74,7 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
       rotate: 0,
       translateX: 0,
       translateY: 0,
-      backgroundColor: "#22C55E",
+      backgroundColor: "#7900FF",
     });
   };
 
@@ -92,13 +92,13 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
   //           gsap.to(".outer-pc", {
   //             duration: 2,
   //             ease: "easeInOut",
-  //             backgroundColor: "#EF4444",
+  //             backgroundColor: "#000",
   //           });
   //         },
   //         duration: 1.5, // Adjust animation duration for individual items
   //         ease: "easeInOut", // Customize easing function
   //         stagger: 0.1, // Add stagger effect for each item (adjust as needed)
-  //         backgroundColor: "#EF4444",
+  //         backgroundColor: "#000",
   //         rotate: (i) => {
   //           const initialRotates = [-13, -26, 3, 20, -13, 43, 30, 11, 75];
   //           return initialRotates[i];
@@ -147,7 +147,7 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
         ref={containerRef}
         className="w-[55vw] site-bg h-[45vw] grid grid-cols-3 place-items-center"
       >
-        <div className="peice-pc bg-[#EF4444] rotate-[-13deg] translate-x-[-1vw] translate-y-[30vw]">
+        <div className="peice-pc bg-[#000] rotate-[-13deg] translate-x-[-1vw] translate-y-[30vw]">
           <span className=" "></span>
           <span className="r site-bg "></span>
           <span className="b site-bg"></span>
@@ -155,68 +155,68 @@ const Puzzle = ({ onSolved, onUnSolved, hideSectionRef }) => {
           {isSolved ? <p className={"solved-pc"}>O</p> : <p className={" text-center w-full text-2xl font-light text-white "}>Marketing, CMR</p>}
         </div>
 
-        <div className="peice-pc bg-[#EF4444] rotate-[-26deg] translate-x-[-18vw] translate-y-[-6vw]">
+        <div className="peice-pc bg-[#000] rotate-[-26deg] translate-x-[-18vw] translate-y-[-6vw]">
           <span className=""></span>
           <span className="r site-bg"></span>
           <span className="b site-bg "></span>
-          <span className="l outer-pc bg-[#EF4444] "></span>
+          <span className="l outer-pc bg-[#000] "></span>
           {isSolved ? <p className={"solved-pc"}>N</p> :<p className={" text-center w-full text-2xl font-light text-white "}>ERP, Finance</p>}
         </div>
 
-        <div className="peice-pc bg-[#EF4444] rotate-[3deg] translate-x-[-15vw] translate-y-[11vw]">
+        <div className="peice-pc bg-[#000] rotate-[3deg] translate-x-[-15vw] translate-y-[11vw]">
           <span className=" "></span>
           <span className=" "></span>
           <span className="b site-bg"></span>
-          <span className="l outer-pc bg-[#EF4444]  "></span>
+          <span className="l outer-pc bg-[#000]  "></span>
           {isSolved ? <p className={"solved-pc"}>E</p> :<p className={" text-center w-full text-2xl font-light text-white "}>Sales, Customer Support</p>}
         </div>
 
-        <div className="peice-pc bg-[#EF4444] rotate-[20deg] translate-x-[15vw] translate-y-[13vw]">
-          <span className="t outer-pc bg-[#EF4444]  "></span>
+        <div className="peice-pc bg-[#000] rotate-[20deg] translate-x-[15vw] translate-y-[13vw]">
+          <span className="t outer-pc bg-[#000]  "></span>
           <span className="r site-bg"></span>
           <span className="b site-bg "></span>
           <span className=" "></span>
           {isSolved ? <p className={"solved-pc"}>S</p> :<p className={" text-center w-full text-2xl font-light text-white "}>Inventory, Supply Chain</p>}
         </div>
 
-        <div className="peice-pc bg-[#EF4444] rotate-[-13deg] translate-x-[16vw] translate-y-[17vw]">
-          <span className="t outer-pc bg-[#EF4444] "></span>
+        <div className="peice-pc bg-[#000] rotate-[-13deg] translate-x-[16vw] translate-y-[17vw]">
+          <span className="t outer-pc bg-[#000] "></span>
           <span className="r site-bg"></span>
           <span className="b site-bg"></span>
-          <span className="l outer-pc bg-[#EF4444]  "></span>
+          <span className="l outer-pc bg-[#000]  "></span>
           {isSolved ? <p className={"solved-pc"}>Y</p> :<p className={" text-center w-full text-2xl font-light text-white "}>Project Management</p>}
         </div>
 
-        <div className="peice-pc bg-[#EF4444] rotate-[43deg] translate-x-[-30vw] translate-y-[-4vw]">
+        <div className="peice-pc bg-[#000] rotate-[43deg] translate-x-[-30vw] translate-y-[-4vw]">
           <div ref={hideSectionRef} className=" hideSection"></div>
-          <span className="t outer-pc bg-[#EF4444]  "></span>
+          <span className="t outer-pc bg-[#000]  "></span>
           <span className=" "></span>
           <span className="b site-bg"></span>
-          <span className="l outer-pc bg-[#EF4444]  "></span>
+          <span className="l outer-pc bg-[#000]  "></span>
           {isSolved ? <p className={"solved-pc"}>S</p> :<p className={" text-center w-full text-2xl font-light text-white "}>IT, Compliance</p>}
         </div>
 
-        <div className="peice-pc bg-[#EF4444] rotate-[30deg] translate-x-[34vw] translate-y-[-30vw] ">
-          <span className="t outer-pc bg-[#EF4444] "></span>
+        <div className="peice-pc bg-[#000] rotate-[30deg] translate-x-[34vw] translate-y-[-30vw] ">
+          <span className="t outer-pc bg-[#000] "></span>
           <span className="r site-bg "></span>
           <span className=" "></span>
           <span className=" "></span>
           {isSolved ? <p className={"solved-pc"}>T</p> :<p className={" text-center w-full text-2xl font-light text-white "}>Reporting, Data Analysis</p>}
         </div>
 
-        <div className="peice-pc bg-[#EF4444] rotate-[11deg] translate-x-[16vw] translate-y-[-14vw]">
-          <span className="t outer-pc bg-[#EF4444]  "></span>
+        <div className="peice-pc bg-[#000] rotate-[11deg] translate-x-[16vw] translate-y-[-14vw]">
+          <span className="t outer-pc bg-[#000]  "></span>
           <span className="r site-bg "></span>
           <span className=" "></span>
-          <span className="l outer-pc bg-[#EF4444] "></span>
+          <span className="l outer-pc bg-[#000] "></span>
           {isSolved ? <p className={"solved-pc"}>E</p> :<p className={" text-center w-full text-2xl font-light text-white "}>E-commerce, Scheduling</p>}
         </div>
 
-        <div className="peice-pc bg-[#EF4444] rotate-[75deg] translate-x-[-16vw] translate-y-[-32vw]">
-          <span className="t outer-pc bg-[#EF4444]  "></span>
+        <div className="peice-pc bg-[#000] rotate-[75deg] translate-x-[-16vw] translate-y-[-32vw]">
+          <span className="t outer-pc bg-[#000]  "></span>
           <span className=" "></span>
           <span className=" "></span>
-          <span className="l outer-pc bg-[#EF4444] "></span>
+          <span className="l outer-pc bg-[#000] "></span>
           {isSolved ? <p className={"solved-pc"}>M</p> :<p className={" text-center w-full text-2xl font-light text-white "}>Communication, Collaboration</p>}
         </div>
       </div>
