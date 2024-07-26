@@ -10,7 +10,7 @@
 }
 
 /* Main Circle */
-.main-circle {
+/* .main-circl {
   width: 25rem;
   height: 25rem;
   border-radius: 100%;
@@ -21,47 +21,21 @@
   -webkit-transform: translate(-50%, -70%);
   -ms-transform: translate(-50%, -70%);
   transform: translate(-50%, -70%);
-}
+} */
 
 /* Phone */
 .phone {
   position: relative;
   z-index: 2;
   background-color: inherit;
-  -webkit-box-shadow: 0 4px 35px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 4px 35px rgba(0, 0, 0, 0.1);
   border-radius: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-/* Top */
-.menu {
-  /*   background-color: blue; */
-  font-size: 80%;
-  opacity: 0.4;
-  padding: 0.6rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
 }
 
 .battery {
@@ -84,18 +58,19 @@
 
 /* Middle */
 .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  /* display: -webkit-box;
+  display: -ms-flexbox; */
   display: flex;
-  -webkit-box-orient: vertical;
+  /* -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
+  -ms-flex-direction: column; */
   flex-direction: column;
+  align-items: center;
   margin: auto;
   text-align: center;
   width: 70%;
-  -webkit-transform: translateY(5%);
-  -ms-transform: translateY(5%);
+  /* -webkit-transform: translateY(5%);
+  -ms-transform: translateY(5%); */
   transform: translateY(5%);
 }
 
@@ -125,13 +100,13 @@
     -webkit-transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-label,
+.label-mb,
 .toggle-mb {
   height: 2.8rem;
   border-radius: 100px;
 }
 
-label {
+.label-mb {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 100px;
@@ -252,14 +227,8 @@ label {
   /*   background-color: blue; */
   font-size: 80%;
   opacity: 0.4;
-  padding: 0.6rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  padding: 0.3rem 1rem;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
