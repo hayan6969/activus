@@ -26,7 +26,7 @@ export default function Section7() {
 
         {/* helping innovation  */}
         <div className={divStyle + " col-span-full row-span-4 lg:row-span-full grid place-content-center "}>
-          <BorderBeam size={300} />
+          <BorderBeam size={250} />
           <div className=" rotate-0 lg:rotate-90 lg:scale-y-[-1] lg:scale-x-[-1] h-fit w-full sm:w-[90vh] grid lg:gap-16">
             <BlurIn
               word={trans("helpingInnovation.heading")}
@@ -41,7 +41,7 @@ export default function Section7() {
 
         {/* databsae design  */}
         <div className={divStyle + " col-span-full sm:row-span-8 sm:col-span-6 lg:row-span-8"}>
-          <BorderBeam size={240} />
+          <BorderBeam size={200} />
 
           <BlurIn
             word={trans("dbDesign.heading")}
@@ -105,7 +105,7 @@ export default function Section7() {
 
         {/* languages  */}
         <div className={divStyle + " col-span-full sm:row-span-3 sm:col-span-6 lg:row-span-5"}>
-          <BorderBeam size={150} />
+          <BorderBeam size={120} />
           <BlurIn word={trans('lang.heading')} className={headingStyle + " "} id={83} />
           <div className=" grid place-items-center h-[24vh] my-auto ">
             <LanguageSwitcher 
@@ -117,7 +117,7 @@ export default function Section7() {
 
         {/* cloud  */}
         <div className={divStyle + " col-span-full  sm:row-span-5 sm:col-span-6 lg:row-span-7"}>
-          <BorderBeam size={280} />
+          <BorderBeam size={240} />
           <BlurIn word={trans('cloud.heading')} className={headingStyle + " "} id={84} />
           <div className=" grid gap-6 my-6">
             <div className=" text-center font-light text-md md:text-lg lg:text-xl px-4  ">
@@ -144,7 +144,7 @@ export default function Section7() {
 
         {/* need analysis  */}
         <div className={divStyle + " row-span-4 col-span-full lg:row-span-4"}>
-          <BorderBeam size={160} />
+          <BorderBeam size={120} />
           <BlurIn
             word={trans('analysis.heading')}
             className={headingStyle + " "}

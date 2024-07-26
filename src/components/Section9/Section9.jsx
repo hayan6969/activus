@@ -52,14 +52,14 @@ export default function Section9() {
           <p className="  text-center font-light text-xl md:text-2xl lg:text-3xl w-full px-1 sm:px-4 lg:px-12 ">
             {trans("design.desc")}
           </p>
-            <Design />
+          <Design />
         </div>
 
         {/* app development   */}
         <div
           className={
             divStyle +
-            " col-span-full md:col-span-6 lg:col-span-6 row-span-8 lg:row-span-4 "
+            " col-span-full md:col-span-6 lg:col-span-8 row-span-8 lg:row-span-4 "
           }
         >
           <BlurIn
@@ -68,51 +68,47 @@ export default function Section9() {
             id={93}
           />
 
-          <AppDevelopment
-            stacks={[
-              {
-                name: trans("appDev.stacks.reactNative.name"),
-                username: trans("appDev.stacks.reactNative.username"),
-                body: trans("appDev.stacks.reactNative.body"),
-                img: trans("appDev.stacks.reactNative.img"),
-              },
-              {
-                name: trans("appDev.stacks.flutter.name"),
-                username: trans("appDev.stacks.flutter.username"),
-                body: trans("appDev.stacks.flutter.body"),
-                img: trans("appDev.stacks.flutter.img"),
-              },
-              {
-                name: trans("appDev.stacks.kotlin.name"),
-                username: trans("appDev.stacks.kotlin.username"),
-                body: trans("appDev.stacks.kotlin.body"),
-                img: trans("appDev.stacks.kotlin.img"),
-              },
-              {
-                name: trans("appDev.stacks.swift.name"),
-                username: trans("appDev.stacks.swift.username"),
-                body: trans("appDev.stacks.swift.body"),
-                img: trans("appDev.stacks.swift.img"),
-              },
-              {
-                name: trans("appDev.stacks.ionic.name"),
-                username: trans("appDev.stacks.ionic.username"),
-                body: trans("appDev.stacks.ionic.body"),
-                img: trans("appDev.stacks.ionic.img"),
-              },
-            ]}
-          />
-
-        </div>
-
-        <div
-          className={
-            divStyle +
-            " col-span-full md:col-span-6 lg:col-span-2 row-span-8 lg:row-span-4 grid place-items-center "
-          }
-        ><NewDesign />
-         
-
+          <div className={" grid grid-cols-1 md:grid-cols-3"}>
+            <div className={" col-span-1 md:col-span-2"}>
+              <AppDevelopment
+                stacks={[
+                  {
+                    name: trans("appDev.stacks.reactNative.name"),
+                    username: trans("appDev.stacks.reactNative.username"),
+                    body: trans("appDev.stacks.reactNative.body"),
+                    img: trans("appDev.stacks.reactNative.img"),
+                  },
+                  {
+                    name: trans("appDev.stacks.flutter.name"),
+                    username: trans("appDev.stacks.flutter.username"),
+                    body: trans("appDev.stacks.flutter.body"),
+                    img: trans("appDev.stacks.flutter.img"),
+                  },
+                  {
+                    name: trans("appDev.stacks.kotlin.name"),
+                    username: trans("appDev.stacks.kotlin.username"),
+                    body: trans("appDev.stacks.kotlin.body"),
+                    img: trans("appDev.stacks.kotlin.img"),
+                  },
+                  {
+                    name: trans("appDev.stacks.swift.name"),
+                    username: trans("appDev.stacks.swift.username"),
+                    body: trans("appDev.stacks.swift.body"),
+                    img: trans("appDev.stacks.swift.img"),
+                  },
+                  {
+                    name: trans("appDev.stacks.ionic.name"),
+                    username: trans("appDev.stacks.ionic.username"),
+                    body: trans("appDev.stacks.ionic.body"),
+                    img: trans("appDev.stacks.ionic.img"),
+                  },
+                ]}
+              />
+            </div>
+            <div className={"col-span-1 grid place-items-center"}>
+              <NewDesign />
+            </div>
+          </div>
         </div>
 
         {/* cooperation   */}

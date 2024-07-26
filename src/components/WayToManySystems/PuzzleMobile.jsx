@@ -42,7 +42,7 @@ const PuzzleMobile = ({ onSolved, onUnSolved }) => {
         gsap.to(".outer-mb", {
           duration: 2.8,
           ease: "easeInOut",
-          backgroundColor: "#22C55E",
+          backgroundColor: "#7900FF",
         });
       },
       duration: 1.5,
@@ -51,7 +51,7 @@ const PuzzleMobile = ({ onSolved, onUnSolved }) => {
       rotate: 0,
       translateX: 0,
       translateY: 0,
-      backgroundColor: "#22C55E",
+      backgroundColor: "#7900FF",
     });
   };
 
@@ -69,13 +69,13 @@ const PuzzleMobile = ({ onSolved, onUnSolved }) => {
   //           gsap.to(".outer-mb", {
   //             duration: 2,
   //         ease: "easeInOut",
-  //             backgroundColor: "#EF4444"
+  //             backgroundColor: "#000"
   //           })
   //         },
   //         duration: 1.5, // Adjust animation duration for individual items
   //         ease: "easeInOut", // Customize easing function
   //         stagger: 0.1, // Add stagger effect for each item (adjust as needed)
-  //         backgroundColor: '#EF4444',
+  //         backgroundColor: '#000',
   //         rotate: (i) => {
   //           const initialRotates = [-13, -26, 3, 20, -13, 43, 30, 11, 75];
   //           return initialRotates[i];
@@ -123,77 +123,77 @@ const PuzzleMobile = ({ onSolved, onUnSolved }) => {
         ref={containerRef}
         className="w-fit site-bg h-fit grid grid-cols-3 place-items-center"
       >
-        <div className="peice-mb bg-[#EF4444] rotate-[-13deg] translate-x-[-1vw] translate-y-[30vw]">
+        <div className="peice-mb bg-[#000] rotate-[-13deg] translate-x-[-1vw] translate-y-[30vw]">
           <span className=" "></span>
           <span className="r site-bg "></span>
           <span className="b site-bg"></span>
           <span className=" "></span>
-          {isSolved ? <p className={"solved-mb"}>O</p> : <p className={" text-center w-full text-xs font-light text-white "}>CMR</p>}
+          {isSolved ? <p className={"solved-mb"}>O</p> : <p className={" text-center w-full text-[10px] text-wrap font-light text-white "}>CMR</p>}
         </div>
 
-        <div className="peice-mb bg-[#EF4444] rotate-[-26deg] translate-x-[-18vw] translate-y-[-6vw]">
+        <div className="peice-mb bg-[#000] rotate-[-26deg] translate-x-[-18vw] translate-y-[-6vw]">
           <span className=""></span>
           <span className="r site-bg"></span>
           <span className="b site-bg "></span>
-          <span className="l outer-mb bg-[#EF4444] "></span>
-          {isSolved ? <p className={"solved-mb"}>N</p> :<p className={" text-center w-full text-xs font-light text-white "}>ERP</p>}
+          <span className="l outer-mb bg-[#000] "></span>
+          {isSolved ? <p className={"solved-mb"}>N</p> :<p className={" text-center w-full text-[10px] text-wrap font-light text-white "}>ERP</p>}
         </div>
 
-        <div className="peice-mb bg-[#EF4444] rotate-[3deg] translate-x-[-15vw] translate-y-[11vw]">
+        <div className="peice-mb bg-[#000] rotate-[3deg] translate-x-[-15vw] translate-y-[11vw]">
           <span className=" "></span>
           <span className=" "></span>
           <span className="b site-bg"></span>
-          <span className="l outer-mb bg-[#EF4444]  "></span>
-          {isSolved ? <p className={"solved-mb"}>E</p> :<p className={" text-center w-full text-xs font-light text-white "}>Sales, Support</p>}
+          <span className="l outer-mb bg-[#000]  "></span>
+          {isSolved ? <p className={"solved-mb"}>E</p> :<p className={" text-center w-full text-[10px] text-wrap font-light text-white "}>Sales</p>}
         </div>
 
-        <div className="peice-mb bg-[#EF4444] rotate-[20deg] translate-x-[15vw] translate-y-[13vw]">
-          <span className="t outer-mb bg-[#EF4444]  "></span>
+        <div className="peice-mb bg-[#000] rotate-[20deg] translate-x-[15vw] translate-y-[13vw]">
+          <span className="t outer-mb bg-[#000]  "></span>
           <span className="r site-bg"></span>
           <span className="b site-bg "></span>
           <span className=" "></span>
-          {isSolved ? <p className={"solved-mb"}>S</p> :<p className={" text-center w-full text-xs font-light text-white "}>Inventory</p>}
+          {isSolved ? <p className={"solved-mb"}>S</p> :<p className={" text-center w-full text-[10px] text-wrap font-light text-white "}>Inventory</p>}
         </div>
 
-        <div className="peice-mb bg-[#EF4444] rotate-[-13deg] translate-x-[16vw] translate-y-[17vw]">
-          <span className="t outer-mb bg-[#EF4444] "></span>
+        <div className="peice-mb bg-[#000] rotate-[-13deg] translate-x-[16vw] translate-y-[17vw]">
+          <span className="t outer-mb bg-[#000] "></span>
           <span className="r site-bg"></span>
           <span className="b site-bg"></span>
-          <span className="l outer-mb bg-[#EF4444]  "></span>
-          {isSolved ? <p className={"solved-mb"}>Y</p> :<p className={" text-center w-full text-xs font-light text-white "}>Management</p>}
+          <span className="l outer-mb bg-[#000]  "></span>
+          {isSolved ? <p className={"solved-mb"}>Y</p> :<p className={" text-center w-full text-[10px] text-wrap font-light text-white "}>Management</p>}
         </div>
 
-        <div className="peice-mb bg-[#EF4444] rotate-[43deg] translate-x-[-30vw] translate-y-[-4vw]">
+        <div className="peice-mb bg-[#000] rotate-[43deg] translate-x-[-30vw] translate-y-[-4vw]">
           
-          <span className="t outer-mb bg-[#EF4444]  "></span>
+          <span className="t outer-mb bg-[#000]  "></span>
           <span className=" "></span>
           <span className="b site-bg"></span>
-          <span className="l outer-mb bg-[#EF4444]  "></span>
-          {isSolved ? <p className={"solved-mb"}>S</p> :<p className={" text-center w-full text-xs font-light text-white "}>IT</p>}
+          <span className="l outer-mb bg-[#000]  "></span>
+          {isSolved ? <p className={"solved-mb"}>S</p> :<p className={" text-center w-full text-[10px] text-wrap font-light text-white "}>IT</p>}
         </div>
 
-        <div className="peice-mb bg-[#EF4444] rotate-[30deg] translate-x-[34vw] translate-y-[-30vw] ">
-          <span className="t outer-mb bg-[#EF4444] "></span>
+        <div className="peice-mb bg-[#000] rotate-[30deg] translate-x-[34vw] translate-y-[-30vw] ">
+          <span className="t outer-mb bg-[#000] "></span>
           <span className="r site-bg "></span>
           <span className=" "></span>
           <span className=" "></span>
-          {isSolved ? <p className={"solved-mb"}>T</p> :<p className={" text-center w-full text-xs font-light text-white "}>Data</p>}
+          {isSolved ? <p className={"solved-mb"}>T</p> :<p className={" text-center w-full text-[10px] text-wrap font-light text-white "}>Data</p>}
         </div>
 
-        <div className="peice-mb bg-[#EF4444] rotate-[11deg] translate-x-[16vw] translate-y-[-14vw]">
-          <span className="t outer-mb bg-[#EF4444]  "></span>
+        <div className="peice-mb bg-[#000] rotate-[11deg] translate-x-[16vw] translate-y-[-14vw]">
+          <span className="t outer-mb bg-[#000]  "></span>
           <span className="r site-bg "></span>
           <span className=" "></span>
-          <span className="l outer-mb bg-[#EF4444] "></span>
-          {isSolved ? <p className={"solved-mb"}>E</p> :<p className={" text-center w-full text-xs font-light text-white "}>E-commerce</p>}
+          <span className="l outer-mb bg-[#000] "></span>
+          {isSolved ? <p className={"solved-mb"}>E</p> :<p className={" text-center w-full text-[10px] text-wrap font-light text-white "}>E-commerce</p>}
         </div>
 
-        <div className="peice-mb bg-[#EF4444] rotate-[75deg] translate-x-[-16vw] translate-y-[-32vw]">
-          <span className="t outer-mb bg-[#EF4444]  "></span>
+        <div className="peice-mb bg-[#000] rotate-[75deg] translate-x-[-16vw] translate-y-[-32vw]">
+          <span className="t outer-mb bg-[#000]  "></span>
           <span className=" "></span>
           <span className=" "></span>
-          <span className="l outer-mb bg-[#EF4444] "></span>
-          {isSolved ? <p className={"solved-mb"}>M</p> :<p className={" text-center w-full text-xs font-light text-white "}>Communication</p>}
+          <span className="l outer-mb bg-[#000] "></span>
+          {isSolved ? <p className={"solved-mb"}>M</p> :<p className={" text-center w-full text-[10px] text-wrap font-light text-white "}>Support</p>}
         </div>
       </div>
     </div>

@@ -42,7 +42,7 @@ export default function Security() {
   };
 
   const divStyle =
-    " rounded-2xl h-full w-full overflow-hidden pointer-events-none md:pointer-events-auto bg-white ";
+    " rounded-2xl h-full w-full overflow-hidden bg-white md:row-span-3 ";
 
   return (
     <section className=" sectionCS h-fit md:h-screen w-full stickyScrol overflow-hidden site-bg ">
@@ -93,8 +93,8 @@ export default function Security() {
         }
         id={24}
       />
-      <div className=" grid grid-cols-1 md:grid-cols-3 gap-6 w-full h-full md:h-[43vh] px-4 md:px-24 bg red-500 py-2 site-bg ">
-        <div className={divStyle + " "}>
+      <div className=" grid grid-cols-1 grid-rows-3 md:grid-cols-3 gap-6 w-full h-full md:h-[43vh] px-4 md:px-24 bg red-500 py-2 site-bg ">
+        <div className={divStyle + " row-span-1 "}>
           {/* <h1 className=" text-center font-semibold text-xl md:text-2xl lg:text-3xl">
           {trans('chat')}
           </h1> */}
@@ -102,7 +102,7 @@ export default function Security() {
           <Chat />
           {/* </div> */}
         </div>
-        <div className={divStyle + " "}>
+        <div className={divStyle + " row-span-1 "}>
           {/* <h1 className=" text-center font-semibold text-xl md:text-2xl lg:text-3xl">
             {trans("payment")}
           </h1>
@@ -110,8 +110,8 @@ export default function Security() {
             <Payment />
           {/* </div> */}
         </div>
-        <div className={divStyle + "  "}>
-          <h1 className=" text-center font-semibold text-xl md:text-2xl lg:text-3xl">
+        <div className={divStyle + " row-span-1 "}>
+          <h1 className=" text-center font-semibold text-xl md:text-2xl lg:text-3xl pointer-events-none md:pointer-events-auto">
             {trans("andMore")}
           </h1>
           <div className=" bg-white w-full h-[40vh] md:h-[36vh] rounded-b-2xl grid place-items-center">
