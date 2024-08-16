@@ -69,9 +69,10 @@ export default function ContactForm({data}) {
       )}
 
       <form
-        onSubmit={(e) => {
-          sendMsg(e);
-        }}
+      action="https://formsubmit.co/Activus@activus.is" method="POST"
+        // onSubmit={(e) => {
+        //   sendMsg(e);
+        // }}
         className=" grid gap-6"
       >
         <input
