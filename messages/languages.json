@@ -1,0 +1,68 @@
+[
+    {
+        "name":"English",
+        "Database_Design":"We design your database with best practice and faster results. Oracle, MS-SQL, MySQL, No-SQL, Informix we know it all.",
+        "Helping_Innovation":"An innovation company in need of programmers, we love innovation and want to help you bring your ideas to the world",
+        "Need1":"We understand your business and provide tailored solutions",
+        "Need2":"We analyze the needs of your business and find the best solution that could suit your business. Our designers map out the functionality you need, and we review in advance what needs to be done to achieve maximum results.",
+        "Cloud":"All in the cloud, for a faster and safer environment. AWS CodeDeploy, Azure DevOps, Kubernetes, Docker, and more"
+    },
+    {
+        "name":"chinese",
+        "Database_Design":"我们设计您的数据库，采用最佳实践和更快的结果。 Oracle，MS-SQL，MySQL，No-SQL，Informix我们都知道。",
+        "Helping_Innovation":"一家需要程序员的创新公司，我们热爱创新，希望帮助您将您的想法带给世界",
+        "Need1":"我们了解您的业务并提供量身定制的解决方案",
+        "Need2":"我们分析您的业务需求，并找到最适合您业务的最佳解决方案。我们的设计师绘制出您需要的功能，我们预先审查需要做什么来实现最大的结果。",
+        "Cloud":"一切都在云中，为了更快速和更安全的环境。 AWS CodeDeploy，Azure DevOps，Kubernetes，Docker等"
+    },
+    {
+        "name":"spanish",
+        "Database_Design":"Diseñamos su base de datos con las mejores prácticas y resultados más rápidos. Oracle, MS-SQL, MySQL, No-SQL, Informix, lo sabemos todo.",
+        "Helping_Innovation":"Una empresa de innovación que necesita programadores, amamos la innovación y queremos ayudarlo a llevar sus ideas al mundo",
+        "Need1":"Entendemos su negocio y proporcionamos soluciones a medida",
+        "Need2":"Analizamos las necesidades de su negocio y encontramos la mejor solución que podría adaptarse a su negocio. Nuestros diseñadores mapean la funcionalidad que necesita, y revisamos de antemano lo que se necesita hacer para lograr los máximos resultados.",
+        "Cloud":"Todo en la nube, para un entorno más rápido y seguro. AWS CodeDeploy, Azure DevOps, Kubernetes, Docker y más"
+    },
+    {
+        "name":"french",
+        "Database_Design":"Nous concevons votre base de données avec les meilleures pratiques et des résultats plus rapides. Oracle, MS-SQL, MySQL, No-SQL, Informix, nous connaissons tout.",
+        "Helping_Innovation":"Une entreprise d'innovation ayant besoin de programmeurs, nous aimons l'innovation et voulons vous aider à concrétiser vos idées dans le monde",
+        "Need1":"Nous comprenons votre entreprise et fournissons des solutions sur mesure",
+        "Need2":"Nous analysons les besoins de votre entreprise et trouvons la meilleure solution qui pourrait convenir à votre entreprise. Nos concepteurs cartographient la fonctionnalité dont vous avez besoin, et nous examinons à l'avance ce qui doit être fait pour obtenir des résultats optimaux.",
+        "Cloud":"Tout dans le cloud, pour un environnement plus rapide et plus sûr. AWS CodeDeploy, Azure DevOps, Kubernetes, Docker et plus"
+    },
+    {
+        "name":"italian",
+        "Database_Design":"Progettiamo il tuo database con le migliori pratiche e risultati più rapidi. Oracle, MS-SQL, MySQL, No-SQL, Informix, sappiamo tutto.",
+        "Helping_Innovation":"Un'azienda di innovazione che ha bisogno di programmatori, amiamo l'innovazione e vogliamo aiutarti a portare le tue idee nel mondo",
+        "Need1":"Capiamo la tua attività e forniamo soluzioni su misura",
+        "Need2":"Analizziamo le esigenze della tua attività e troviamo la soluzione migliore che potrebbe adattarsi alla tua attività. I nostri designer mappano la funzionalità di cui hai bisogno, e rivediamo in anticipo ciò che deve essere fatto per ottenere risultati massimi.",
+        "Cloud":"Tutto nel cloud, per un ambiente più veloce e sicuro. AWS CodeDeploy, Azure DevOps, Kubernetes, Docker e altro"
+    },
+    {
+        "name":"brazil",
+        "Database_Design":"Projetamos seu banco de dados com as melhores práticas e resultados mais rápidos. Oracle, MS-SQL, MySQL, No-SQL, Informix, sabemos tudo.",
+        "Helping_Innovation":"Uma empresa de inovação que precisa de programadores, amamos a inovação e queremos ajudá-lo a levar suas ideias para o mundo",
+        "Need1":"Entendemos o seu negócio e fornecemos soluções personalizadas",
+        "Need2":"Analisamos as necessidades de sua empresa e encontramos a melhor solução que poderia se adequar ao seu negócio. Nossos designers mapeiam a funcionalidade de que você precisa, e revisamos antecipadamente o que precisa ser feito para alcançar resultados máximos.",
+        "Cloud":"Tudo na nuvem, para um ambiente mais rápido e seguro. AWS CodeDeploy, Azure DevOps, Kubernetes, Docker e mais"
+       
+    },
+    {
+        "name":"german",
+        "Database_Design":"Wir entwerfen Ihre Datenbank mit bewährten Methoden und schnelleren Ergebnissen. Oracle, MS-SQL, MySQL, No-SQL, Informix, wir kennen uns aus.",
+        "Helping_Innovation":"Ein Innovationsunternehmen, das Programmierer benötigt, wir lieben Innovation und möchten Ihnen helfen, Ihre Ideen in die Welt zu bringen",
+        "Need1":"Wir verstehen Ihr Geschäft und bieten maßgeschneiderte Lösungen",
+        "Need2":"Wir analysieren die Bedürfnisse Ihres Unternehmens und finden die beste Lösung, die Ihrem Unternehmen entsprechen könnte. Unsere Designer kartieren die Funktionalität, die Sie benötigen, und wir überprüfen im Voraus, was getan werden muss, um maximale Ergebnisse zu erzielen.",
+        "Cloud":"Alles in der Cloud, für eine schnellere und sicherere Umgebung. AWS CodeDeploy, Azure DevOps, Kubernetes, Docker und mehr"
+    },
+    {
+        "name":"russian",
+        "Database_Design":"Мы проектируем вашу базу данных с использованием передовых практик и быстрых результатов. Oracle, MS-SQL, MySQL, No-SQL, Informix, мы знаем все.",
+        "Helping_Innovation":"Инновационная компания, нуждающаяся в программистах, мы любим инновации и хотим помочь вам принести свои идеи в мир",
+        "Need1":"Мы понимаем ваш бизнес и предоставляем индивидуальные решения",
+        "Need2":"Мы анализируем потребности вашего бизнеса и находим лучшее решение, которое могло бы подойти для вашего бизнеса. Наши дизайнеры картографируют функциональность, которая вам нужна, и мы заранее рассматриваем, что нужно сделать, чтобы достичь максимальных результатов.",
+        "Cloud":"Все в облаке, для более быстрой и безопасной среды. AWS CodeDeploy, Azure DevOps, Kubernetes, Docker и другие"
+
+    }
+]

@@ -5,7 +5,7 @@ import { useTransition } from "react";
 import { useRouter, usePathname } from "@/navigation";
 import { CircleFlag } from "react-circle-flags";
 
-export default function LanguageSwitcher() {
+export default function LanguageSwitcher({language,setLanguage}) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const pathname = usePathname();
@@ -29,7 +29,8 @@ export default function LanguageSwitcher() {
     <div className=" flex flex-wrap items-center justify-center gap-4 md:gap-8 w-full px-8 ">
       <button
         onClick={() => {
-          handleChangeLanguage("en");
+          // handleChangeLanguage("en");
+          setLanguage(0);
         }}
         disabled={isPending}
         key="lang-btn-en"
@@ -40,7 +41,8 @@ export default function LanguageSwitcher() {
       </button>
       <button
         onClick={() => {
-          handleChangeLanguage("fr");
+          // handleChangeLanguage("fr");
+          setLanguage(3);
         }}
         disabled={isPending}
         key="lang-btn-fr"
@@ -50,7 +52,8 @@ export default function LanguageSwitcher() {
       </button>
       <button
         onClick={() => {
-          handleChangeLanguage("es");
+          // handleChangeLanguage("es");
+          setLanguage(2);
         }}
         disabled={isPending}
         key="lang-btn-es"
@@ -60,7 +63,8 @@ export default function LanguageSwitcher() {
       </button>
       <button
         onClick={() => {
-          handleChangeLanguage("de");
+          // handleChangeLanguage("de");
+          setLanguage(6);
         }}
         disabled={isPending}
         key="lang-btn-de"
@@ -70,7 +74,8 @@ export default function LanguageSwitcher() {
       </button>
       <button
         onClick={() => {
-          handleChangeLanguage("it");
+          // handleChangeLanguage("it");
+          setLanguage(4);
         }}
         disabled={isPending}
         key="lang-btn-it"
@@ -81,7 +86,8 @@ export default function LanguageSwitcher() {
 
       <button
         onClick={() => {
-          handleChangeLanguage("cn");
+          // handleChangeLanguage("cn");
+          setLanguage(1);
         }}
         disabled={isPending}
         key="lang-btn-cn"
@@ -91,7 +97,8 @@ export default function LanguageSwitcher() {
       </button>
       <button
         onClick={() => {
-          handleChangeLanguage("br");
+          // handleChangeLanguage("br");
+          setLanguage(5);
         }}
         disabled={isPending}
         key="lang-btn-br"
@@ -101,7 +108,8 @@ export default function LanguageSwitcher() {
       </button>
       <button
         onClick={() => {
-          handleChangeLanguage("ru");
+          // handleChangeLanguage("ru");
+          setLanguage(7);
         }}
         disabled={isPending}
         key="lang-btn-ru"

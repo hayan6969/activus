@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { BorderBeam } from "../magicui/border-beam";
 import BlurIn from "../magicui/blur-in";
@@ -12,6 +13,8 @@ import { AiOutlineKubernetes } from "react-icons/ai";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { TextRevealCard } from "../ui/text-reveal-card";
+import languages from "../../../messages/languages.json";
+import { useState } from "react";
 
 export default function Section7() {
 
@@ -20,6 +23,9 @@ export default function Section7() {
     " relative w-full h-fit sm:h-full rounded-2xl lg:col-span-4 bg-white overflow-hidden ";
 
   const headingStyle = " text-2xl sm:text-3xl md:text-4xl font-semibold pt-2 sm:p-0 ";
+
+  const [language, setLanguage] = useState(0);
+  
 
   return (
     <section id="section7" className="  w-full  sm:h-fit lg:h-screen px-4 md:px-24 py-2 my-6 overflow-hidden site-bg">
@@ -35,7 +41,7 @@ export default function Section7() {
               id={81}
             />
             <p className=" text-center font-light text-lg md:text-2xl lg:text-3xl w-full p-2 sm:p-0">
-              {trans("helpingInnovation.desc")}
+              {languages[language].Helping_Innovation}
             </p>
           </div>
         </div>
@@ -51,7 +57,7 @@ export default function Section7() {
           />
           <p className="text-center font-light text-md md:text-lg lg:text-xl px-4 ">
             
-            {trans("dbDesign.desc")}
+            {languages[language].Database_Design}
           </p>
           <div className="relative flex h-fit w-full flex-col items-center justify-center overflow-hidden">
             <span className="pointer-events-none whitespace-pre-wrap h-[42vh] "></span>
@@ -110,6 +116,8 @@ export default function Section7() {
           <BlurIn word={trans('lang.heading')} className={headingStyle + " "} id={83} />
           <div className=" grid place-items-center h-[24vh] my-auto ">
             <LanguageSwitcher 
+            language={language}
+            setLanguage={setLanguage}
             // english={trans('lang.english')} 
             // french={trans('lang.french')} 
             />
@@ -122,7 +130,7 @@ export default function Section7() {
           <BlurIn word={trans('cloud.heading')} className={headingStyle + " "} id={84} />
           <div className=" grid gap-6 my-6">
             <div className=" text-center font-light text-md md:text-lg lg:text-xl px-4  ">
-              {trans('cloud.desc')}
+              {languages[language].Cloud}
             </div>
             <div className="relative w-full">
               <Dock magnification={70} distance={80}>
@@ -153,8 +161,8 @@ export default function Section7() {
           />
           <TextRevealCard
           className={" text-center font-light text-md md:text-lg "}
-          text={trans('analysis.descBefore')}
-          revealText={trans('analysis.descAfter')}
+          text={languages[language].Need1}
+          revealText={languages[language].Need2}
           />
           {/* <p className="text-center font-light text-md md:text-lg px-4 py-2 sm:py-0 ">
           {trans('analysis.desc')}
